@@ -1,0 +1,44 @@
+% 1=boolean, display yes or no
+% 2=begin date
+% 3=end date
+% 4=organization name
+% 5=short description
+% 6=longer description
+\newcommand{\experience}[6]{
+  \ifnum#1=1
+    \definecolor{tmpclr}{RGB}{0,0,0}
+  \else
+    \definecolor{tmpclr}{gray}{.5}
+  \fi
+  \begin{tabu} to  \linewidth { X[l]X[.15cm] }
+    \large \textbf{\textcolor{tmpclr}{#5}} & \footnotesize \textcolor{tmpclr}{#2 -} \normalsize \\
+    \textit{\textcolor{tmpclr}{at #4}} & \footnotesize \textcolor{tmpclr}{#3} \normalsize \\
+  \end{tabu}
+  \ifnum#1=1
+    #6 \\
+  \fi
+  \\
+}
+
+\newcommand{\SCRUM}{\normalsize\textcolor{gray}{\textit{using \textsc{SCRUM}}}}
+
+\experience{1}{jun 2016}{aug 2016}{\href{http://superbuddy.nl}{Superbuddy}, Zwolle}{Implementing Continues Integration \SCRUM}{\href{https://github.com/SuperBuddy/ci}{github.com/Superbuddy/ci}}
+\experience{1}{feb 2016}{jun 2016}{\href{http://blendle.com}{Blendle}, Utrecht}{Optimize back-end using caching \SCRUM}{}
+\experience{1}{sep 2015}{jan 2016}{\href{http://imgzine.com}{imgZine}, Amsterdam}{XMPP over websocket integration}{Messaging integration, setting up server, auto deploy using Docker}
+\experience{1}{feb 2015}{jun 2015}{\href{http://www.maxedy.com/en/}{Maxedy}, Amsterdam}{REST API Meteor/OrientDB \SCRUM}{Automation of server set-up (bash) and back-end code in Meteor (JS)}
+\experience{1}{nov 2013}{jan 2014}{\href{http://www.icebergwebshophands.com/}{Iceberg Webshop hands}, Dronten}{PoC in Grails \SCRUM}{Proof of Concept; developing online craigslist for fresh food}
+\experience{1}{apr 2013}{jun 2013}{Windesheim}{Route planner in C\# \SCRUM}{With 25 people we developed a route planner}
+\experience{1}{jan 2013}{mar 2013}{Windesheim}{Game in C\#}{Game that loads level from XML file}
+\experience{1}{apr 2012}{jun 2012}{Windesheim}{Java TSP challenge}{3D animation on computer and real life situation (robot arms made of Lego)}
+\experience{1}{jan 2012}{mar 2012}{Windesheim}{Arduino project}{School project; drawing robot}
+\experience{1}{sep 2011}{dec 2011}{Windesheim}{PHP, MySQL projects}{Two school projects; creating website}
+%\experience{0}{2009}{2011}{Iscal Sugar, Lelystad}{Technical department}{Part-time job}
+%\experience{0}{jan 2010}{jan 2011}{Engels en de Beer, Lelystad}{Switch cabinets}{Part-time job}
+%\experience{0}{feb 2011}{jul 2011}{Total Wind, Dronten}{Wind turbine mechanic}{6 month internship}
+%\experience{0}{sep 2010}{jan 2011}{Martin Gaus, Lelystad}{3D CAD / designer}{5 month development of a machine that throws tennis balls, which is fully operated and powered by a (trained) dog}
+%\experience{0}{feb 2010}{jun 2010}{Tanis Food Tec, Lelystad}{3D CAD / research}{5 month research (2 days a week) the possibilities for modification on food processing machine}
+%\experience{0}{sep 2009}{jan 2010}{Engels en de Beer, Lelystad}{Switch cabinets}{5 month internship}
+%\experience{0}{jan 2009}{mar 2009}{Iscal Sugar, Lelystad}{Technical department}{3 month internship}
+%\experience{0}{mar 2008}{jun 2008}{Leenart en Heemskerk}{Call Centre}{3 month part-time job, calling for charity (War Child)}
+%\experience{0}{apr 2008}{jun 2008}{Strijkert Metaal, Biddinghuizen}{Intern; Metal Worker}{3 month internship}
+%\experience{0}{2000}{2009}{De Pijler, Lelystad}{Sound technician}{Monitor, studio and FOH}

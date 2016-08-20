@@ -1,0 +1,86 @@
+\newcommand{\progressReport}[7]{
+	\h{3}{wk#1}{}
+
+%  \begin{tabu} to  \linewidth { X[.25cm]X[l] }
+%		\textbf{\roleSt} & \authorStudentNbr, \authorName, \phoneLink{\authorPhone}, \mailLink{\authorMail} \\
+%		\textbf{Company} & \companyName, \companyCity \\
+%    \textbf{\roleSM} & \scrumMasterName, \phoneLink{\scrumMasterPhone}, \mailLink{\scrumMasterMail} \\
+%		\textbf{\roleCo} & \coachName, \roleSM, \phoneLink{\coachPhone}, \mailLink{\coachMail} \\
+%  \end{tabu}
+
+	#2
+
+  \subsubsection*{Went well}
+  \begin{itemize}
+    \item #3
+  \end{itemize}
+
+  \subsubsection*{Obstacles (and possible solutions)}
+  \begin{itemize}
+    \item #4
+  \end{itemize}
+
+  \subsubsection*{TODO next week}
+  \begin{itemize}
+    \item #5
+  \end{itemize}
+
+  \subsubsection*{Reflection}
+    #6
+
+  \subsubsection*{Feedback \roleSu}
+  \begin{tabu} to  \linewidth { X[l]X[.3cm] }
+    #7 &
+    \textcolor{lightgray}{\randomize{Signature} \roleSu} \\
+  \end{tabu}
+
+\newpage
+}
+
+\newcommand{\weekLayout}[6]{
+	\subsubsection*{Monday #1}
+	#2
+	\subsubsection*{Tuesday}
+	#3
+	\subsubsection*{Wednesday}
+	#4
+	\subsubsection*{Thursday}
+	#5
+	\subsubsection*{Friday}
+	#6
+}
+\newcommand{\renderWeekLayout}{
+\weekLayout{\progressMondayDateDATA
+}{\progressMoDATA%
+}{\progressTuDATA%
+}{\progressWeDATA%
+}{\progressThDATA%
+}{\progressFrDATA%
+}%
+}
+
+\newcommand{\renderProgressReport}{
+\progressReport{\progressWkNbrDATA\ \progressMondayDateDATA
+}{\renderWeekLayout%
+}{\progressGoodDATA%
+}{\progressObstaclesDATA%
+}{\progressTodoDATA%
+}{\progressReflectDATA%
+}{\progressFeedbackDATA%
+}\emptyProgressReport
+}
+
+\newcommand{\emptyProgressReport}{
+\progressWkNbr{}
+\progressMondayDate{}
+\progressMo{}
+\progressTu{}
+\progressWe{}
+\progressTh{}
+\progressFr{}
+\progressGood{}
+\progressObstacles{}
+\progressTodo{}
+\progressReflect{}
+\progressFeedback{}
+}

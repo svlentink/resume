@@ -1,0 +1,53 @@
+%layout based on https://www.overleaf.com/articles/maze-solving-by-an-autonomous-robot/ywxprrzmxpkg#.VNJANXJGjUY
+
+% 1=doctype, 2=title, 3=subTitle
+\newcommand{\coverPage}[3]{
+	\begin{titlepage}
+	\centering
+	\thispagestyle{empty}%remove pagenumber on title page
+
+	%title
+		\textcolor{white}{.}\\ [3.5cm] %SHOULD NOT BE VISIBLE
+		\normalsize #1 \\ [.45cm]
+		\HRule{0.5pt} \\ [.6cm]
+		\Huge #2 \\
+		\Large #3 \\ [.6cm]
+		\HRule{0.5pt} \\ [1.8cm]
+
+	%author
+		\authorName \\
+		\small
+      \authorStudentNbr \\*
+		  Student \fieldOfStudy \\
+		  \uni \\ [.5cm]
+
+	%date
+		\normalsize Version \documentversionnumber \todayDate \\ [4cm]
+
+	\begin{tabu} to \linewidth { X[l]X[r] }
+		\roleCC & \roleCo \\
+		\roleCCName & \roleCoName \\
+		\small \mailLink{\roleCCMail} &
+		\small \mailLink{\roleCoMail} \\ [.8cm]
+	\end{tabu}
+
+  \begin{tabu} to \linewidth { X[l]X[r] }
+		\textcolor{lightgray}{Signature} & \textcolor{lightgray}{Signature} \\
+		\roleSuName & \authorName \\
+		\roleSu & \roleSt \\
+	\end{tabu}
+
+	\scriptsize - The pdf \randomize{version} of this \randomize{document} \randomize{contains} \randomize{hyperlinks}. -
+
+\Comment{ If you see red text under headings, than you compiled it with the comment messages.
+	Bevat de tekst ‘Plan van aanpak’
+	Bevat de naam van de opdracht
+	Bevat de naam van de organisatie en de naam van de opdrachtgever
+	Bevat de naam van de begeleidend docent
+	Bevat versienummer en datum van de huidige versie
+	Bevat naam en studentnummer van de student
+	Bevat instellingsnaam en opleiding van de student
+}
+	\end{titlepage}
+
+}

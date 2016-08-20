@@ -1,0 +1,44 @@
+%params 1=URL, 2=description, 3=width
+\newcommand{\hrefPic}[3]{
+	\textbf{not-implemented, svlentink needs to implement this in bash using wget}
+  \imgC
+}
+
+%\newcommand{é}{\'e}%writelatex.com accepted this!
+%\newcommand{ë}{\"e}
+
+
+\def\tableOfImageItems{\currenttime}
+%1=defined command,2=item to push
+\newcommand{\arrayPUSH}[2]{
+\edef #1{#1 #2}
+}
+\newcommand{\imagesPUSH}[1]{
+  \arrayPUSH{\tableOfImageItems}{#1} %\item[Figure \ref{#1}]
+}
+%\usepackage{etoolbox}%including in main list of usepackages
+\newcommand{\tableOfImages}{ % not working ATM, working on it
+%\patchcmd{\abstract}{::}{\\}{}{}
+\begin{description}
+\item[a] b
+\tableOfImageItems
+\end{description}
+}
+
+
+\newcommand{\ifNotEmptyItemDEPRICATED}[2]{
+	\ifx&#1&%
+    %empty
+  \else
+    #2
+  \fi
+}
+
+\newcommand{\codeBlockDEPRICATED}[2]{% https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+  \ifNotEmpty{#1}{
+    \lstset{language=#1}
+  }
+  \begin{lstlisting}[frame=single]
+    #2
+  \end{lstlisting}
+}

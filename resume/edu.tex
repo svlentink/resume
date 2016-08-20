@@ -1,0 +1,27 @@
+\newcommand{\education}[6]{
+  \ifnum#1=1
+    \definecolor{tmpclr}{RGB}{0,0,0}
+  \else
+    \definecolor{tmpclr}{gray}{.5}
+  \fi
+  \begin{tabu} to  \linewidth { X[.18cm]X[l] }
+    \footnotesize \textcolor{tmpclr}{#2\ifNotEmpty{#3}{ - #3}} & \large \textbf{\textcolor{tmpclr}{#5}} \normalsize \\
+%    \ifNotEmpty{#3}{
+%      \footnotesize \textcolor{tmpclr}{#3} \normalsize
+%    }
+    & \textit{\textcolor{tmpclr}{at #4}} \\
+  \end{tabu}
+%  \ifnum#1=1
+%    #6 \\
+%  \fi
+  \\
+  \\
+}
+
+%\education{1}{2016}{2018}{University, Utrecht}{MSc. Computing Science}{}
+\education{1}{2012}{present}{Windesheim, Zwolle}{BSc. Software Engineering}{}
+\education{1}{2014}{}{University of Amsterdam}{Minor AI}{}
+\education{1}{2014}{}{University Utrecht}{Minor Mathematics}{}
+\education{1}{2013}{}{Windesheim, Zwolle}{Minor Web Technology}{}
+\education{1}{2011}{2012}{Windesheim, Zwolle}{Propedeuse Computer Engineering}{}
+%\education{0}{2007}{2011}{Landstede, Harderwijk}{MBO Mechatronica}{}

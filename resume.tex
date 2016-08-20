@@ -1,0 +1,52 @@
+% compile using: texi2pdf --tidy resume.tex
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.2cm, vmargin=1.2cm, bmargin=.5cm]{geometry} % Document margins
+
+
+\newcommand{\boolhidecomments}{1}
+\newcommand{\watermarktext}{}
+\include{custom/basics_and_packages}
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+%\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+\definecolor{linkcolor}{RGB}{0,0,240} % Blue-gray color for links
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{10pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\begin{minipage}[t]{0.25\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+\subimport*{resume/}{left}
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.7\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+\subimport*{resume/}{right}
+
+\end{minipage} % End right-hand side of the page
+
+\end{document}
