@@ -1,0 +1,14 @@
+start: 2013-04
+end: 2013-06
+hours: 40
+employment: edu. project
+archive: true #makes it invisible
+company: Windesheim
+city: Zwolle
+cc: NL
+scrum: true
+title: C-sharp developer
+desc: Developed a route planner with 25 people
+dutch:
+  title: C-sharp developer
+  desc: Ontwikkeling van een route planner met 25 man

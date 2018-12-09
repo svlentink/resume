@@ -1,0 +1,13 @@
+start: 2015-02
+end: 2015-06
+hours: 40
+employment: internship
+company: Maxedy
+city: Amsterdam
+cc: NL
+scrum: true
+url: http://www.maxedy.com
+title: NodeJS developer
+desc: Deployment using Bash and REST-API in Meteor using OrientDB
+dutch:
+  title: NodeJS ontwikkelaar

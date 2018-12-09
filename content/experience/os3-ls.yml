@@ -1,0 +1,13 @@
+start: 2017-11
+end: 2017-12
+hours: 24
+employment: edu. project
+company: OS3
+city: Amsterdam
+cc: NL
+url: http://www.os3.nl
+projecturl: https://github.com/svlentink/container-performance
+title: Container technologist
+desc: Comparing on the fly container utilization using LXC, rkt and Docker
+dutch:
+  desc: Vergelijken van on the fly container utilizatie mbv. LXC, rkt en Docker

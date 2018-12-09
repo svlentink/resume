@@ -1,0 +1,14 @@
+start: 2009-01
+end: 2009-03
+hours: 40
+employment: internship
+archive: true #makes it invisible
+company: Iscal sugar
+city: Lelystad
+cc: NL
+url: http://www.iscalsugar.nl
+title: Machine maintenance
+desc: Part of the technical department in a food factory
+dutch:
+  title: Machine monteur
+  desc: Onderdeel van de technische dienst bij een voedsel producent

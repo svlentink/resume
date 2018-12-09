@@ -1,0 +1,14 @@
+start: 2009-09
+end: 2010-01
+hours: 40
+employment: internship
+archive: true #makes it invisible
+company: Engels en de Beer
+city: Lelystad
+cc: NL
+url: https://engelsdebeer.com
+title: Electrical engineer
+desc: Creating switch cabinets for machines used in food factories
+dutch:
+  title: Electro monteur
+  desc: Maken van schakelkasten gebruikt in de voedings industrie

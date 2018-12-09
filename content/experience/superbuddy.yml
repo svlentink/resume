@@ -1,0 +1,13 @@
+start: 2016-06
+end: 2016-09
+hours: 40
+employment: thesis
+company: Superbuddy
+city: Zwolle
+cc: NL
+scrum: true
+url: http://superbuddy.nl
+title: DevOps
+desc: Implementing CI/CD using micro services and docker-compose
+dutch:
+  desc: Invoeren van CI/CD mbv. micro services en docker-compose

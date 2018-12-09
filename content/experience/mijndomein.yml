@@ -1,0 +1,13 @@
+start: 2016-12
+end: 2018-11
+hours: 24
+employment: employee
+scrum: true
+company: Mijndomein
+city: Lelystad
+cc: NL
+url: http://mijndomein.nl
+title: DevOps
+desc: Supporting hosting facilities, using Python, VMs, containers, load balancing, RabbitMQ, exim, DC/OS and kubernetes
+dutch:
+  desc: Onderhouden van hosting faciliteiten mbv. Python, VMs, containers, load balancing, RabbitMQ, exim, DC/OS en kubernetes

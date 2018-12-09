@@ -1,0 +1,14 @@
+start: 2010-09
+end: 2011-01
+hours: 16
+employment: internship
+archive: true #makes it invisible
+company: Martin Gaus
+city: Lelystad
+cc: NL
+url: https://mgh-lelystad.nl
+title: Machine designer
+desc: Developed a machine that throws a tennis balls, which is fully operated and powered by a (trained) dog
+dutch:
+  title: Machine ontwerper
+  desc: Ontwikkeling van een machine die een tennisbal gooit, volledig aangedreven en bediend door een (getrainde) hond

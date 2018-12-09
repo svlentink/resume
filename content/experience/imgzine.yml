@@ -1,0 +1,11 @@
+start: 2015-09
+end: 2016-01
+hours: 40
+employment: internship
+company: imgZine
+city: Amsterdam
+cc: NL
+scrum: true
+url: http://imgzine.com
+title: DevOps
+desc: Dockerized XMPP server, supporting websockets (RFC7395)

@@ -1,0 +1,14 @@
+start: 2000
+end: 2009
+hours: 8
+employment: community service
+archive: true #makes it invisible
+company: De Pijler
+city: Lelystad
+cc: NL
+url: http://www.congrespijler.nl
+title: Sound technician
+desc: Theater building in which I managed the monitor sound, the studio or as Front-of-house.
+dutch:
+  title: Geluidstechnicus
+  desc: Theater gebouw waar ik het geluid regelde voor de monitoren, studio of FOH.

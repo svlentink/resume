@@ -1,0 +1,13 @@
+start: 2010-01
+end: 2011-01
+hours: 8
+employment: employee
+company: Engels en de Beer
+city: Lelystad
+cc: NL
+url: https://engelsdebeer.com
+title: Electrical engineer
+desc: Side job, creating switch cabinets for machines used in food factories
+dutch:
+  title: Electro monteur
+  desc: Bijbaan, maken van schakelkasten gebruikt in de voedings industrie
