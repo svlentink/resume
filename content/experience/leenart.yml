@@ -2,6 +2,7 @@ start: 2008-03
 end: 2008-06
 hours: 12
 employment: employee
+sector: communication
 archive: true #makes it invisible
 company: Leenart en Heemskerk
 city: Lelystad
@@ -10,3 +11,4 @@ title: Call center
 desc: Calling for charity, such as War Child
 dutch:
   desc: Bellen voor organisaties zoals War Child
+  sector: communicatie

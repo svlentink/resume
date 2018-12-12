@@ -4,9 +4,11 @@ hours: 40
 employment: internship
 company: Total Wind
 city: Dronten
+sector: energy
 cc: NL
 scrum: true
 url: http://www.certion.nu
 title: Wind turbine mechanic
 dutch:
   title: Windmolen monteur
+  sector: energie

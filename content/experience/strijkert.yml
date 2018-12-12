@@ -1,6 +1,7 @@
 start: 2008-04
 end: 2008-06
 hours: 40
+sector: metal
 employment: internship
 archive: true #makes it invisible
 company: Strijkert Metaal
@@ -9,3 +10,4 @@ cc: NL
 title: Metal worker
 dutch:
   title: Metaal bewerker
+  sector: metaal
