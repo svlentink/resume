@@ -1,135 +1,169 @@
-
-infrastructure:
-  Linux:
-    Alpine:
-      start: 2016
-    Ubuntu / Debian:
-      start: 2012
+knowledge tree:  
+  infrastructure:
+    Linux:
+      Alpine:
+        start: 2016
+      Ubuntu / Debian:
+        start: 2012
+    monitoring and notify:
+      nagios:
+        start: 2016-12
+        end: 2018-11
+      Slack API:
+        start: 2017
+        end: 2018
+      email:
+        smarthost: {}
+        exim:
+          start: 2017-04
   
-
-languages:
-  Bash:
-    start: 2015-02
-  Python:
-    start: 2017-02
-  Javascript / Node.js:
-    start: 2015-02
-  LaTeX:
-    start: 2014
-  R:
-    start: 2017-11
-    end: 2018-03
-  Ruby:
-    start: 2016-02
-    end: 2016-05
-
-security:
-  IPTables:
-    start: 2017-05
-  Kali linux:
-    start: 2018-02
-    end: 2018-04
-  DNSSEC:
-    start: 2018-10
-  VPN:
-    start: 2017
-  Basic-AUTH:
-    start: 2017-05
-  Netfilter: {}
-  Cryptography:
-    RSA: {}
-    ECC: {}
-    Transport Layer Security TLS: {}
-    Secure Socket Layer SSL: {}
-    Public Key Infrastructure PKI: {}
-  
-
-Configuration Management CM:
-  Version Control Systems VCS:
-    Git:
-      start: 2013
-      Gitlab: {}
-      Github: {}
-      Bitbucket: {}
-    svn:
-      start: 2012
-      end: 2013
-
-process management:
-  ticketing system:
-    Jira:
-      start: 2016
-      end: 2017
-    Trello:
-      start: 2013
-    Github issue system:
-      start: 2014
-  Software Development Life Cycle SDLC:
-    Agile:
-      Kanban:
-        start: 2013
-      SCRUM:
-        start: 2013
-    Waterfall:
-      start: 2011-10
-      stop: 2012
-
-containers:
-  lxc:
-    start: 2017-03
-    lxd:
-      start: 2017-11
-  docker:
-    start:
-  container orchestration:
-    microservices:
-      start: 2016-06
-    kubernetes k8s:
-      start: 2018-06
-    DC/OS Mesosphere:
+  languages:
+    Bash:
+      start: 2015-02
+    Python:
       start: 2017-02
-      end: 2018-11
-
-mechatronics:
-  archive: true
-  CAD:
-    Autodesk Inventor:
-      start: 2010
-      end: 2011
-
-data:
-  database:
-    SQL server:
-      start: 2012
-      end: 2013
-    MySQL / MariaDB:
-      start: 2011-10
-    NoSQL:
-      OrientDB:
-        start: 2015-03
-        end: 2015-06
-      MongoDB:
-        start: 2016-07
+    Javascript / Node.js:
+      start: 2015-02
+    LaTeX:
+      start: 2014
+    R:
+      start: 2017-11
+      end: 2018-03
+    Ruby:
+      start: 2016-02
+      end: 2016-05
+    SQL:
+      start: 2011-09
+    PHP:
+      start: 2011-09
+      end: 2012-06
+    'c#':
+      start: 2013-01
+      end: 2013-06
+    Java:
+      start: 2012-04
+      end: 2014-01
+  
+  security:
+    IPTables:
+      start: 2017-05
+    Kali linux:
+      start: 2018-02
+      end: 2018-04
+    DNSSEC:
+      start: 2018-10
+    VPN:
+      start: 2017
+    Basic-AUTH:
+      start: 2017-05
+    Netfilter: {}
+    Cryptography:
+      RSA: {}
+      ECC: {}
+      Transport Layer Security TLS: {}
+      Secure Socket Layer SSL: {}
+      Public Key Infrastructure PKI: {}
+    
+  
+  Configuration Management CM:
+    Version Control Systems VCS:
+      Git:
+        start: 2013
+        Gitlab: {}
+        Github: {}
+        Bitbucket: {}
+      svn:
+        start: 2012
+        end: 2013
+  
+  process management:
+    ticketing system:
+      Jira:
+        start: 2016
+        end: 2017
+      Trello:
+        start: 2013
+      Github issue system:
+        start: 2014
+      Redmine:
+        start: 2013-04
+        end: 2013-06
+    Software Development Life Cycle SDLC:
+      Agile:
+        Kanban:
+          start: 2013
+        SCRUM:
+          start: 2013-04
+        User stories: {}
+      Waterfall:
+        start: 2011-10
+        stop: 2012
+  
+  containers:
+    lxc:
+      start: 2017-03
+      lxd:
+        start: 2017-11
+    docker:
+      start: 2015-02
+    container orchestration:
+      microservices:
+        start: 2016-06
+      kubernetes k8s:
+        start: 2018-06
+      DC/OS Mesosphere:
+        start: 2017-02
+        end: 2018-11
+  
+  mechatronics:
+    archive: true
+    CAD:
+      Autodesk Inventor:
+        start: 2010
+        end: 2011
+  
+  data:
+    database:
+      SQL server:
+        start: 2012
+        end: 2013
+      MySQL / MariaDB:
+        start: 2011-10
+      NoSQL:
+        OrientDB:
+          start: 2015-03
+          end: 2015-06
+        MongoDB:
+          start: 2016-07
+          end: 2018-10
+    cache:
+      Redis:
+        start: 2016-06
         end: 2018-10
-  cache:
-    Redis:
-      start: 2016-06
-      end: 2018-10
-    Memcache:
-      start: 2017-04
-      end: 2018-10
-  data science:
-    web scraping: {}
-    D3js:
-      start:
+      Memcache:
+        start: 2017-04
+        end: 2018-10
+    data science:
+      web scraping: {}
+      D3js:
+        start: 2015
+        end: 2017
+      Python:
+        Numpy:
+          start: 2018-09
+          end: 2018-10
+        Pandas:
+          start: 2018-09
+          end: 2018-11
+      
 
 
 
-Bussword bingo:
-Keywords that can be derived from the above stack:
-REST API, SSH, JSON, XML, MVC, markdown, SOAP, openssl, openssh, YAML, RFC,
-IaaS, SaaS, PaaS, data-mining, Internet of Things IoT, cloud, back-end, infrastructure, user stories
+#Bussword bingo:
+#Keywords that can be derived from the above stack:
+#REST API, SSH, JSON, XML, MVC, markdown, SOAP, openssl, openssh, YAML, RFC,
+#IaaS, SaaS, PaaS, data-mining, Internet of Things IoT, cloud, back-end, infrastructure
 
 
 
-  blockchain, elastic search, rabbitmq, nfs, load balancing, nginx, apache, REST API, exim, bind, dns, IPv6, KISS, DRY, Arduino, cloud, travis, S3, AWS, wireshark, docuwiki, CSS3, websockets, reverse proxy, mocha, vms, dns, openstack, routing, wordpress, logstash, kibana, slack, redmine, numpy, pandas
+ # blockchain, elastic search, rabbitmq, nfs, load balancing, nginx, apache, REST API, exim, bind, dns, IPv6, KISS, DRY, Arduino, cloud, travis, S3, AWS, wireshark, docuwiki, CSS3, websockets, reverse proxy, mocha, vms, dns, openstack, routing, wordpress, logstash, kibana, slack, redmine
