@@ -10,6 +10,8 @@ from datetime import datetime
 
 gen_tree_func = LeftAligned()
 
+print('TODO do not show the archive:true elements')
+
 tree = {}
 with open("/content/knowledge-tree.yml", 'r') as ymlfile:
   tree = yaml.load(ymlfile)

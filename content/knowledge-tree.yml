@@ -97,7 +97,7 @@ knowledge tree:
         User stories: {}
       Waterfall:
         start: 2011-10
-        stop: 2012
+        end: 2012
   
   containers:
     lxc:
@@ -147,7 +147,7 @@ knowledge tree:
       web scraping: {}
       D3js:
         start: 2015
-        end: 2017
+        end: 2017-02
       Python:
         Numpy:
           start: 2018-09
