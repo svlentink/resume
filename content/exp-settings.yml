@@ -1,0 +1,22 @@
+aggregations:
+  timespan:
+    - start #points to value
+    - ' ==> '
+    - end #also a value
+    - ', ' # string
+    - hours #value in experience file again
+    - 'h p/w' #str
+  organization:
+    - company
+    - ', '
+    - city
+
+order:
+  - sector
+  - organization
+  - title
+  - timespan
+  - employment
+  - projecturl
+  - desc
+

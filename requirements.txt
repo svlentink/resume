@@ -1,3 +1,4 @@
 pyyaml
 asciitree
 boltons
+python-docx

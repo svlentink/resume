@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+file_path = "/content/knowledge-tree.yml"
+
 import yaml
 from asciitree import LeftAligned
 from collections import OrderedDict as odict
@@ -11,9 +13,10 @@ from datetime import datetime
 gen_tree_func = LeftAligned()
 
 print('TODO do not show the archive:true elements')
+print('Use a mono-spaced font such as Courier!')
 
 tree = {}
-with open("/content/knowledge-tree.yml", 'r') as ymlfile:
+with open(file_path, 'r') as ymlfile:
   tree = yaml.load(ymlfile)
 
 def get_timeline(inp: dict):
