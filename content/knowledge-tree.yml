@@ -1,5 +1,14 @@
 knowledge tree:  
   infrastructure:
+    Openstack:
+      start: 2017-01
+      end: 2017-02
+    VM:
+      KVM:
+        start: 2017-02
+        end: 2018-10
+      Xen:
+        start: 2017-11
     Linux:
       Alpine:
         start: 2016
@@ -16,6 +25,34 @@ knowledge tree:
         smarthost: {}
         exim:
           start: 2017-04
+      elastic search:
+        start: 2017-04
+        end: 2018-07
+        kibana: {}
+        logstash / grok:
+          start: 2017-11
+          end: 2017-12
+    cloud:
+      AWS Amazon Web Services:
+        start: 2017-02
+        end: 2018-11
+      Load balancing:
+        start: 2017-07
+        end: 2018-09
+        HA-proxy:
+          start: 2016-03
+          end: 2018-10
+      Reverse / TLS proxy:
+        Nginx:
+          start: 2015
+        Apache:
+          start: 2017-01
+          end: 2018-09
+      DNS:
+        start: 2016
+        bind:
+          start: 2018-09
+          end: 2018-10
   
   languages:
     Bash:
@@ -43,8 +80,12 @@ knowledge tree:
     Java:
       start: 2012-04
       end: 2014-01
+    HTML5 / CSS3:
+      start: 2011-09
   
   security:
+    Wireshark / tcpdump:
+      start: 2014
     IPTables:
       start: 2017-05
     Kali linux:
@@ -82,6 +123,13 @@ knowledge tree:
       terraform:
         start: 2018-11
         end: 2018-11
+    CI/CD Continuous integration / Deployment:
+      gitlab:
+        start: 2018-08
+        end: 2018-11
+      travis:
+        start: 2017-02
+        end: 2018-10
   
   process management:
     ticketing system:
@@ -95,6 +143,13 @@ knowledge tree:
       Redmine:
         start: 2013-04
         end: 2013-06
+    documentation:
+      markdown: {}
+      dokuwiki:
+        start: 2017
+      confluence:
+        start: 2017-04
+        end: 2018-11
     Software Development Life Cycle SDLC:
       Agile:
         Kanban:
@@ -122,14 +177,21 @@ knowledge tree:
         start: 2017-02
         end: 2018-11
   
-  mechatronics:
-    archive: true
-    CAD:
-      Autodesk Inventor:
-        start: 2010
-        end: 2011
+#  mechatronics:
+#    archive: true
+#    CAD:
+#      Autodesk Inventor:
+#        start: 2010
+#        end: 2011
   
   data:
+    formats:
+      AMQP / RabbitMQ:
+        start: 2017-02
+      JSON: {}
+      XML: {}
+      YAML: {}
+      
     database:
       SQL server:
         start: 2012
@@ -162,15 +224,9 @@ knowledge tree:
         Pandas:
           start: 2018-09
           end: 2018-11
-      
 
 
 
 #Bussword bingo:
 #Keywords that can be derived from the above stack:
-#REST API, SSH, JSON, XML, MVC, markdown, SOAP, openssl, openssh, YAML, RFC,
-#IaaS, SaaS, PaaS, data-mining, Internet of Things IoT, cloud, back-end, infrastructure
-
-
-
- # blockchain, elastic search, rabbitmq, nfs, load balancing, nginx, apache, REST API, exim, bind, dns, IPv6, KISS, DRY, Arduino, cloud, travis, S3, AWS, wireshark, docuwiki, CSS3, websockets, reverse proxy, mocha, vms, dns, openstack, routing, wordpress, logstash, kibana, slack, redmine
+#REST API, SSH, MVC, SOAP, openssl, openssh, RFC, IaaS, SaaS, PaaS, data-mining, Internet of Things IoT, back-end, blockchain, KISS, IPv6, KISS, DRY, Arduino, S3, websockets, NFS,  mocha, routing, wordpress, makefile, gcc, unit test, integration testing, UML
