@@ -5,8 +5,8 @@ lang_pref = 'dutch'
 
 import yaml
 from glob import iglob
-from datetime import datetime
-#from docx import Document
+import datetime
+from gen_tables import *
 
 lang_dict = {}
 for f in iglob('/content/languages/' + lang_pref + '.y*ml'):
@@ -21,7 +21,7 @@ for f in iglob(dir_path + '/*.y*ml'):
   with open(f,'r') as ymlfile:
     obj = yaml.load(ymlfile)
     if 'end' not in obj:
-      obj['end'] = datetime.now().year
+      obj['end'] = datetime.datetime.now().year
     obj['end'] = str(obj['end']) #make all a str
     if 'archive' not in obj or not obj['archive']:
       exps.append(obj)
@@ -29,6 +29,12 @@ for f in iglob(dir_path + '/*.y*ml'):
       print('Skipping archived', f)
 
 exps.sort(key=lambda obj: obj['end'], reverse=True)
+
+for e in exps:
+  if 'end' in e:
+    e['end'] = date2str(e['end'])
+  if 'start' in e:
+    e['start'] = date2str(e['start'])
 
 def attribute2tuple(obj,attr):
   if attr not in obj:
@@ -69,9 +75,9 @@ for e in exps:
     tpl = attribute2tuple(e,i)
     if tpl != False:
       rows.append(tpl)
-      layout = "{:<18}{}".format(*tpl)
-      print(layout)
-  print()
   tables.append(rows)
 
-#print(tables)
+for t in tables:
+  mono_outp = tuples2monospaced(t)
+  print(mono_outp)
+  print()

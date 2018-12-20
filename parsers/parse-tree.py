@@ -6,7 +6,8 @@ import yaml
 from asciitree import LeftAligned
 from collections import OrderedDict as odict
 from boltons.iterutils import remap
-from datetime import datetime
+import datetime
+from gen_tables import *
 #import numpy as np
 #import pandas as pd
 
@@ -15,12 +16,12 @@ gen_tree_func = LeftAligned()
 print('TODO do not show the archive:true elements')
 print('Use a mono-spaced font such as Courier!')
 
-tree = {}
+rawdata = {}
 with open(file_path, 'r') as ymlfile:
-  tree = yaml.load(ymlfile)
+  rawdata = yaml.load(ymlfile)
 
 def get_timeline(inp: dict):
-  end = datetime.now().year
+  end = datetime.datetime.now().year
   start = end
   if 'end' in inp:
     if isinstance(inp['end'],dict):
@@ -33,12 +34,12 @@ def get_timeline(inp: dict):
   else:
     start = inp['start']
   inp.pop('start',None)
-  return str(start), str(end)
+  return date2str(start), date2str(end)
 
 def to_odict(path, key, value):
   if isinstance(value,dict) and 'start' in value:
     start, end = get_timeline(value)
-    newkey = key + '; ' + start + ' ==> ' + end
+    newkey = key + ';' + start + ';->;' + end
     return newkey, value #{ 'macaroni':{}}
   if isinstance(value,int):
     return key, { str(value): {}} #str(value)
@@ -49,30 +50,18 @@ def to_odict(path, key, value):
     return key, odict(sorted(value.items(), key=lambda t: t[0]))
   return key, value
 
+def asciitree2lists(inp: str, sep = ';'):
+  lines = inp.split('\n')
+  result = []
+  for l in lines:
+    arr = l.split(';')
+    result.append(arr)
+  return result
+
 # https://sedimental.org/remap.html
-remapped = remap(tree, visit=to_odict)
-outp = gen_tree_func(remapped)
-lines = outp.split('\n')
-
-longestline = 0
-for key in range(len(lines)):
-  firstpartofline = lines[key].split(';')[0]
-  if len(firstpartofline) > longestline:
-    longestline = len(firstpartofline)
-
-for key in range(len(lines)):
-  line = lines[key]
-  if ';' in line:
-    arr = line.split(';')
-    while len(arr[0]) < longestline:
-      arr[0] += ' '
-    firstpartofline = line.split(';')[0]
-    lines[key] = ''.join(arr)
-
-
-table = '\n'.join(lines)
+remapped = remap(rawdata, visit=to_odict)
+asciitr = gen_tree_func(remapped)
+arr = asciitree2lists(asciitr)
+table = tuples2monospaced(arr)
 print(table)
 
-#cols = [item.split(';') for item in lines]
-#print(cols)
-#np.matrix(cols)

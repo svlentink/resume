@@ -1,7 +1,7 @@
 aggregations:
   timespan:
     - start #points to value
-    - ' ==> '
+    - ' -> '
     - end #also a value
     - ', ' # string
     - hours #value in experience file again

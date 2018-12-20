@@ -4,9 +4,12 @@ employee: werknemer
 hired: ingehuurd
 internship: stage
 relationship: relatie
-food: voedel
+food: voeding
 desc: omschrijving
 organization: organisatie
 employment: dienstverband
 industrial: industrie
 sector: branche
+title: functie
+timespan: periode
+activities: werkzaamheden

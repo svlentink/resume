@@ -86,18 +86,22 @@ knowledge tree:
   security:
     Wireshark / tcpdump:
       start: 2014
-    IPTables:
-      start: 2017-05
     Kali linux:
       start: 2018-02
       end: 2018-04
     DNSSEC:
       start: 2018-10
-    VPN:
-      start: 2017
-    Basic-AUTH:
-      start: 2017-05
-    Netfilter: {}
+    Snort:
+      start: 2018-04
+      end: 2018-04
+    Access control:
+      Basic-AUTH:
+        start: 2017-05
+      Netfilter: {}
+      IPTables:
+        start: 2017-05
+      VPN:
+        start: 2017
     Cryptography:
       RSA: {}
       ECC: {}
@@ -150,6 +154,7 @@ knowledge tree:
       confluence:
         start: 2017-04
         end: 2018-11
+      draw.io: {}
     Software Development Life Cycle SDLC:
       Agile:
         Kanban:
@@ -168,6 +173,9 @@ knowledge tree:
         start: 2017-11
     docker:
       start: 2015-02
+    rkt:
+      start: 2017-11
+      end: 2017-12
     container orchestration:
       microservices:
         start: 2016-06
@@ -205,6 +213,7 @@ knowledge tree:
         MongoDB:
           start: 2016-07
           end: 2018-10
+      PostgreSQL: {}
     cache:
       Redis:
         start: 2016-06
@@ -216,7 +225,7 @@ knowledge tree:
       web scraping: {}
       D3js:
         start: 2015
-        end: 2017-02
+        end: 2018-04
       Python:
         Numpy:
           start: 2018-09
@@ -229,4 +238,4 @@ knowledge tree:
 
 #Bussword bingo:
 #Keywords that can be derived from the above stack:
-#REST API, SSH, MVC, SOAP, openssl, openssh, RFC, IaaS, SaaS, PaaS, data-mining, Internet of Things IoT, back-end, blockchain, KISS, IPv6, KISS, DRY, Arduino, S3, websockets, NFS,  mocha, routing, wordpress, makefile, gcc, unit test, integration testing, UML
+#REST API, SSH, MVC, SOAP, openssl, openssh, RFC, IaaS, SaaS, PaaS, data-mining, Internet of Things IoT, back-end, blockchain, KISS, IPv6, KISS, DRY, Arduino, S3, websockets, NFS, mocha, routing, wordpress, makefile, gcc, unit test, integration testing, UML, flask, JQuery, webpack
