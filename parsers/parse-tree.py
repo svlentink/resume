@@ -2,11 +2,9 @@
 
 file_path = "/content/knowledge-tree.yml"
 
-import yaml
 from asciitree import LeftAligned
 from collections import OrderedDict as odict
 from boltons.iterutils import remap
-import datetime
 from gen_tables import *
 #import numpy as np
 #import pandas as pd
@@ -58,10 +56,20 @@ def asciitree2lists(inp: str, sep = ';'):
     result.append(arr)
   return result
 
+def saveTree2doc(table, doc):
+  doc.add_heading('Knowledgetree', 2)
+  run = doc.add_paragraph().add_run(table)
+  font = run.font
+  font.name = 'Courier'
+  font.size = Pt(8)
+  doc.add_page_break()
+  doc.save('/output/tree.docx')
+
 # https://sedimental.org/remap.html
 remapped = remap(rawdata, visit=to_odict)
 asciitr = gen_tree_func(remapped)
 arr = asciitree2lists(asciitr)
 table = tuples2monospaced(arr)
 print(table)
+saveTree2doc(table,shared_doc)
 

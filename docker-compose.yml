@@ -1,5 +1,11 @@
 version: '3'
 services:
+  generate:
+    image: temp
+    environment:
+      COMPILE_LANGUAGE: dutch
+    volumes:
+      - $PWD/generated:/output
   build:
     image: svlentink/texlive-full
     volumes:

@@ -1,17 +1,8 @@
 #!/usr/bin/env python
 
 dir_path = "/content/experience"
-lang_pref = 'dutch'
 
-import yaml
-from glob import iglob
-import datetime
 from gen_tables import *
-
-lang_dict = {}
-for f in iglob('/content/languages/' + lang_pref + '.y*ml'):
-  with open(f,'r') as ymlfile:
-    lang_dict = yaml.load(ymlfile)
 
 with open('/content/exp-settings.yml', 'r') as f:
   settings = yaml.load(f)
@@ -28,8 +19,10 @@ for f in iglob(dir_path + '/*.y*ml'):
     else:
       print('Skipping archived', f)
 
+# sort by end date
 exps.sort(key=lambda obj: obj['end'], reverse=True)
 
+# convert date to long format
 for e in exps:
   if 'end' in e:
     e['end'] = date2str(e['end'])
@@ -81,3 +74,5 @@ for t in tables:
   mono_outp = tuples2monospaced(t)
   print(mono_outp)
   print()
+  
+  tuples2docx(t,shared_doc)

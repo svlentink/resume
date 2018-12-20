@@ -127,7 +127,7 @@ knowledge tree:
       terraform:
         start: 2018-11
         end: 2018-11
-    CI/CD Continuous integration / Deployment:
+    CI/CD integration, deployment:
       gitlab:
         start: 2018-08
         end: 2018-11
@@ -155,7 +155,7 @@ knowledge tree:
         start: 2017-04
         end: 2018-11
       draw.io: {}
-    Software Development Life Cycle SDLC:
+    SDLC:
       Agile:
         Kanban:
           start: 2013
