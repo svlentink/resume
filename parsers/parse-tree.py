@@ -5,14 +5,13 @@ file_path = "/content/knowledge-tree.yml"
 from asciitree import LeftAligned
 from collections import OrderedDict as odict
 from boltons.iterutils import remap
-from gen_tables import *
+from shared import *
 #import numpy as np
 #import pandas as pd
 
 gen_tree_func = LeftAligned()
 
 print('TODO do not show the archive:true elements')
-print('Use a mono-spaced font such as Courier!')
 
 rawdata = {}
 with open(file_path, 'r') as ymlfile:
@@ -56,9 +55,9 @@ def asciitree2lists(inp: str, sep = ';'):
     result.append(arr)
   return result
 
-def saveTree2doc(table, doc):
+def saveTree2doc(tree, doc):
   doc.add_heading('Knowledgetree', 2)
-  run = doc.add_paragraph().add_run(table)
+  run = doc.add_paragraph().add_run(tree)
   font = run.font
   font.name = 'Courier'
   font.size = Pt(8)
@@ -69,7 +68,9 @@ def saveTree2doc(table, doc):
 remapped = remap(rawdata, visit=to_odict)
 asciitr = gen_tree_func(remapped)
 arr = asciitree2lists(asciitr)
-table = tuples2monospaced(arr)
-print(table)
-saveTree2doc(table,shared_doc)
+finaltree = tuples2monospaced(arr)
+saveTree2doc(finaltree,shared_doc)
+
+with open('/output/tree.txt','w') as f:
+  f.write(finaltree)
 

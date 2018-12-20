@@ -1,33 +1,31 @@
 #!/usr/bin/env python
 
-dir_path = "/content/experience"
+from shared import *
 
-from gen_tables import *
+def load_exps(dir_path = "/content/experience"):
+  exps = []
+  for f in iglob(dir_path + '/*.y*ml'):
+    with open(f,'r') as ymlfile:
+      obj = yaml.load(ymlfile)
+      if 'end' not in obj:
+        obj['end'] = datetime.datetime.now().year
+      obj['end'] = str(obj['end']) #make all a str
+      if 'archive' not in obj or not obj['archive']:
+        exps.append(obj)
+      else:
+        print('Skipping archived', f)
+  
+  # sort by end date
+  exps.sort(key=lambda obj: obj['end'], reverse=True)
+  
+  # convert date to long format
+  for e in exps:
+    if 'end' in e:
+      e['end'] = date2str(e['end'])
+    if 'start' in e:
+      e['start'] = date2str(e['start'])
 
-with open('/content/exp-settings.yml', 'r') as f:
-  settings = yaml.load(f)
-
-exps = []
-for f in iglob(dir_path + '/*.y*ml'):
-  with open(f,'r') as ymlfile:
-    obj = yaml.load(ymlfile)
-    if 'end' not in obj:
-      obj['end'] = datetime.datetime.now().year
-    obj['end'] = str(obj['end']) #make all a str
-    if 'archive' not in obj or not obj['archive']:
-      exps.append(obj)
-    else:
-      print('Skipping archived', f)
-
-# sort by end date
-exps.sort(key=lambda obj: obj['end'], reverse=True)
-
-# convert date to long format
-for e in exps:
-  if 'end' in e:
-    e['end'] = date2str(e['end'])
-  if 'start' in e:
-    e['start'] = date2str(e['start'])
+  return exps
 
 def attribute2tuple(obj,attr):
   if attr not in obj:
@@ -61,18 +59,27 @@ def attribute2tuple(obj,attr):
     attrname = attr
   return (attrname,value)
 
-tables = []
-for e in exps:
-  rows = []
-  for i in settings['order']:
-    tpl = attribute2tuple(e,i)
-    if tpl != False:
-      rows.append(tpl)
-  tables.append(rows)
+def get_exp_tables(exps: list):
+  tables = []
+  for e in exps:
+    rows = []
+    for i in settings['exp-order']:
+      tpl = attribute2tuple(e,i)
+      if tpl != False:
+        rows.append(tpl)
+    tables.append(rows)
 
+  return tables
+
+exps = load_exps()
+tables = get_exp_tables(exps)
+
+blob = ''
 for t in tables:
-  mono_outp = tuples2monospaced(t)
-  print(mono_outp)
-  print()
-  
   tuples2docx(t,shared_doc)
+  blob += tuples2monospaced(t) + '\n\n'
+
+shared_doc.save('/output/experience.docx')
+
+with open('/output/experience.txt','w') as f:
+  f.write(blob)

@@ -11,7 +11,7 @@ aggregations:
     - ', '
     - city
 
-order:
+exp-order:
   - sector
   - organization
   - title

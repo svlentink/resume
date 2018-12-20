@@ -6,7 +6,6 @@ import datetime
 import yaml
 from os import getenv
 from glob import iglob
-from gen_tables import *
 
 shared_doc = Document()
 
@@ -15,6 +14,9 @@ lang_dict = {}
 for f in iglob('/content/languages/' + lang_pref + '.y*ml'):
   with open(f,'r') as ymlfile:
     lang_dict = yaml.load(ymlfile)
+
+with open('/content/settings.yml', 'r') as f:
+  settings = yaml.load(f)
 
 
 def date2str(inp):
@@ -75,5 +77,4 @@ def tuples2docx(inp: list, doc):
       value = row[ci]
       cells[ci].text = value
   doc.add_page_break()
-  doc.save('/output/doc.docx')
-
+  return doc
