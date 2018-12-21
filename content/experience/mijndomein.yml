@@ -11,17 +11,30 @@ url: http://mijndomein.nl
 title: DevOps
 desc: Supporting hosting facilities, using Python, VMs, containers, load balancing, RabbitMQ, exim, DC/OS and kubernetes
 dutch:
-  desc: Onderhouden van hosting faciliteiten mbv. Python, VMs, containers, load balancing, RabbitMQ, exim, DC/OS en kubernetes
+  desc: Automatiseren van het operationeel beheer en het implementeren van nieuwe services.
+    Mijn verantwoordelijkheid was het in de lucht houden van de bestaande diensten; hosting, email, DNS en het moderniseren van de interne configuratie tools. 
+  activities:
+    - Ontwikkelen microservices met python
+    - Microservices koppelen met RabbitMQ message systeem
+    - Optimaliseren beheer mbv. nagios, elastic search monitoring, Slack notifications
+    - Beheer hosting infra
+    - Audit en rapporteren van security mbt. infrastructuur
+    - Ddos interventie
+    - Spam en phising email monitoring en preventie
+    - Software ontwikkelaars voorzien van docker platform
+    - Standby diensten draaien
+    - Email platform beheer
+    - Onderhoud in datacenter
 #techniques
 tech:
-  - Scrum
-  - Kanban
+  - Scrum/Kanban
   - Python
   - Apache2
   - LXC
   - SQL
   - Docker
   - Kubernetes
+  - DC/OS
   - Exim
   - KVM
   - Debian Linux

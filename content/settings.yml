@@ -20,5 +20,15 @@ exp-order:
   - employment
   - projecturl
   - desc
+  - activities
   - tech
+
+edu-column-percentage: [15,27,27,8,8,15]
+edu-order:
+  - type
+  - title
+  - institution
+  - start
+  - end
+  - status
 

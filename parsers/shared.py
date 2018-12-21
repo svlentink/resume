@@ -2,6 +2,8 @@
 
 from docx import Document
 from docx.shared import Pt
+#from docx.enum.table import WD_ROW_HEIGHT_RULE
+#from docx.enum.style import WD_STYLE_TYPE
 import datetime
 import yaml
 from os import getenv
@@ -17,6 +19,31 @@ for f in iglob('/content/languages/' + lang_pref + '.y*ml'):
 with open('/content/settings.yml', 'r') as f:
   settings = yaml.load(f)
 
+def get_val(obj, attr):
+  if lang_pref in obj and attr in obj[lang_pref]:
+    value = obj[lang_pref][attr]
+  elif attr in obj:
+    value = obj[attr]
+  elif attr in settings['aggregations']:
+    value = []
+    for i in settings['aggregations'][attr]:
+      indx = str(i)
+      tmpval = get_val(obj, indx)
+      if tmpval != '':
+        value.append(tmpval)
+      else:
+        value.append(indx) #use it as a string
+    value = ''.join(value)
+  else:
+    return ''
+
+  if isinstance(value, int):
+    value = str(value)
+  # now we try to convert the value using our language dictionary
+  if isinstance(value, str) and value in lang_dict:
+    value = lang_dict[value]
+
+  return value
 
 def date2str(inp):
   '''
@@ -67,21 +94,25 @@ def tuples2monospaced(inp: list, spacing = 1):
   return '\n'.join(result)
 
 def tuples2colon(inp: list):
-  print('todo')
+  print('todo, colon separated')
 
 def tuples2docx(inp: list, doc, colswidths = []):
   '''
   The colswidths should be an array of percentages e.g. [25,50,25]
   '''
   table = doc.add_table(rows=0, cols=get_max_cols(inp))
+  #table.style = 'TableGrid' #table.add_style('Grid',WD_STYLE_TYPE.TABLE)
   lists = []
   for row in inp:
-    cells = table.add_row().cells
+    tr = table.add_row()
+    cells = tr.cells
     for ci in range(len(row)):
       value = row[ci]
       if isinstance(value, list):
         value = '\n'.join(value) #cells[ci].add_paragraph(v, style='List Bullet')
       cells[ci].text = value
+    #tr.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY #.AUTO
+    #tr.height = Pt(12)
 
   for i in range(len(colswidths)):
     # https://stackoverflow.com/questions/43749177/python-docx-table-column-width
@@ -89,3 +120,29 @@ def tuples2docx(inp: list, doc, colswidths = []):
 
   doc.add_page_break()
   return doc
+
+def load_yamls(dir_path):
+  objs = []
+  for f in iglob(dir_path + '/*.y*ml'):
+    with open(f,'r') as ymlfile:
+      obj = yaml.load(ymlfile)
+      if 'end' not in obj:
+        obj['end'] = datetime.datetime.now().year
+      obj['end'] = str(obj['end']) #make all a str
+      if 'archive' not in obj or not obj['archive']:
+        objs.append(obj)
+      else:
+        print('Skipping archived', f)
+  
+  # sort by end date
+  objs.sort(key=lambda obj: obj['end'], reverse=True)
+  
+  # convert date to long format
+  for e in objs:
+    if 'end' in e:
+      e['end'] = date2str(e['end'])
+    if 'start' in e:
+      e['start'] = date2str(e['start'])
+
+  return objs
+

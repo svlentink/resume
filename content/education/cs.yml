@@ -2,7 +2,7 @@ start: 2012
 end: 2016
 type: BSc.
 institution: Windesheim
-graduated: true
+status: graduated
 city: Zwolle
 cc: NL
 title: Software engineering
