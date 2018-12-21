@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 
-file_path = "/content/knowledge-tree.yml"
-
 from asciitree import LeftAligned
 from collections import OrderedDict as odict
 from boltons.iterutils import remap
@@ -12,10 +10,6 @@ from shared import *
 gen_tree_func = LeftAligned()
 
 print('TODO do not show the archive:true elements')
-
-rawdata = {}
-with open(file_path, 'r') as ymlfile:
-  rawdata = yaml.load(ymlfile)
 
 def get_timeline(inp: dict):
   end = datetime.datetime.now().year
@@ -55,22 +49,22 @@ def asciitree2lists(inp: str, sep = ';'):
     result.append(arr)
   return result
 
-def saveTree2doc(tree, doc):
-  doc.add_heading('Knowledgetree', 2)
+def getTree(file_path = "/content/knowledge-tree.yml"):
+  rawdata = {}
+  with open(file_path, 'r') as ymlfile:
+    rawdata = yaml.load(ymlfile)
+  # https://sedimental.org/remap.html
+  remapped = remap(rawdata, visit=to_odict)
+  asciitr = gen_tree_func(remapped)
+  arr = asciitree2lists(asciitr)
+  finaltree = tuples2monospaced(arr)
+  return finaltree
+
+def tree2doc(doc, tree = getTree()):
+  doc.add_heading('Knowledgetree', 1)
   run = doc.add_paragraph().add_run(tree)
   font = run.font
   font.name = 'Courier'
   font.size = Pt(8)
   doc.add_page_break()
-  doc.save('/output/tree.docx')
-
-# https://sedimental.org/remap.html
-remapped = remap(rawdata, visit=to_odict)
-asciitr = gen_tree_func(remapped)
-arr = asciitree2lists(asciitr)
-finaltree = tuples2monospaced(arr)
-saveTree2doc(finaltree,shared_doc)
-
-with open('/output/tree.txt','w') as f:
-  f.write(finaltree)
 

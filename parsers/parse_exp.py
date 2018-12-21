@@ -59,7 +59,7 @@ def attribute2tuple(obj,attr):
     attrname = attr
   return (attrname,value)
 
-def get_exp_tables(exps: list):
+def get_exp_tables(exps = load_exps()):
   tables = []
   for e in exps:
     rows = []
@@ -71,15 +71,14 @@ def get_exp_tables(exps: list):
 
   return tables
 
-exps = load_exps()
-tables = get_exp_tables(exps)
+def exps2monospaced(tables = get_exp_tables()):
+  blob = ''
+  for t in tables:
+    blob += tuples2monospaced(t) + '\n\n'
+  return blob
 
-blob = ''
-for t in tables:
-  tuples2docx(t,shared_doc)
-  blob += tuples2monospaced(t) + '\n\n'
+def exps2doc(doc, tables = get_exp_tables()):
+  doc.add_heading('Experience', 1)
+  for t in tables:
+    tuples2docx(t,doc)
 
-shared_doc.save('/output/experience.docx')
-
-with open('/output/experience.txt','w') as f:
-  f.write(blob)

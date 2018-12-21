@@ -7,7 +7,6 @@ import yaml
 from os import getenv
 from glob import iglob
 
-shared_doc = Document()
 
 lang_pref = getenv('COMPILE_LANGUAGE') or 'language_unknown'
 lang_dict = {}

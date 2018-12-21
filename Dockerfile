@@ -7,6 +7,6 @@ COPY requirements.txt /
 RUN cat requirements.txt | xargs -n 1 pip install || true
 # since docx and pandas failed, we do this cat hack
 
-ENTRYPOINT ["/parsers/run-all.sh"]
+ENTRYPOINT ["/parsers/generate_all.py"]
 COPY parsers /parsers
 COPY content /content
