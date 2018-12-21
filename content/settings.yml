@@ -11,6 +11,7 @@ aggregations:
     - ', '
     - city
 
+exp-column-percentage: [20,80]
 exp-order:
   - sector
   - organization
@@ -19,4 +20,5 @@ exp-order:
   - employment
   - projecturl
   - desc
+  - tech
 

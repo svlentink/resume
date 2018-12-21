@@ -7,6 +7,7 @@ COPY requirements.txt /
 RUN cat requirements.txt | xargs -n 1 pip install || true
 # since docx and pandas failed, we do this cat hack
 
+ENV COMPILE_LANGUAGE dutch
 ENTRYPOINT ["/parsers/generate_all.py"]
 COPY parsers /parsers
 COPY content /content

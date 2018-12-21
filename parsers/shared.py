@@ -45,6 +45,7 @@ def tuples2monospaced(inp: list, spacing = 1):
   '''
   As input it takes a list of tuples or lists, thus a 2d plane or table
   '''
+  inp = [ [str(y) for y in x ] for x in inp ]
   maxcols = get_max_cols(inp)
 #
   maxlength_per_col = []
@@ -68,12 +69,23 @@ def tuples2monospaced(inp: list, spacing = 1):
 def tuples2colon(inp: list):
   print('todo')
 
-def tuples2docx(inp: list, doc):
+def tuples2docx(inp: list, doc, colswidths = []):
+  '''
+  The colswidths should be an array of percentages e.g. [25,50,25]
+  '''
   table = doc.add_table(rows=0, cols=get_max_cols(inp))
+  lists = []
   for row in inp:
     cells = table.add_row().cells
     for ci in range(len(row)):
       value = row[ci]
+      if isinstance(value, list):
+        value = '\n'.join(value) #cells[ci].add_paragraph(v, style='List Bullet')
       cells[ci].text = value
+
+  for i in range(len(colswidths)):
+    # https://stackoverflow.com/questions/43749177/python-docx-table-column-width
+    table.columns[i].width = colswidths[i] * 55000
+
   doc.add_page_break()
   return doc

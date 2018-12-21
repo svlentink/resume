@@ -48,9 +48,10 @@ def attribute2tuple(obj,attr):
     else:
       value = obj[attr]
     
-    value = str(value)
+    if isinstance(value, int):
+      value = str(value)
     # now we try to convert the value using our language dictionary
-    if value in lang_dict:
+    if isinstance(value, str) and value in lang_dict:
       value = lang_dict[value]
   # we do the same for the attribute name, which we also try to translate
   if attr in lang_dict:
@@ -68,7 +69,6 @@ def get_exp_tables(exps = load_exps()):
       if tpl != False:
         rows.append(tpl)
     tables.append(rows)
-
   return tables
 
 def exps2monospaced(tables = get_exp_tables()):
@@ -80,5 +80,4 @@ def exps2monospaced(tables = get_exp_tables()):
 def exps2doc(doc, tables = get_exp_tables()):
   doc.add_heading('Experience', 1)
   for t in tables:
-    tuples2docx(t,doc)
-
+    tuples2docx(t,doc, settings['exp-column-percentage'] or [] )

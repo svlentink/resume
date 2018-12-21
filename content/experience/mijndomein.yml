@@ -12,5 +12,23 @@ title: DevOps
 desc: Supporting hosting facilities, using Python, VMs, containers, load balancing, RabbitMQ, exim, DC/OS and kubernetes
 dutch:
   desc: Onderhouden van hosting faciliteiten mbv. Python, VMs, containers, load balancing, RabbitMQ, exim, DC/OS en kubernetes
+#techniques
+tech:
+  - Scrum
+  - Kanban
+  - Python
+  - Apache2
+  - LXC
+  - SQL
+  - Docker
+  - Kubernetes
+  - Exim
+  - KVM
+  - Debian Linux
+  - AWS EC2
+  - RabbitMQ
+  - PowerDNS
+  - HA-proxy
+  - OpenStack
 
 # worked the first 9 months full time, the remaining months part time.
