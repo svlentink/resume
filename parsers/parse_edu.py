@@ -7,11 +7,8 @@ def get_edu_table(edus = load_yamls('/content/education')):
   for e in edus:
     row = []
     for i in settings['edu-order']:
-      if i in e:
-        val = get_val(e,i)
-        row.append(val)
-      else:
-        row.append('')
+      val = get_val(e,i)
+      row.append(val)
     table.append(row)
   return table
 

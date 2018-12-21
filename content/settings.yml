@@ -6,6 +6,10 @@ aggregations:
     - ', ' # string
     - hours #value in experience file again
     - 'h p/w' #str
+  fromto:
+    - start
+    - '-'
+    - end
   organization:
     - company
     - ', '
@@ -23,12 +27,11 @@ exp-order:
   - activities
   - tech
 
-edu-column-percentage: [15,27,27,8,8,15]
+edu-column-percentage: [15,30,31,14,10]
 edu-order:
   - type
   - title
   - institution
-  - start
-  - end
+  - fromto
   - status
 
