@@ -10,3 +10,21 @@ scrum: true
 url: http://imgzine.com
 title: DevOps
 desc: Dockerized XMPP server, supporting websockets (RFC7395)
+dutch:
+  desc: Het ontwikkelen van een Proof of Concept back-end die gebruikt kan worden voor interne chat in applicaties.
+    Heb een bestaande XMPP server gedockerized en gecompiled met websocket libraries
+    en vervolgens een HTML5 applicatie gemaakt die via websockets (RFC7395) verbinding maakt met de back-end.
+  activities:
+    - Ontwikkelen HTML5 chat client
+    - Back-end inrichten
+    - Installatie script in Bash
+
+tech:
+  - Docker
+  - HTML5
+  - XMPP server
+  - Websockets
+  - Bash
+  - LaTeX
+  - Git
+

@@ -11,4 +11,22 @@ title: Blockchain developer
 desc: Using blockchain technology to distribute logs across servers
 dutch:
   title: Blockchain ontwikkelaar
+  desc: Klassieke infrastructuren maken vaak gebruik van een centrale log server.
+    We hebben een Proof of Concept gemaakt die log blokken naar
+    een willekeurige andere log server stuurt en een hash ervan op een blockchain plaatst.
+    Hierdoor wordt het onmogelijk of onaantrekkelijk gemaakt om achteraf logs aan te passen. 
+  activities:
+    - Maken blockchain architectuur
+    - Ontwikkelen van web interface die real time een representatie van de graph laat zien
+    - Ontwikkelen van de back-end code in Python
+
+tech:
+  - Python
+  - Docker
+  - HTML5
+  - Javascript
+  - LaTeX
+  - D3js
+  - Git
+
 #  desc: Log distributie over server dmv. blockchain technologie

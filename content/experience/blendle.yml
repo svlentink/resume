@@ -11,4 +11,27 @@ scrum: true
 title: System analyst
 desc: Network and application layer recommendations
 dutch:
-  desc: Netwerk en applicatie laag aanbevelingen
+  desc: Om de laadtijd van de applicatie sneller te maken,
+    heb ik gekeken naar mogelijkheden om caching op verschillende lagen te implementeren.
+    Wanneer bleek dat alles met query parameters ging en dit niet mogelijk was op netwerk niveau,
+    ben ik opzoek gegaan naar de code die het meeste tijd koste (dmv. static code analysis).
+    Na twee bugs gevonden te hebben heb ik de applicatie ook locaal werkend gekregen door hun core te dockerizen.
+  activities:
+    - Architectuur vatten in diagrammen
+    - Dataflow analysis
+    - Static code analysis (Ruby)
+    - Dockerizen monolith
+
+tech:
+  - draw.io
+  - LaTeX
+  - Ruby
+  - Nginx
+  - HAproxy
+  - CDN Content Delivery Network
+  - Javascript
+  - REST API
+  - HAL JSON
+  - Git
+
+#Netwerk en applicatie laag aanbevelingen

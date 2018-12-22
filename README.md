@@ -23,3 +23,13 @@ We now have another layer of abstraction.
   - HTML (`pandoc --from=markdown`)
   - or .doc (for recruiters)
 
+### Editable
+If you give a pdf, people cannot edit it.
+If you give latex source, you are just weird.
+
+Large coorperations sometimes want to anonymize resumes,
+preventing discrimination etc.
+
+Recruiters also do things to your resume, deal with it,
+they understand the HR language better than us techies.
+

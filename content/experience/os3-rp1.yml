@@ -10,4 +10,13 @@ title: Blockchain researcher
 desc: Paper about Practical blockchain on mobile devices
 dutch:
   title: Blockchain onderzoeker
-  desc: Onderzoeksverslag over Praktische blockchain op mobiele apparaten
+  desc: De meeste blockchain technologieen eisen dat een participant altijd online is om bij te blijven met de blockchain.
+    We hebben een onderzoeksverslag geschreven over de verschillende consensus mechanismes uit de blockchain wereld
+    en laten zien wat toepasbaar is voor mobiele apparaten. 
+
+tech:
+  - LaTeX
+  - Docker
+  - Git
+
+#Onderzoeksverslag over Praktische blockchain op mobiele apparaten

@@ -10,4 +10,24 @@ projecturl: https://github.com/svlentink/container-performance
 title: Container technologist
 desc: Comparing on the fly container utilization using LXC, rkt and Docker
 dutch:
-  desc: Vergelijken van on the fly container utilizatie mbv. LXC, rkt en Docker
+  desc: Een van de nieuwe ontwikkelingen is serverless.
+    Serverless vraag vaak dat code herschreven dient te worden.
+    Als alternatief heb ik een Proof of Concept ontworpen die op basis van een trigger
+    (REST API, AMQP message) een container opstart en vervolgens de output van het process in de container terug geeft. 
+  activities:
+    - Ontwikkelen van PoC in python
+    - Performance overzicht genereren met R
+    - Bootstrappen van VPSen mbv. Bash
+
+tech:
+  - Rkt
+  - Docker
+  - LXC
+  - Python
+  - Flask
+  - Bash
+  - LaTeX
+  - R
+  - Git
+
+#Vergelijken van on the fly container utilizatie mbv. LXC, rkt en Docker

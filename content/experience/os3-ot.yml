@@ -9,4 +9,19 @@ url: http://www.os3.nl
 title: Covert channel researcher
 desc: Comparison of steganography inside JPG and BMP images to various social media
 dutch:
-  desc: Vergelijken van steganography in JPG en BMP plaatjes op verschillende sociale media
+  desc: Onderzoek naar de mogelijkheid om verborgen data in plaatjes via sociale media te delen.
+    Verschillende sociale media lieten zien dat zij plaatjes converteren,
+    zowel JPG als BMP, wat maakt dat verborgen data vernietigd wordt.
+  activities:
+    - data embedden mbv. verschillende stenography tools
+    - code bijdragen aan open source stenography tool op Github
+    - de verschillende data dragers uploaden en weer downloaden voor validatie
+
+tech:
+  - Bash
+  - Imagemagick
+  - LaTeX
+  - docker
+  - Git
+
+#Vergelijken van steganography in JPG en BMP plaatjes op verschillende sociale media
