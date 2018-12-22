@@ -35,3 +35,9 @@ edu-order:
   - fromto
   - status
 
+eduoth-column-percentage: [15,35,31,19]
+eduoth-order:
+  - type
+  - title
+  - institution
+  - end

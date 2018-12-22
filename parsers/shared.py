@@ -96,7 +96,7 @@ def tuples2monospaced(inp: list, spacing = 1):
 def tuples2colon(inp: list):
   print('todo, colon separated')
 
-def tuples2docx(inp: list, doc, colswidths = []):
+def tuples2docx(inp: list, doc, colswidths = [], pagebreak=True):
   '''
   The colswidths should be an array of percentages e.g. [25,50,25]
   '''
@@ -117,8 +117,8 @@ def tuples2docx(inp: list, doc, colswidths = []):
   for i in range(len(colswidths)):
     # https://stackoverflow.com/questions/43749177/python-docx-table-column-width
     table.columns[i].width = colswidths[i] * 55000
-
-  doc.add_page_break()
+  if pagebreak:
+    doc.add_page_break()
   return doc
 
 def load_yamls(dir_path):
@@ -145,4 +145,9 @@ def load_yamls(dir_path):
       e['start'] = date2str(e['start'])
 
   return objs
+
+def addHead(doc,title,lvl=1):
+  # hack to convert the title to local language
+  val = get_val({title:title},title)
+  doc.add_heading(val,lvl)
 

@@ -3,11 +3,10 @@
 FROM python
 
 COPY requirements.txt /
-#RUN pip install -r /requirements.txt
-RUN cat requirements.txt | xargs -n 1 pip install || true
-# since docx and pandas failed, we do this cat hack
+RUN pip install -r /requirements.txt
 
-ENV COMPILE_LANGUAGE dutch
+ENV COMPILE_LANGUAGE english
+COPY content /content
+VOLUME /content
 ENTRYPOINT ["/parsers/generate_all.py"]
 COPY parsers /parsers
-COPY content /content

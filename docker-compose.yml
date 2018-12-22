@@ -1,13 +1,14 @@
 version: '3'
 services:
   generate:
-    image: temp
+    image: svlentink/yaml-resume
     environment:
       COMPILE_LANGUAGE: dutch
     volumes:
       - $PWD/generated:/output
-  build:
-    image: svlentink/texlive-full
-    volumes:
-      - $PWD:/data
-    command: texi2pdf --tidy --shell-escape --output=/data/resume.pdf /data/resume.tex
+      - $PWD/content:/content:ro
+#  build:
+#    image: svlentink/texlive-full
+#    volumes:
+#      - $PWD:/data
+#    command: texi2pdf --tidy --shell-escape --output=/data/resume.pdf /data/resume.tex

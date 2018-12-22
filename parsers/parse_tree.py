@@ -60,11 +60,17 @@ def getTree(file_path = "/content/knowledge-tree.yml"):
   finaltree = tuples2monospaced(arr)
   return finaltree
 
-def tree2doc(doc, tree = getTree()):
-  doc.add_heading('Knowledgetree', 1)
+def getOtherstr(file_path = "/content/other-knowledge.txt"):
+  with open(file_path, 'r') as f:
+    return f.read().split('\n')
+
+def tree2doc(doc, tree = getTree(), other=getOtherstr()):
+  addHead(doc,'Knowledge fields', 1)
   run = doc.add_paragraph().add_run(tree)
   font = run.font
   font.name = 'Courier'
   font.size = Pt(8)
+  addHead(doc,'Other',2)
+  doc.add_paragraph(', '.join(other))
   doc.add_page_break()
 

@@ -1,0 +1,32 @@
+REST API
+SSH
+MVC
+SOAP
+openssl
+openssh
+RFC
+IaaS
+SaaS
+PaaS
+data-mining
+Internet of Things IoT
+back-end
+blockchain
+KISS Keep it simple
+IPv6
+DRY Don't repeat yourself
+Arduino
+S3
+websockets
+NFS
+mocha
+routing
+Wordpress
+makefile
+gcc
+unit test
+integration testing
+UML Unified Modeling Language
+flask
+JQuery
+webpack

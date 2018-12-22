@@ -31,6 +31,6 @@ def exps2monospaced(tables = get_exp_tables()):
   return blob
 
 def exps2doc(doc, tables = get_exp_tables()):
-  doc.add_heading('Experience', 1)
+  addHead(doc,'Experience', 1)
   for t in tables:
     tuples2docx(t,doc, settings['exp-column-percentage'] or [] )
