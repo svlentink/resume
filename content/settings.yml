@@ -41,3 +41,15 @@ eduoth-order:
   - title
   - institution
   - end
+
+basics-column-percentage: [30,70]
+basics-order:
+  - name
+  - currentcity
+  - birthyear
+  - languages
+  - drivers license
+  - phone
+  - email
+  - links
+

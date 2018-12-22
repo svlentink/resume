@@ -3,6 +3,7 @@
 from parse_tree import getTree, tree2doc, tuples2monospaced
 from parse_exp import exps2doc, get_exp_tables, exps2monospaced
 from parse_edu import get_edu_table, edu2doc
+from parse_person import person2doc
 from shared import load_yamls
 from docx import Document
 
@@ -28,8 +29,12 @@ with open('/output/experience.txt','w') as f:
 
 # creating bundled document
 doc = Document()
+person2doc(doc)
+doc.add_page_break()
 edu2doc(doc)
+doc.add_page_break()
 tree2doc(doc, tree)
+doc.add_page_break()
 exps2doc(doc, exptables)
 doc.save('/output/resume.docx')
 

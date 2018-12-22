@@ -25,7 +25,8 @@ def get_edu_table(edus = load_yamls('/content/education'), order=settings['edu-o
 def edu2doc(doc):
   addHead(doc,'Education', 1)
   edutable = get_edu_table()
-  tuples2docx(edutable,doc, settings['edu-column-percentage'] or [], pagebreak=False)
+  tuples2docx(edutable,doc, settings['edu-column-percentage'] or [])
+  doc.add_paragraph(' \n ')
   addHead(doc,'Certificates and courses',2)
   edutable2 = get_edu_table(load_yamls('/content/education/other'),settings['eduoth-order'])
   tuples2docx(edutable2,doc, settings['eduoth-column-percentage'] or [] )

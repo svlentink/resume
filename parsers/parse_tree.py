@@ -61,8 +61,11 @@ def getTree(file_path = "/content/knowledge-tree.yml"):
   return finaltree
 
 def getOtherstr(file_path = "/content/other-knowledge.txt"):
+  data = []
   with open(file_path, 'r') as f:
-    return f.read().split('\n')
+    data = f.read().split('\n')
+  data.sort()
+  return data
 
 def tree2doc(doc, tree = getTree(), other=getOtherstr()):
   addHead(doc,'Knowledge fields', 1)
@@ -72,5 +75,4 @@ def tree2doc(doc, tree = getTree(), other=getOtherstr()):
   font.size = Pt(8)
   addHead(doc,'Other',2)
   doc.add_paragraph(', '.join(other))
-  doc.add_page_break()
 

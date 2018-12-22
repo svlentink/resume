@@ -1,6 +1,10 @@
-name_with_title: ing. Sander Lentink
+doctitle: Freelance DevOps / Linux engineer
+name: ing. Sander Lentink
 currentcity: Lelystad
 languages: EN, NL
+drivers license: A, B
+phone: '+31617012655'
+email: sv@lent.ink
 birthyear: 1991
 availability: Currently available as a part-time Freelance DevOps (24h),
   while finishing my MSc. Security and Network engineering (summer 2019).
@@ -8,15 +12,22 @@ intro: Eager to create and learn, diligent and always looking to get the job don
   Technologies are solely a means to get the job done.
   Security minded and willing to discreetly address issues.
 #  As a DevOps my job is to enable developers to expose their latest features through 
-  My peers knows me as the Docker guy.
+#  My peers knows me as the Docker guy.
 headline: todo
 preference: kubernetes, security, data science, coding
 develop_goal: todo in the future lorem ipsum
+motivation: todo
 dutch:
   intro: Leergierig, ijverig en altijd opzoek naar de beste manier om iets gedaan te krijgen.
     Technologieen zijn enkel een middel tot het doel.
     Security bewust en bereid om problemen discreet aan te kaarten.
+  develop_goal: Wil graag meer ervaring opdoen met container orchestration zoals kubernetes.
+    Daarnaast vind ik het leuk om raakvlakken te hebben met data science, security
+    en code te schrijven.
 
-Wil graag meer ervaring opdoen met container orchestration zoals kubernetes.
-Daarnaast vind ik het leuk om raakvlakken te hebben met data science, security
-en code te schrijven.
+links:
+  - www.lentink.consulting
+  - linkedin.com/in/svlentink
+  - github.com/svlentink
+  - blog.lent.ink
+

@@ -96,7 +96,7 @@ def tuples2monospaced(inp: list, spacing = 1):
 def tuples2colon(inp: list):
   print('todo, colon separated')
 
-def tuples2docx(inp: list, doc, colswidths = [], pagebreak=True):
+def tuples2docx(inp: list, doc, colswidths = []):
   '''
   The colswidths should be an array of percentages e.g. [25,50,25]
   '''
@@ -117,8 +117,6 @@ def tuples2docx(inp: list, doc, colswidths = [], pagebreak=True):
   for i in range(len(colswidths)):
     # https://stackoverflow.com/questions/43749177/python-docx-table-column-width
     table.columns[i].width = colswidths[i] * 55000
-  if pagebreak:
-    doc.add_page_break()
   return doc
 
 def load_yamls(dir_path):
@@ -150,4 +148,15 @@ def addHead(doc,title,lvl=1):
   # hack to convert the title to local language
   val = get_val({title:title},title)
   doc.add_heading(val,lvl)
+
+def attribute2tuple(obj,attr):
+  value = get_val(obj,attr)
+  if value == '':
+    return False
+  # try to translate the attribute name
+  if attr in lang_dict:
+    attrname = lang_dict[attr]
+  else:
+    attrname = attr
+  return (attrname,value)
 
