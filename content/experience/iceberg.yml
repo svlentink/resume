@@ -6,10 +6,17 @@ company: Iceberg Webshophands
 sector: retail
 city: Dronten
 cc: NL
-scrum: true
 url: http://www.icebergwebshophands.com
 title: Grails developer
 desc: Proof of Concept; developing online craigslist for fresh food
 dutch:
   title: Grails ontwikkelaar
 
+tech:
+  - Scrum
+  - Bash
+  - Java
+  - HTML
+  - SQL
+  - Grails
+  - Git

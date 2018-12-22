@@ -6,7 +6,6 @@ company: imgZine
 city: Amsterdam
 sector: IT
 cc: NL
-scrum: true
 url: http://imgzine.com
 title: DevOps
 desc: Dockerized XMPP server, supporting websockets (RFC7395)
@@ -20,6 +19,7 @@ dutch:
     - Installatie script in Bash
 
 tech:
+  - Scrum
   - Docker
   - HTML5
   - XMPP server

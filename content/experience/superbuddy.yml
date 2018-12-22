@@ -6,7 +6,6 @@ sector: IT
 company: Superbuddy
 city: Zwolle
 cc: NL
-scrum: true
 url: http://superbuddy.nl
 title: DevOps
 desc: Implementing CI/CD using micro services and docker-compose
@@ -22,6 +21,7 @@ dutch:
     - Adviseren VPS providers
 
 tech:
+  - Scrum
   - Git
   - Bash
   - Docker

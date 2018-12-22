@@ -6,9 +6,20 @@ sector: IT
 company: Maxedy
 city: Amsterdam
 cc: NL
-scrum: true
 url: http://www.maxedy.com
 title: NodeJS developer
 desc: Deployment using Bash and REST-API in Meteor using OrientDB
 dutch:
   title: NodeJS ontwikkelaar
+
+tech:
+  - Scrum
+  - OrientDB
+  - Node.Js / Javascript
+  - REST API
+  - Bash
+  - NoSQL
+  - HTML5
+  - draw.io
+  - Git
+

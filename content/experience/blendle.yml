@@ -7,7 +7,6 @@ company: Blendle
 city: Utrecht
 cc: NL
 url: http://blendle.com
-scrum: true
 title: System analyst
 desc: Network and application layer recommendations
 dutch:
@@ -23,6 +22,7 @@ dutch:
     - Dockerizen monolith
 
 tech:
+  - Scrum
   - draw.io
   - LaTeX
   - Ruby
