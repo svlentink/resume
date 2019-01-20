@@ -11,7 +11,8 @@ title: DevOps
 desc: Supporting hosting facilities, using Python, VMs, containers, load balancing, RabbitMQ, exim, DC/OS and kubernetes
 dutch:
   desc: Automatiseren van het operationeel beheer en het implementeren van nieuwe services.
-    Mijn verantwoordelijkheid was het in de lucht houden van de bestaande diensten; hosting, email, DNS en het moderniseren van de interne configuratie tools. 
+    Mijn verantwoordelijkheid was het in de lucht houden van de bestaande diensten;
+    hosting, email, DNS en het moderniseren van de interne configuratie tools. 
   activities:
     - Ontwikkelen microservices met python
     - Microservices koppelen met RabbitMQ message systeem
@@ -33,7 +34,8 @@ tech:
   - SQL
   - Docker
   - Kubernetes
-  - DC/OS
+  - DC/OS Mesosphere
+  - Git
   - Exim
   - KVM
   - Debian Linux

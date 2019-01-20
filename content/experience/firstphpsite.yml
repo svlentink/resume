@@ -6,7 +6,12 @@ company: Windesheim
 city: Zwolle
 cc: NL
 title: PHP developer
-desc: Build two websites in teams using MySQL and PHP5
+desc: Development of two websites in teams
 dutch:
   title: PHP ontwikkelaar
-  desc: Bouwen van twee websites in teams, mbv. MySQL en PHP5
+  desc: Ontwikkelen van twee websites in teams
+
+tech:
+  - MySQL
+  - PHP5
+  - svn

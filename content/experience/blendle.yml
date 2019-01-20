@@ -8,13 +8,22 @@ city: Utrecht
 cc: NL
 url: http://blendle.com
 title: System analyst
-desc: Network and application layer recommendations
+desc: To reduce the loading time of the application,
+  I've researched various options to implement caching at different layers.
+  When it was clear that everything had a query parameter and that it could not be solved on the network layer,
+  I looked at bottlenecks in their monolith through static code analysis.
+  After founding two code bugs, I managed to get their monolith working by dockerizing it.
+activities:
+  - Creating diagrams of current architecture
+  - Dataflow analysis
+  - Static code analysis (Ruby)
+  - Dockerizing monolith
 dutch:
   desc: Om de laadtijd van de applicatie sneller te maken,
     heb ik gekeken naar mogelijkheden om caching op verschillende lagen te implementeren.
     Wanneer bleek dat alles met query parameters ging en dit niet mogelijk was op netwerk niveau,
     ben ik opzoek gegaan naar de code die het meeste tijd koste (dmv. static code analysis).
-    Na twee bugs gevonden te hebben heb ik de applicatie ook locaal werkend gekregen door hun core te dockerizen.
+    Na twee bugs gevonden te hebben heb ik de applicatie ook lokaal werkend gekregen door hun core te dockerizen.
   activities:
     - Architectuur vatten in diagrammen
     - Dataflow analysis

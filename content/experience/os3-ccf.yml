@@ -18,7 +18,7 @@ dutch:
   activities:
     - Maken blockchain architectuur
     - Ontwikkelen van web interface die real time een representatie van de graph laat zien
-    - Ontwikkelen van de back-end code in Python
+    - Ontwikkelen van de backend code in Python
 
 tech:
   - Python

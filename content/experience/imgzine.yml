@@ -8,14 +8,20 @@ sector: IT
 cc: NL
 url: http://imgzine.com
 title: DevOps
-desc: Dockerized XMPP server, supporting websockets (RFC7395)
+activities:
+  - Developing HTML5 chat client
+  - Configure backend
+  - Installation script in Bash
+desc: Developing a Proof of Concept backend which is used for chat inside intranet applications.
+  Dockerized an existing XMPP server and compiled it with websocket libraries and
+  developed an HTML5 app which connects to the backend using websockets (RFC7395).
 dutch:
-  desc: Het ontwikkelen van een Proof of Concept back-end die gebruikt kan worden voor interne chat in applicaties.
+  desc: Het ontwikkelen van een Proof of Concept backend die gebruikt kan worden voor interne chat in applicaties.
     Heb een bestaande XMPP server gedockerized en gecompiled met websocket libraries
-    en vervolgens een HTML5 applicatie gemaakt die via websockets (RFC7395) verbinding maakt met de back-end.
+    en vervolgens een HTML5 applicatie gemaakt die via websockets (RFC7395) verbinding maakt met de backend.
   activities:
     - Ontwikkelen HTML5 chat client
-    - Back-end inrichten
+    - Backend inrichten
     - Installatie script in Bash
 
 tech:

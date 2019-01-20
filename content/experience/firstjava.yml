@@ -8,6 +8,10 @@ city: Zwolle
 cc: NL
 title: Java developer
 desc: 3D animation on computer of real life situation (robot arms made of Lego)
+tech:
+  - Lego
+  - Arduino
+  - Java
 dutch:
   title: Java ontwikkelaar
   desc: 3D animatie op pc van werkelijkheid (robot armen van Lego)

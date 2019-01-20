@@ -30,3 +30,6 @@ UML Unified Modeling Language
 flask
 JQuery
 webpack
+Progressive Web App
+Chrome extension
+Hugo

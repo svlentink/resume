@@ -6,6 +6,7 @@ COPY requirements.txt /
 RUN pip install -r /requirements.txt
 
 ENV COMPILE_LANGUAGE english
+VOLUME /output
 COPY content /content
 VOLUME /content
 ENTRYPOINT ["/parsers/generate_all.py"]

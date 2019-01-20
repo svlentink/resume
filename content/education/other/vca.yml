@@ -2,4 +2,6 @@ end: 2007-02
 type: Certificate
 institution: Cito
 cc: NL
-title: Basisveiligheid VCA
+title: Basic Safety VCA
+dutch:
+  title: Basisveiligheid VCA

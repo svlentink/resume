@@ -33,3 +33,7 @@ preventing discrimination etc.
 Recruiters also do things to your resume, deal with it,
 they understand the HR language better than us techies.
 
+## Links
+
++ Great examples: https://enhancv.com/resume-examples/
++ possible option for generation of PDF: https://themes.gohugo.io/hugo-theme-winning/

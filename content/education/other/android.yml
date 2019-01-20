@@ -3,4 +3,6 @@ type: Certificate
 institution: InfoSupport
 city: Veenendaal
 cc: NL
-title: Introductie Android Development
+title: Introduction Android Development
+dutch:
+  title: Introductie Android Development
