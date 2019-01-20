@@ -2,3 +2,4 @@ pyyaml
 asciitree
 boltons
 python-docx
+pandas

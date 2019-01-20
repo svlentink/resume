@@ -1,30 +1,39 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from parse_tree import getTree, tree2doc, tuples2monospaced
-from parse_exp import exps2doc, get_exp_tables, exps2monospaced
+from parse_exp import exps2doc, get_exp_tables, exps2monospaced, exps2html
 from parse_edu import get_edu_table, edu2doc
 from parse_person import person2doc
-from shared import load_yamls, lang_pref
+from shared import load_yamls, lang_pref, tuples2html
 from docx import Document
 
 # data attributes
 tree = getTree()
 exptables = get_exp_tables()
 expstxt = exps2monospaced(exptables)
+expshtml = exps2html(exptables)
 edutable = get_edu_table()
-edustxt = tuples2monospaced(edutable)
+edutxt = tuples2monospaced(edutable)
+eduhtml = tuples2html(edutable)
 edutable2 = get_edu_table(load_yamls('/content/education/other'))
-edustxt2 = tuples2monospaced(edutable2)
+edutxt2 = tuples2monospaced(edutable2)
+eduhtml2 = tuples2html(edutable2)
 
 # saving to separate files
 with open('/output/education-' + lang_pref + '.txt','w') as f:
-  f.write(edustxt)
+  f.write(edutxt)
 with open('/output/education-other-' + lang_pref + '.txt','w') as f:
-  f.write(edustxt2)
+  f.write(edutxt2)
+with open('/output/education-' + lang_pref + '.htm','w') as f:
+  f.write(eduhtml)
+with open('/output/education-other-' + lang_pref + '.htm','w') as f:
+  f.write(eduhtml2)
 with open('/output/tree.txt','w') as f:
   f.write(tree)
 with open('/output/experience-' + lang_pref + '.txt','w') as f:
   f.write(expstxt)
+with open('/output/experience-' + lang_pref + '.htm','w') as f:
+  f.write(expshtml)
 
 
 # creating bundled document

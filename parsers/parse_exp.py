@@ -24,3 +24,12 @@ def exps2doc(doc, tables = get_exp_tables()):
   for t in tables:
     tuples2docx(t,doc, settings['exp-column-percentage'] or [])
     doc.add_paragraph(' \n \n ')
+
+def exps2html(tables = get_exp_tables()):
+  if len(tables):
+    y = tables.pop()
+    x = exps2html(tables)
+    return x + tuples2html(y)
+  else:
+    return ''
+    

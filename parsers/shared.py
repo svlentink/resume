@@ -8,6 +8,7 @@ import datetime
 import yaml
 from os import getenv
 from glob import iglob
+import pandas as pd
 
 
 lang_pref = getenv('COMPILE_LANGUAGE') or 'language_unknown'
@@ -160,3 +161,36 @@ def attribute2tuple(obj,attr):
     attrname = attr
   return (attrname,value)
 
+def list2htmllist(arr):
+  result = '<ul>'
+  for i in arr:
+    result += '<li>' + str(i) + '</li>'
+  result += '</ul>'
+  return result
+
+
+tablecss = '''
+<style>
+.dataframe thead { display:none; }
+.dataframe td:first-child { display:none; }
+</style>
+'''
+def tuples2html(inp):
+  table = []
+  for x in inp:
+    row = []
+    for y in x:
+      if isinstance(y,list):
+        y = list2htmllist(y)
+        print(y, type(y))
+      row.append(y)
+    table.append(row)
+
+  df = pd.DataFrame(table, dtype=str)
+  print(df)
+  pd.set_option('display.max_colwidth', -1)
+  #df.apply(lambda x: list2htmllist(x) if isinstance(x,list) else x)
+  #df.drop(columns=[0], inplace=True)
+  result = tablecss
+  result += df.to_html(bold_rows=False,escape=False)
+  return result

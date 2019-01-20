@@ -7,6 +7,9 @@ services:
     volumes:
       - $PWD/generated:/output
       - $PWD/content:/content:ro
+      - $PWD/parsers:/parsers:ro
+#    entrypoint: ['pip3']
+#    command: ['install','pandas']
 #  build:
 #    image: svlentink/texlive-full
 #    volumes:
