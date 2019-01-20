@@ -31,5 +31,5 @@ def exps2html(tables = get_exp_tables()):
     x = exps2html(tables)
     return x + tuples2html(y)
   else:
-    return ''
+    return '<h2>' + get_val(0,'Experience') + '</h2>'
     

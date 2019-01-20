@@ -31,3 +31,13 @@ def edu2doc(doc):
   edutable2 = get_edu_table(load_yamls('/content/education/other'),settings['eduoth-order'])
   tuples2docx(edutable2,doc, settings['eduoth-column-percentage'] or [] )
 
+def edu2html():
+  result = '<h2>' + get_val(0, 'Education') + '</h2>'
+  edutable = get_edu_table()
+  eduhtml = tuples2html(edutable)
+  result += eduhtml
+  result += '<h3>' + get_val(0, 'Certificates and courses') + '</h3>'
+  edutable2 = get_edu_table(load_yamls('/content/education/other'))
+  eduhtml2 = tuples2html(edutable2)
+  result += eduhtml2
+  return result

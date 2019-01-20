@@ -21,6 +21,8 @@ with open('/content/settings.yml', 'r') as f:
   settings = yaml.load(f)
 
 def get_val(obj, attr):
+  if not obj:
+    obj = {attr:attr}
   if lang_pref in obj and attr in obj[lang_pref]:
     value = obj[lang_pref][attr]
   elif attr in obj:
@@ -182,15 +184,13 @@ def tuples2html(inp):
     for y in x:
       if isinstance(y,list):
         y = list2htmllist(y)
-        print(y, type(y))
       row.append(y)
     table.append(row)
 
   df = pd.DataFrame(table, dtype=str)
-  print(df)
   pd.set_option('display.max_colwidth', -1)
   #df.apply(lambda x: list2htmllist(x) if isinstance(x,list) else x)
   #df.drop(columns=[0], inplace=True)
   result = tablecss
-  result += df.to_html(bold_rows=False,escape=False)
+  result += df.to_html(bold_rows=False,escape=False,border=0)
   return result

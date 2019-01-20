@@ -2,8 +2,8 @@
 
 from parse_tree import getTree, tree2doc, tuples2monospaced
 from parse_exp import exps2doc, get_exp_tables, exps2monospaced, exps2html
-from parse_edu import get_edu_table, edu2doc
-from parse_person import person2doc
+from parse_edu import get_edu_table, edu2doc, edu2html
+from parse_person import person2doc, person2html
 from shared import load_yamls, lang_pref, tuples2html
 from docx import Document
 
@@ -46,4 +46,26 @@ tree2doc(doc, tree)
 doc.add_page_break()
 exps2doc(doc, exptables)
 doc.save('/output/resume-' + lang_pref + '.docx')
+
+# creating bundled html
+html = '''
+<style>
+table {
+  border: 1px solid;
+  padding:3px;
+}
+td {
+  padding: 3px;
+  vertical-align: top;
+}
+#experience table {
+  margin-bottom: 30px;
+}
+</style>
+'''
+html += '<section id="personal">' + person2html() + '</section>'
+html += '<section id="education">' + edu2html() + '</section>'
+html += '<section id="experience">' + exps2html() + '</section>'
+with open('/output/resume-' + lang_pref + '.html','w') as f:
+  f.write(html)
 
