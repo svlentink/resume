@@ -50,6 +50,7 @@ doc.save('/output/resume-' + lang_pref + '.docx')
 # creating bundled html
 html = '''
 <style>
+body { max-width: 800px; }
 table {
   border: 1px solid;
   padding:3px;
@@ -61,6 +62,8 @@ td {
 #experience table {
   margin-bottom: 30px;
 }
+.dataframe thead { display:none; }
+.dataframe td:first-child { display:none; }
 </style>
 '''
 html += '<section id="personal">' + person2html() + '</section>'

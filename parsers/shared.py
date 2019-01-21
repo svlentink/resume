@@ -171,12 +171,6 @@ def list2htmllist(arr):
   return result
 
 
-tablecss = '''
-<style>
-.dataframe thead { display:none; }
-.dataframe td:first-child { display:none; }
-</style>
-'''
 def tuples2html(inp):
   table = []
   for x in inp:
@@ -191,6 +185,5 @@ def tuples2html(inp):
   pd.set_option('display.max_colwidth', -1)
   #df.apply(lambda x: list2htmllist(x) if isinstance(x,list) else x)
   #df.drop(columns=[0], inplace=True)
-  result = tablecss
-  result += df.to_html(bold_rows=False,escape=False,border=0)
+  result = df.to_html(bold_rows=False,escape=False,border=0)
   return result
