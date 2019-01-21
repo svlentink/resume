@@ -3,7 +3,8 @@
 This is the source code of my LaTeX resume
 (on Github to share my format with others).
 
-You should only edit the contents in `/resume`.
+You should only edit the contents in `/content`
+and the generated files will be located in `/output`.
 
 ## Yaml
 
@@ -17,10 +18,10 @@ However, this was not enough.
 
 We now have another layer of abstraction.
 + The actual data is stored in yaml files
-+ Python script generates LaTeX or markdown.
++ Python script generates **LaTeX or markdown** docx, txt and HTML.
 + This is then converted to a;
-  - pdf (`texi2pdf`),
-  - HTML (`pandoc --from=markdown`)
+  - TODO: pdf (`texi2pdf`),
+  - HTML **(`pandoc --from=markdown`)** did not work, markdown needs table header
   - or .doc (for recruiters)
 
 ### Editable
