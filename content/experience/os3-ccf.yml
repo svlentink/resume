@@ -8,7 +8,14 @@ cc: NL
 url: http://www.os3.nl
 projecturl: http://github.com/svlentink/logdag
 title: Blockchain developer
-desc: Using blockchain technology to distribute logs across servers
+desc: Classic infrastructures use a central logging server.
+  We created a Proof of Concept which distributes log chunks randomly
+  to other servers and adds a hash of it a blockchain.
+  This makes it infeasible to change the logs.
+activities:
+  - Design and implement blockchain architecture
+  - Developing a web interface which shows a representation of the graph in real time
+  - Writing the backend code in Python
 dutch:
   title: Blockchain ontwikkelaar
   desc: Klassieke infrastructuren maken vaak gebruik van een centrale log server.
@@ -16,7 +23,7 @@ dutch:
     een willekeurige andere log server stuurt en een hash ervan op een blockchain plaatst.
     Hierdoor wordt het onmogelijk of onaantrekkelijk gemaakt om achteraf logs aan te passen. 
   activities:
-    - Maken blockchain architectuur
+    - Ontwerpen en bouwen blockchain architectuur
     - Ontwikkelen van web interface die real time een representatie van de graph laat zien
     - Ontwikkelen van de backend code in Python
 

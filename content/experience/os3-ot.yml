@@ -7,7 +7,13 @@ city: Amsterdam
 cc: NL
 url: http://www.os3.nl
 title: Covert channel researcher
-desc: Comparison of steganography inside JPG and BMP images to various social media
+desc: Desk research into the possibilities of hiding data in pictures and sharing them on social media.
+  Various social media converted the images (JPG and BMP),
+  destroying the hidden data.
+activities:
+  - Embed data using various stenography tools
+  - Contribute to an open source stenography tool on Github
+  - Uploading various data containing images and downloading for validation
 dutch:
   desc: Onderzoek naar de mogelijkheid om verborgen data in plaatjes via sociale media te delen.
     Verschillende sociale media lieten zien dat zij plaatjes converteren,

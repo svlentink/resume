@@ -7,7 +7,9 @@ city: Amstelveen
 cc: NL
 url: http://kpmg.nl
 title: Blockchain researcher
-desc: Paper about Practical blockchain on mobile devices
+desc: Most blockchain technologies demand a participant to always be online, in sync with the blockchain.
+  We wrote a paper on the various consensus mechanisms from the blockchain landscape
+  and showed which are applicable on mobile devices.
 dutch:
   title: Blockchain onderzoeker
   desc: De meeste blockchain technologieen eisen dat een participant altijd online is om bij te blijven met de blockchain.

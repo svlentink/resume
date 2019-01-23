@@ -8,13 +8,27 @@ city: Lelystad
 cc: NL
 url: http://mijndomein.nl
 title: DevOps
-desc: Supporting hosting facilities, using Python, VMs, containers, load balancing, RabbitMQ, exim, DC/OS and kubernetes
+desc: Automating operations related tasks and implementing new services.
+  Maintaining the uptime of current services; hosting, email, DNS
+  and upgrade internal configuration tools.
+activities:
+  - Developing micro services using Python
+  - Enable and connect services to the RabbitMQ message system
+  - Optimize operations using Nagios, Elastic search monitoring, Slack notifications
+  - Maintenance hosting infrastructure
+  - Security audit the infrastructure
+  - Ddos intervention
+  - Spam and phising email monitoring and prevention
+  - Provide software developers with docker platform
+  - On-call shift
+  - Email platform maintenance
+  - Maintenance in data center
 dutch:
   desc: Automatiseren van het operationeel beheer en het implementeren van nieuwe services.
     Mijn verantwoordelijkheid was het in de lucht houden van de bestaande diensten;
     hosting, email, DNS en het moderniseren van de interne configuratie tools. 
   activities:
-    - Ontwikkelen microservices met python
+    - Ontwikkelen microservices met Python
     - Microservices koppelen met RabbitMQ message systeem
     - Optimaliseren beheer mbv. nagios, elastic search monitoring, Slack notifications
     - Beheer hosting infra

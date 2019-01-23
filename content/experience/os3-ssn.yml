@@ -8,6 +8,12 @@ cc: NL
 url: http://www.os3.nl
 title: IoT Security researcher
 desc: Analysing the traffic of multiple IoT devices
+desc: Analysing the data flow of IoT (Internet of Things) devices,
+  to get insight into the security and privacy.
+  We looked at multiple devices, looking at the data and to where it connected to.
+activities:
+  - Configuration IoT devices
+  - Analyse tcpdump using Wireshark
 dutch:
   title: IoT beveiling onderzoeker
   desc: Analyseren van de dataflow van IoT (Internet of Things) apparaten bekijken om inzicht te krijgen in de veiligheid en privacy.

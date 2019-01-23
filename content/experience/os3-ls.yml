@@ -8,7 +8,15 @@ cc: NL
 url: http://www.os3.nl
 projecturl: https://github.com/svlentink/container-performance
 title: Container technologist
-desc: Comparing on the fly container utilization using LXC, rkt and Docker
+desc: One of the new innovations is serverless.
+  Serverless often requires you to rewrite code.
+  We developed an alternative Proof of Concept,
+  which when triggered (REST API, AMQP message)
+  starts a container and returns its output.
+activities:
+  - Develop PoC in python
+  - Generate performance overview using R
+  - Bootstrapping VPSes using Bash
 dutch:
   desc: Een van de nieuwe ontwikkelingen is serverless.
     Serverless vraag vaak dat code herschreven dient te worden.
@@ -22,7 +30,7 @@ dutch:
 tech:
   - Rkt
   - Docker
-  - LXC
+  - LXC / LXD
   - Python
   - Flask
   - Bash

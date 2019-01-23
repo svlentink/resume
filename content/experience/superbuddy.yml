@@ -8,7 +8,15 @@ city: Zwolle
 cc: NL
 url: http://superbuddy.nl
 title: DevOps
-desc: Implementing CI/CD using micro services and docker-compose
+desc: As part of my thesis, I've dockerized their monolith
+  and enabled AB testing by separating components into micr0 services.
+  Adding better monitoring and deployment via CI/CD.
+activities:
+  - System recommendations
+  - Dockerizing existing applications
+  - Implement CI/CD
+  - Enable A/B testing using nginx
+  - Advise on VPS providers
 dutch:
   desc: Als onderdeel van mijn thesis heb ik hun oude monolith gedockerized
     en AB testing mogelijk gemaakt door verschillende componenten in te richten als micro-services.
