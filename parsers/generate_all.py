@@ -44,7 +44,7 @@ edu2doc(doc)
 doc.add_page_break()
 tree2doc(doc, tree)
 doc.add_page_break()
-exps2doc(doc, get_exp_tables())
+exps2doc(doc)
 doc.save('/output/resume-' + lang_pref + '.docx')
 
 # creating bundled html
