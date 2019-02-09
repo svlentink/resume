@@ -38,3 +38,13 @@ they understand the HR language better than us techies.
 
 + Great examples: https://enhancv.com/resume-examples/
 + possible option for generation of PDF: https://themes.gohugo.io/hugo-theme-winning/
+
+## TODO
+
+Use the items of knowledge tree,
+together with the items of all experiences
+and combine them into one set of items
+for one page resume.
+
+Add MBTI outcome, belbin?
+
