@@ -76,3 +76,11 @@ def tree2doc(doc, tree = getTree(), other=getOtherstr()):
   addHead(doc,'Other',2)
   doc.add_paragraph(', '.join(other))
 
+def tree2html(tree = getTree(), other=getOtherstr()):
+  result = '<h2>' + get_val(0, 'Knowledge fiels') + '</h2>'
+  result += '<pre><code style="font-family:monospace;">\n'
+  result += tree + '\n</code></pre>'
+  result += '<h3>' + get_val(0, 'Other') + '</h3>'
+  result += '<span>' + ', '.join(other) + '</span>'
+  return result
+

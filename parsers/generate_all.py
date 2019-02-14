@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from parse_tree import getTree, tree2doc, tuples2monospaced
+from parse_tree import getTree, tree2doc, tuples2monospaced, tree2html
 from parse_exp import exps2doc, get_exp_tables, exps2monospaced, exps2html
 from parse_edu import get_edu_table, edu2doc, edu2html
 from parse_person import person2doc, person2html
@@ -66,9 +66,10 @@ td {
 .dataframe td:first-child { display:none; }
 </style>
 '''
-html += '<section id="personal">' + person2html() + '</section>'
-html += '<section id="education">' + edu2html() + '</section>'
-html += '<section id="experience">' + exps2html() + '</section>'
+html += '<section id="personal">'   + person2html() + '</section>'
+html += '<section id="education">'  + edu2html()    + '</section>'
+html += '<section id="tree">'       + tree2html()   + '</section>'
+html += '<section id="experience">' + exps2html()   + '</section>'
 with open('/output/resume-' + lang_pref + '.html','w') as f:
   f.write(html)
 
