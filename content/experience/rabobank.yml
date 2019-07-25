@@ -1,0 +1,24 @@
+start: 2019-03
+end: 2020
+hours: 24
+sector: finance
+employment: consultant
+company: Rabobank
+city: Utrecht
+cc: NL
+url: http://rabobank.nl
+title: Cloud Architectuur
+desc: From Pets to Cattle
+activities:
+  - Data parsers in Python
+  - Strategize transition to containers
+  - Containerize Pega
+  - Creating Terraform provider using Golang
+
+tech:
+  - Docker
+  - Python
+  - Ansible
+  - Linux
+  - Git
+
