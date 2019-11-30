@@ -1,0 +1,31 @@
+start: 2019-10
+end: 2019-11
+hours: 40
+sector: Research
+employment: thesis
+company: Surfnet
+city: Utrecht
+cc: NL
+url: http://surfnet.nl
+projecturl: http://tunroam.org
+title: Network engineer
+desc: Created wireless protocol that allows the creating of secure WiFi
+  access points by whitelisting VPN traffic.
+activities:
+  - Modifying 802.1x authentication server to support protocol
+  - Design wireless protocol
+  - Implement protocol on a Raspberry Pi, making it a wireless Access Point
+
+tech:
+  - draw.io
+  - LaTeX
+  - FreeRADIUS
+  - Python
+  - Markdown
+  - Javascript
+  - Git
+  - Debian
+  - Docker
+  - Bash
+
+#Netwerk en applicatie laag aanbevelingen
