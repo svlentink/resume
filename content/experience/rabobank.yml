@@ -1,6 +1,6 @@
 start: 2019-03
 end: 2020
-hours: 24
+hours: 40
 sector: finance
 employment: consultant
 company: Rabobank
@@ -8,7 +8,7 @@ city: Utrecht
 cc: NL
 url: http://rabobank.nl
 title: Cloud Architectuur
-desc: From Pets to Cattle
+desc: Rationalize on premise infrastructure and Pega on Azure
 activities:
   - Data parsers in Python
   - Strategize transition to containers
@@ -24,4 +24,6 @@ tech:
   - Git
   - Terraform
   - Azure DevOps
+  - Go (golang)
+  - Azure
 

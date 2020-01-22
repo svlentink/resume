@@ -1,5 +1,8 @@
 knowledge tree:  
   infrastructure:
+    FreeRADIUS:
+      start: 2019-10
+      end: 2019-12
     Openstack:
       start: 2017-01
       end: 2017-02
@@ -25,6 +28,7 @@ knowledge tree:
         smarthost: {}
         exim:
           start: 2017-04
+          end: 2019
       elastic search:
         start: 2017-04
         end: 2018-07
@@ -82,6 +86,9 @@ knowledge tree:
       end: 2014-01
     HTML5 / CSS3:
       start: 2011-09
+    Go:
+      start: 2019-06
+      end: 2019-09
   
   security:
     Wireshark / tcpdump:
@@ -123,10 +130,9 @@ knowledge tree:
     Infrastructure as Code IaC:
       ansible:
         start: 2017-03
-        end: 2017-04
+        end: 2019-08
       terraform:
         start: 2018-11
-        end: 2018-11
     CI/CD integration, deployment:
       gitlab:
         start: 2018-08
@@ -134,14 +140,17 @@ knowledge tree:
       travis:
         start: 2017-02
         end: 2018-10
+      Azure Devops:
+        start: 2019-11
   
   process management:
     ticketing system:
       Jira:
         start: 2016
-        end: 2017
+        end: 2019
       Trello:
         start: 2013
+        end: 2018
       Github issue system:
         start: 2014
       Redmine:
@@ -151,6 +160,7 @@ knowledge tree:
       markdown: {}
       dokuwiki:
         start: 2017
+        end: 2019
       confluence:
         start: 2017-04
         end: 2018-11
@@ -169,8 +179,10 @@ knowledge tree:
   containers:
     lxc:
       start: 2017-03
+      end: 2018
       lxd:
         start: 2017-11
+        end: 2018
     docker:
       start: 2015-02
     rkt:
@@ -179,6 +191,7 @@ knowledge tree:
     container orchestration:
       microservices:
         start: 2016-06
+        end: 2018
       kubernetes k8s:
         start: 2018-06
       DC/OS Mesosphere:
