@@ -67,6 +67,7 @@ knowledge tree:
       start: 2015-02
     LaTeX:
       start: 2014
+      end: 2019
     R:
       start: 2017-11
       end: 2018-03
@@ -93,11 +94,13 @@ knowledge tree:
   security:
     Wireshark / tcpdump:
       start: 2014
+      end: 2019
     Kali linux:
       start: 2018-02
       end: 2018-04
     DNSSEC:
       start: 2018-10
+      end: 2019
     Snort:
       start: 2018-04
       end: 2018-04
@@ -107,6 +110,7 @@ knowledge tree:
       Netfilter: {}
       IPTables:
         start: 2017-05
+        end: 2019
       VPN:
         start: 2017
     Cryptography:

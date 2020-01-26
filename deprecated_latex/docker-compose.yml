@@ -1,0 +1,7 @@
+version: '3'
+services:
+  build:
+    image: svlentink/texlive-full
+    volumes:
+      - $PWD:/data
+    command: texi2pdf --tidy --shell-escape --output=/data/resume.pdf /data/resume.tex
