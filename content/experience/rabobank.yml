@@ -14,7 +14,7 @@ activities:
   - Strategize transition to containers
   - Containerize Pega
   - Creating Terraform provider using Golang
-  - Automated deployment on Azure using Terraform
+  - Automated deployment on Azure using Terraform and pipelines
 
 tech:
   - Docker
