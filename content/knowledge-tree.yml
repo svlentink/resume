@@ -17,6 +17,9 @@ knowledge tree:
         start: 2016
       Ubuntu / Debian:
         start: 2012
+      Redhat:
+        start: 2019-04
+        end: 2019-08
     monitoring and notify:
       nagios:
         start: 2016-12
@@ -40,6 +43,9 @@ knowledge tree:
       AWS Amazon Web Services:
         start: 2017-02
         end: 2018-11
+      Microsoft Azure:
+        start: 2019-06
+        end: 2020-06
       Load balancing:
         start: 2017-07
         end: 2018-09

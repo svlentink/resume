@@ -1,4 +1,4 @@
-doctitle: Freelance DevOps / Linux engineer
+doctitle: Freelance Data / DevOps / Linux engineer
 name: ing. Sander Lentink, MSc.
 currentcity: Lelystad
 languages: EN, NL
@@ -6,7 +6,7 @@ drivers license: A, B
 phone: '+31617012655'
 email: sv@lent.ink
 birthyear: 1991
-availability: Not actively looking
+availability: Actively looking
 intro: Eager to create and learn, diligent and always looking to get the job done.
   Technologies are solely a means to get the job done.
   Security minded and willing to discreetly address issues.
@@ -14,17 +14,17 @@ intro: Eager to create and learn, diligent and always looking to get the job don
 #  My peers knows me as the Docker guy.
 headline: FIXME
 preference: kubernetes, security, data science, coding
-develop_goal: Love to deepen my experience with container orchestration such as kubernetes.
-  Like it when my work incorporates data science, security and writing code.
+develop_goal: Love to deepen my experience with container orchestration (kubernetes)
+  and like it when my work incorporates data science, security and writing code.
 motivation: todo
 dutch:
   name: drs. ing. Sander Lentink
   intro: Leergierig, ijverig en altijd opzoek naar de beste manier om iets gedaan te krijgen.
     Technologieen zijn enkel een middel tot het doel.
     Security bewust en bereid om problemen discreet aan te kaarten.
-  develop_goal: Vind het leuk mijn ervaring met container orchestration (kubernetes) te verdiepen.
-    Daarnaast vind ik het leuk om raakvlakken te hebben met data science, security
-    en code te schrijven.
+  develop_goal: Wil mijn kennis mbt. container orchestration (kubernetes) verdiepen
+    en vind het leuk als mijn werk raakvlakken heeft met data science,
+    security en code te schrijven. 
 
 # FIXME
 # write it more into what I have the customer to offer

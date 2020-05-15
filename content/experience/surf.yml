@@ -9,12 +9,21 @@ cc: NL
 url: http://surfnet.nl
 projecturl: http://tunroam.org
 title: Network engineer
-desc: Created wireless protocol that allows the creating of secure WiFi
+desc: Created wireless protocol that allows the creating of secure public WiFi
   access points by whitelisting VPN traffic.
 activities:
   - Modifying 802.1x authentication server to support protocol
   - Design wireless protocol
   - Implement protocol on a Raspberry Pi, making it a wireless Access Point
+
+dutch:
+  desc: Ontwikkelen van een wireless protocol die
+    veilige public WiFi access points
+    mogelijk maakt door VPN traffic te whitelisten.
+  activities:
+  - 802.1x authentication server aanpassen voor protocol
+  - Ontwikkelen wireless protocol
+  - Implementeren van protocol op Raspberry Pi, welke dient als wireless Access Point
 
 tech:
   - draw.io

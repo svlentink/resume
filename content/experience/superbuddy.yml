@@ -7,7 +7,7 @@ company: Superbuddy
 city: Zwolle
 cc: NL
 url: http://superbuddy.nl
-title: DevOps
+title: DevOps Engineer
 desc: As part of my thesis, I've dockerized their monolith
   and enabled AB testing by separating components into micr0 services.
   Adding better monitoring and deployment via CI/CD.

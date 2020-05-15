@@ -1,5 +1,5 @@
 start: 2019-03
-end: 2020
+end: 2020-06
 hours: 40
 sector: finance
 employment: consultant
@@ -7,23 +7,35 @@ company: Rabobank
 city: Utrecht
 cc: NL
 url: http://rabobank.nl
-title: Cloud Architectuur
-desc: Rationalize on premise infrastructure and Pega on Azure
+title: Cloud Architect
+desc: Rationalize on premise infrastructure and Pega in kubernetes on Azure Through
+  continues integration (CI) pipelines
 activities:
-  - Data parsers in Python
+  - Automated deployment on Azure using Terraform and pipelines
+  - Creating Terraform provider using Golang
+  - Develop data parsers in Python
   - Strategize transition to containers
   - Containerize Pega
-  - Creating Terraform provider using Golang
-  - Automated deployment on Azure using Terraform and pipelines
+dutch:
+  desc: Rationaliseren van on permise infrastructuur en het inrichten
+    van Pega in kubernetes op Azure
+    dmv. continues integration (CI) pipelines.
+  activities:
+  - Automatiseren uitrol op Azure met Terraform en pipelines
+  - Ontwikkelen Terraform provider in Golang
+  - Ontwikkelen data parsers in Python
+  - Strategie maken transitie naar containers
+  - Containerize Pega
 
 tech:
-  - Docker
-  - Python
-  - Ansible
-  - Linux
-  - Git
-  - Terraform
-  - Azure DevOps
-  - Go (golang)
-  - Azure
+- Kubernetes
+- Terraform
+- Azure DevOps
+- Docker
+- Python
+- Ansible
+- Linux
+- Git
+- Go (golang)
+- Azure
 

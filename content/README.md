@@ -25,6 +25,11 @@ Everything can be found in `content/settings.yml`
 
 ## Tips
 
+activities to previous roles:
+- strategic: design, architecture
+- tactic: research, selection, coordination, assessment
+- operational: manage(ment), develop, implement
+
 Received valuable feedback on my resume (version 2019) and tips on job seeking in general from someone I hold in high regard;
 
 - Work and educational experiences need to make sense, no short/fragmented list
