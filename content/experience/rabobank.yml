@@ -8,26 +8,32 @@ city: Utrecht
 cc: NL
 url: http://rabobank.nl
 title: Cloud Architect
-desc: Rationalize on premise infrastructure and Pega in kubernetes on Azure Through
-  continues integration (CI) pipelines
+desc: As part of the strategic move away from own data centers (DC) to the Cloud,
+  I rationalized on premise infrastructure.
+  Followed by implementing Pega (Java)
+  in kubernetes on Azure through
+  continues integration (CI) pipelines.
 activities:
   - Automated deployment on Azure using Terraform and pipelines
   - Creating Terraform provider using Golang
-  - Develop data parsers in Python
+  - Develop data parsers in Python for on premise DC management
   - Strategize transition to containers
   - Containerize Pega
 dutch:
-  desc: Rationaliseren van on permise infrastructuur en het inrichten
-    van Pega in kubernetes op Azure
+  desc: Als onderdeel van de strategische verschuiving van eigen datacenters (DC) naar de Cloud,
+    rationaliseerde ik bestaande infrastructuur.
+    Gevolgd door het inrichten
+    van Pega (Java) in kubernetes op Azure
     dmv. continues integration (CI) pipelines.
   activities:
   - Automatiseren uitrol op Azure met Terraform en pipelines
   - Ontwikkelen Terraform provider in Golang
-  - Ontwikkelen data parsers in Python
+  - Ontwikkelen data parsers in Python voor on premise DC management
   - Strategie maken transitie naar containers
   - Containerize Pega
 
 tech:
+- Scrum
 - Kubernetes
 - Terraform
 - Azure DevOps
