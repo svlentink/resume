@@ -18,7 +18,9 @@ activities:
   - Creating Terraform provider using Golang
   - Develop data parsers in Python for on premise DC management
   - Strategize transition to containers
-  - Containerize Pega
+  - Containerize Pega (creation of golden image)
+  - Convert existing installation guide to Infrastructure as Code (IaC)
+  - Optimize Azure pipelines
 dutch:
   desc: Als onderdeel van de strategische verschuiving van eigen datacenters (DC) naar de Cloud,
     rationaliseerde ik bestaande infrastructuur.
