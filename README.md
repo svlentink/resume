@@ -46,3 +46,6 @@ they understand the HR language better than us techies.
 - Add MBTI outcome, belbin?
 - TODO: pdf (`texi2pdf`),
 - HTML **(`pandoc --from=markdown`)** did not work, markdown needs table header
+- see experience as single block
+- remove scrum as separate and place in techniques
+- title on top and 'Resume compile on', left a about/ambition in italics, right contact details with favicons to links

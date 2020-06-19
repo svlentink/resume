@@ -5,23 +5,32 @@ aggregations:
     - end #also a value
     - ', ' # string
     - hours #value in experience file again
-    - 'h p/w' #str
+    - 'h p/w (' #str
+    - employment
+    - ')'
   fromto:
     - start
     - '-'
     - end
   organization:
     - company
-    - ', '
+    - ' ('
+    - sector
+    - '), '
+    - city
+  role:
+    - title
+    - ' | '
+    - company
+    - ' ('
+    - sector
+    - '), '
     - city
 
 exp-column-percentage: [20,80]
 exp-order:
-  - sector
-  - organization
-  - title
+  - role
   - timespan
-  - employment
   - projecturl
   - desc
   - activities
@@ -46,9 +55,9 @@ basics-column-percentage: [30,70]
 basics-order:
   - name
   - currentcity
-  - birthyear
-  - languages
-  - drivers license
+#  - birthyear
+#  - languages
+#  - drivers license
   - phone
   - email
   - links

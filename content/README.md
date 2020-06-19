@@ -43,3 +43,9 @@ Received valuable feedback on my resume (version 2019) and tips on job seeking i
 - When relevant; research immigration law practices and get personal advice!
 
 
+Avoid
+- interests/hobbies/leisures
+- birth date/year
+- irrelevant work experiences
+- https://www.businessinsider.com/dont-put-these-things-on-your-resume-2015-3-31?international=true&r=US&IR=T#30-short-term-employment-30
+

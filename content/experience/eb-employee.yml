@@ -1,3 +1,4 @@
+archive: true #makes it invisible
 start: 2010-01
 end: 2011-01
 hours: 8

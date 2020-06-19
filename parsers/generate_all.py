@@ -50,20 +50,45 @@ doc.save('/output/resume-' + lang_pref + '.docx')
 # creating bundled html
 html = '''
 <style>
-body { max-width: 800px; }
+body {
+  max-width: 210mm;
+  width: 210mm;
+//  height: 297mm;  
+  size: A4;
+    margin: 0 auto;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+}
+section {
+  page-break-after:always;
+}
 table {
   border: 1px solid;
-  padding:3px;
+  padding: 3px;
 }
 td {
-  padding: 3px;
+  padding: 2px;
   vertical-align: top;
 }
 #experience table {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 .dataframe thead { display:none; }
 .dataframe td:first-child { display:none; }
+#experience .dataframe td:nth-child(2) { display:none; }
+#experience tr:last-child ul { list-style: none; }
+#experience tr:last-child li {
+  display: inline-block;
+  margin-right: 3px;
+  font-style: italic;
+}
+#experience tr:last-child li:after { content: ', '; }
+#experience tr:last-child li:last-child:after { content: ''; }
 </style>
 '''
 html += '<section id="personal">'   + person2html() + '</section>'
