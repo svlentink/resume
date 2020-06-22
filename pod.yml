@@ -1,0 +1,62 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cv
+  labels:
+    type: local
+    name: cv
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  # kubectl get sc
+  storageClassName: microk8s-hostpath
+  hostPath:
+    path: /root/Dropbox/webIDE/gits/resume
+
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: cv-claim
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: microk8s-hostpath
+  selector:
+    matchLabels:
+      name: cv
+
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: cv
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: cv
+        image: svlentink/yaml-resume
+        volumeMounts:
+        - name: cv
+          mountPath: /content
+          subPath: content
+        - name: cv
+          mountPath: /parsers
+          subPath: parsers
+        - name: cv
+          mountPath: /output
+          subPath: generated
+      volumes:
+      - name: cv
+        persistentVolumeClaim:
+          claimName: cv-claim
+  backoffLimit: 1
+

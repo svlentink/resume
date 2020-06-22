@@ -50,51 +50,119 @@ doc.save('/output/resume-' + lang_pref + '.docx')
 # creating bundled html
 html = '''
 <style>
+/* basics */
+.dataframe thead { display:none; }
+.dataframe td:first-child { display:none; }
+
+/* needed for proper print layout */
 body {
   max-width: 210mm;
+  min-width: 210mm;
   width: 210mm;
 //  height: 297mm;  
   size: A4;
-    margin: 0 auto;
-    border: initial;
-    border-radius: initial;
-    width: initial;
-    min-height: initial;
-    box-shadow: initial;
-    background: initial;
-    page-break-after: always;
+  margin: 0 auto;
+  border: initial;
+  border-radius: initial;
+  min-height: initial;
+  box-shadow: initial;
+  background: initial;
 }
 section {
-  page-break-after:always;
+//  page-break-after:always;
+  width: 100%;
+  margin:0;
+  padding:0;
+  display:block;
+  overflow:hidden;
 }
+
+/* additionals */
 table {
-  border: 1px solid;
-  padding: 3px;
+  border-top: 1px solid;
+  padding: 0;
 }
 td {
-  padding: 2px;
   vertical-align: top;
 }
+ul { margin:0; padding-left: 3mm; }
+h1,h2,h3,h4 { margin:1mm; margin-bottom:0; }
+
+/* experience */
+#experience {
+  max-width: 60%;
+  float:left;
+}
+#experience .dataframe td:nth-child(2) { display:none; }
+#experience tr { font-size: 90%; }
+#experience tr:nth-child(1) { /* title */
+  font-weight: bold;
+  font-size: 100%;
+}
+#experience tr:nth-child(2) { text-align:right; } /* timespan */
 #experience table {
   margin-bottom: 0;
 }
-.dataframe thead { display:none; }
-.dataframe td:first-child { display:none; }
-#experience .dataframe td:nth-child(2) { display:none; }
 #experience tr:last-child ul { list-style: none; }
 #experience tr:last-child li {
   display: inline-block;
-  margin-right: 3px;
+  margin-right: 1mm;
   font-style: italic;
 }
 #experience tr:last-child li:after { content: ', '; }
 #experience tr:last-child li:last-child:after { content: ''; }
+
+/* header (personal) */
+#personal .dataframe td:nth-child(2) { display:none; }
+h1 {margin-bottom: 2mm; }
+#personal:children {
+  float: left;
+}
+#personal p {
+  max-width: 60%;
+  float: left;
+  margin: 0;
+  text-align: center;
+  font-style: italic;
+}
+#personal table {
+  max-width:35%;
+  float:right;
+  margin: 0;
+  text-align:right;
+}
+#personal table td { padding: 0; }
+#personal h1 {
+  width: 100%;
+  text-align: center;
+}
+#personal h3, #personal h4 { display:none; }
+#personal tr ul { list-style: none; }
+#personal tr:nth-child(1) td { font-weight:bold; } /* name */
+#personal tr:nth-child(2) td:after { content: '	\\01F4CD'; } /* location pushpin */
+#personal tr:nth-child(3) td:after { content: '	\\0260F'; } /* phone */
+#personal tr:nth-child(4) td:after { content: '	\\02709'; } /* envelope */
+#personal table { border: 0; }
+
+/* education */
+#education table {
+  min-width:100%;
+  font-size: 80%;
+}
+#education, #tree {
+  max-width: 38%;
+  float:right;
+}
+
+/* knowledge graph */
+#knowledgeoverview { display:none; }
+
 </style>
 '''
-html += '<section id="personal">'   + person2html() + '</section>'
-html += '<section id="education">'  + edu2html()    + '</section>'
-html += '<section id="tree">'       + tree2html()   + '</section>'
-html += '<section id="experience">' + exps2html()   + '</section>'
+html += '<section id="personal">\n'   + person2html() + '</section>\n'
+html += '<section id="experience">\n' + exps2html()   + '</section>\n'
+html += '<section id="education">\n'  + edu2html()    + '</section>\n'
+html += '<section id="tree">\n'       + tree2html()   + '</section>\n'
 with open('/output/resume-' + lang_pref + '.html','w') as f:
   f.write(html)
 

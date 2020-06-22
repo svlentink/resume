@@ -33,8 +33,8 @@ dutch:
 # business value should come through
 
 links:
-#  - www.lentink.consulting
-  - linkedin.com/in/svlentink
+#  - www.lentink.consulting # they don't need this, since they are already looking at my resume
+#  - linkedin.com/in/svlentink # I don't have a very common name (e.g. John Smith), they'll find me
   - github.com/svlentink
   - blog.lent.ink
 

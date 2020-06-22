@@ -4,6 +4,7 @@ from asciitree import LeftAligned
 from collections import OrderedDict as odict
 from boltons.iterutils import remap
 from shared import *
+from glob import glob
 #import numpy as np
 #import pandas as pd
 
@@ -60,12 +61,48 @@ def getTree(file_path = "/content/knowledge-tree.yml"):
   finaltree = tuples2monospaced(arr)
   return finaltree
 
+def getTreeAsSet(key, value, result=set()):
+  if isinstance(value,dict) and ('start' in value or not value): #also empty dicts
+    result.add(key)
+  elif isinstance(value, str):
+    result.add(key)
+  elif isinstance(value, dict):
+    for k, v in value.items():
+      getTreeAsSet(k, v, result)
+
 def getOtherstr(file_path = "/content/other-knowledge.txt"):
   data = []
   with open(file_path, 'r') as f:
     data = f.read().split('\n')
   data.sort()
-  return data
+  removed_empty = filter(len, data)
+  return removed_empty
+
+def getAllTech():
+  file_path = "/content/knowledge-tree.yml"
+  rawdata = {}
+  with open(file_path, 'r') as ymlfile:
+    rawdata = yaml.load(ymlfile)
+  treeset = set()
+  getTreeAsSet('',rawdata,treeset)
+
+  otherset = set(getOtherstr())
+
+  files_path = "/content/experience/*.yml"
+  expset = set()
+  for f in glob(files_path):
+    with open(f, 'r') as ymlfile:
+      rawdata = yaml.load(ymlfile)
+      if 'tech' in rawdata:
+        for key in rawdata['tech']:
+          expset.add(key)
+
+  return treeset.union(otherset).union(expset)
+
+def getAllTechStr():
+  l = list(getAllTech())
+  s = sorted(l, key = lambda x: str(x).casefold())
+  return ', '.join(s)
 
 def tree2doc(doc, tree = getTree(), other=getOtherstr()):
   addHead(doc,'Knowledge fields', 1)
@@ -77,10 +114,14 @@ def tree2doc(doc, tree = getTree(), other=getOtherstr()):
   doc.add_paragraph(', '.join(other))
 
 def tree2html(tree = getTree(), other=getOtherstr()):
-  result = '<h2>' + get_val(0, 'Knowledge fields') + '</h2>'
+  result = '<div id="knowledgeoverview">'
+  result +='<h2>' + get_val(0, 'Knowledge fields') + '</h2>'
   result += '<pre><code style="font-family:monospace;">\n'
   result += tree + '\n</code></pre>'
   result += '<h3>' + get_val(0, 'Other') + '</h3>'
   result += '<span>' + ', '.join(other) + '</span>'
+  result += '</div>\n'
+  result += '<h2>' + get_val(0, 'Techniques') + '</h3>'
+  result += '<span>' + getAllTechStr() + '</span>'
   return result
 

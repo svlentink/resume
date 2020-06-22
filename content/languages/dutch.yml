@@ -14,7 +14,7 @@ title: functie
 timespan: periode
 activities: werkzaamheden
 tech: technieken
-graduated: behaald
+graduated: '&#x1f393;' #behaald
 in progress: bezig
 community college: MBO
 certificate: certificaat

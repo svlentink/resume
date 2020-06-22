@@ -1,4 +1,4 @@
-start: 2019-03
+start: 2019-11
 end: 2020-06
 hours: 40
 sector: banking
@@ -22,28 +22,45 @@ activities:
   - Convert existing installation guide to Infrastructure as Code (IaC)
   - Optimize Azure pipelines
 dutch:
-  desc: Als onderdeel van de strategische verschuiving van eigen datacenters (DC) naar de Cloud,
+  desc-old: Als onderdeel van de strategische verschuiving van eigen datacenters (DC) naar de Cloud,
     rationaliseerde ik bestaande infrastructuur.
     Gevolgd door het inrichten
     van Pega (Java) in kubernetes op Azure
     dmv. continues integration (CI) pipelines.
-  activities:
+  desc: Greenfield development van omgeving waar (Java) applicaties draaien op
+    een kubernetes cluster in de Cloud.
+    Hierbij kreeg ik de verantwoordelijkheid om de schaalbaarheid en kwaliteit
+    van de Infrastructure as Code (IaC) methodiek te borgen.
+    Ik was verantwoordelijk voor het design van de standaarden
+    en moest er als Lead voor zorgen dat het team deze standaard in de gehele stack ging toepassen.
+  activities-old:
   - Automatiseren uitrol op Azure met Terraform en pipelines
   - Ontwikkelen Terraform provider in Golang
   - Ontwikkelen data parsers in Python voor on premise DC management
   - Strategie maken transitie naar containers
   - Containerize Pega
+  activities:
+  - Design van de Infrastructure as Code (IaC) omgeving
+  - Integreren van security principes in IaC en werkprocessen
+  - Uitvoeren Database tests tbv. selectie proces
+  - Ontwikkelen standaarden en modules in Terraform code
+  - Blueprints en Templates bouwen met Terraform en Docker
+  - Aanpassen CI/CD pipelines om standaarden te ondersteunen
+  - Ontwikkelen van connecties tussen de verschillende systemen en API’s
+  - Terraform inrichten als cloud agnostische configuratie tool
+  - Ontwerpen Azure resource groups
+  - Aansturen van driekoppig IaC team
+  - Bijwonen van Agile Events
 
 tech:
 - Scrum
 - Kubernetes
 - Terraform
 - Azure DevOps
-- Docker
 - Python
-- Ansible
 - Linux
 - Git
-- Go (golang)
+- PostgreSQL
 - Azure
+- Pega (Java)
 
