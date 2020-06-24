@@ -49,6 +49,9 @@ doc.save('/output/resume-' + lang_pref + '.docx')
 
 # creating bundled html
 html = '''
+<!--
+github.com/svlentink/resume
+-->
 <style>
 /* basics */
 .dataframe thead { display:none; }

@@ -29,6 +29,7 @@ activities to previous roles:
 - strategic: design, architecture
 - tactic: research, selection, coordination, assessment
 - operational: manage(ment), develop, implement
+- describe via STAR method (situation, task, action, result), show business value created instead of only subject taken on
 
 Received valuable feedback on my resume (version 2019) and tips on job seeking in general from someone I hold in high regard;
 
