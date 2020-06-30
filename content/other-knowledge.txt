@@ -2,8 +2,8 @@ REST API
 SSH
 MVC
 SOAP
-openssl
-openssh
+OpenSSL
+OpenSSH
 RFC
 IaaS
 SaaS

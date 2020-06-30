@@ -43,7 +43,7 @@ dutch:
 tech:
   - Scrum/Kanban
   - Python
-  - Apache2
+  - Apache
   - LXC
   - SQL
   - Docker
@@ -58,5 +58,7 @@ tech:
   - PowerDNS
   - HA-proxy
   - OpenStack
+  - Kibana
+  - Dokuwiki
 
 # worked the first 9 months full time, the remaining months part time.

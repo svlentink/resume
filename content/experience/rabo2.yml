@@ -9,48 +9,41 @@ cc: NL
 url: http://rabobank.nl
 title: Cloud Architect
 desc: As part of the strategic move away from own data centers (DC) to the Cloud,
-  I rationalized on premise infrastructure.
-  Followed by implementing Pega (Java)
-  in kubernetes on Azure through
-  continues integration (CI) pipelines.
+  I helped with setting up the infrastructure for the pilot application (Pega)
+  by creating the automated rollout of the kubernetes (k8s) cluster including the application.
+  We were responsible for designing and executing the first migration,
+  in which I directed the implementation of the Infrastructure as Code (IaC) using Terraform.
 activities:
-  - Automated deployment on Azure using Terraform and pipelines
-  - Creating Terraform provider using Golang
-  - Develop data parsers in Python for on premise DC management
-  - Strategize transition to containers
-  - Containerize Pega (creation of golden image)
-  - Convert existing installation guide to Infrastructure as Code (IaC)
-  - Optimize Azure pipelines
+  - Constant evaluation of business value vs. engineer's wishes for technical improvements
+  - Design of Infrastructure as Code (IaC) environment
+  - Integrate security principles in IaC, k8s and processes
+  - Develop standards and modules in Terraform
+  - Optimize CI/CD pipelines and its templates
+#  - Implement Terraform as a cloud agnostic configuration tool
+  - Automate deployment on Azure using Terraform and pipelines
+  - Convert existing installation guide to IaC
+  - Perform Database tests as part of selection process
+  - Direct the IaC team
+  - Assisting team with Terraform and container questions
 dutch:
-  desc-old: Als onderdeel van de strategische verschuiving van eigen datacenters (DC) naar de Cloud,
-    rationaliseerde ik bestaande infrastructuur.
-    Gevolgd door het inrichten
-    van Pega (Java) in kubernetes op Azure
-    dmv. continues integration (CI) pipelines.
-  desc: Greenfield development van omgeving waar (Java) applicaties draaien op
-    een kubernetes cluster in de Cloud.
-    Hierbij kreeg ik de verantwoordelijkheid om de schaalbaarheid en kwaliteit
-    van de Infrastructure as Code (IaC) methodiek te borgen.
-    Ik was verantwoordelijk voor het design van de standaarden
-    en moest er als Lead voor zorgen dat het team deze standaard in de gehele stack ging toepassen.
-  activities-old:
-  - Automatiseren uitrol op Azure met Terraform en pipelines
-  - Ontwikkelen Terraform provider in Golang
-  - Ontwikkelen data parsers in Python voor on premise DC management
-  - Strategie maken transitie naar containers
-  - Containerize Pega
+  desc: Als onderdeel van de strategische verschuiving van eigen datacenters (DC) naar de Cloud,
+    hielp ik met het opzetten van de infrastructuur voor de pilot applicatie (Pega)
+    door het ontwikkelen van het automatisch uitrollen van het kubernetes (k8s) cluster met de applicatie.
+    Wij waren verantwoordelijk voor het opzetten en uitvoeren van de eerste migratie,
+    waarbij ik de implementatie aanstuurde van de Infrastructure as Code (IaC) mbv. Terraform.
   activities:
+  - Continue evaluatie van business value vs. technische verbeteringen aangedragen door engineers
   - Design van de Infrastructure as Code (IaC) omgeving
-  - Integreren van security principes in IaC en werkprocessen
-  - Uitvoeren Database tests tbv. selectie proces
-  - Ontwikkelen standaarden en modules in Terraform code
-  - Blueprints en Templates bouwen met Terraform en Docker
-  - Aanpassen CI/CD pipelines om standaarden te ondersteunen
-  - Ontwikkelen van connecties tussen de verschillende systemen en API’s
-  - Terraform inrichten als cloud agnostische configuratie tool
-  - Ontwerpen Azure resource groups
+  - Integreren security principes in IaC, k8s en werkprocessen
+  - Ontwikkelen standaarden en modules in Terraform
+  - Optimaliseren CI/CD pipelines en templates
+#  - Terraform inrichten als cloud agnostische configuratie tool
+  - Automatiseren deployment op Azure mbv. Terraform en pipelines
+  - Omzetten bestaande installatie handleiding naar IaC
+  - Uitvoeren Database tests tbv. selectieproces
   - Aansturen van driekoppig IaC team
-  - Bijwonen van Agile Events
+  - Ondersteunen van team met Terraform en container vragen
+
 
 tech:
 - Scrum
@@ -58,9 +51,13 @@ tech:
 - Terraform
 - Azure DevOps
 - Python
+- Dockerfile
 - Linux
+- CI/CD
 - Git
 - PostgreSQL
 - Azure
 - Pega (Java)
+- Infrastructure as Code (IaC)
+
 

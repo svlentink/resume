@@ -34,9 +34,10 @@ tech:
   - Bash
   - Docker
   - Docker-compose
-  - nginx
+  - Nginx
   - PHP
   - draw.io
   - LaTeX
+  - Gitlab
 
 #Invoeren van CI/CD mbv. micro services en docker-compose

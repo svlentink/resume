@@ -24,11 +24,11 @@ dutch:
     - Analyse van tcpdump mbv. Wireshark
 
 tech:
-  - Wireshark
-  - Tcpdump
+  - Wireshark / tcpdump
   - LaTeX
   - Docker
   - Bash
   - Git
+  - Dokuwiki
 
 #Analyseren van verkeer van meerdere IoT apparaten

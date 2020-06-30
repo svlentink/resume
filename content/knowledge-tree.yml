@@ -13,30 +13,30 @@ knowledge tree:
       Xen:
         start: 2017-11
     Linux:
-      Alpine:
+      Alpine Linux:
         start: 2016
       Ubuntu / Debian:
         start: 2012
       Redhat:
         start: 2019-04
         end: 2019-08
-    monitoring and notify:
-      nagios:
+    monitoring and alerting:
+      Nagios:
         start: 2016-12
         end: 2018-11
       Slack API:
         start: 2017
         end: 2018
-      email:
+      Email:
         smarthost: {}
-        exim:
+        Exim:
           start: 2017-04
           end: 2019
-      elastic search:
+      Elastic Search:
         start: 2017-04
         end: 2018-07
-        kibana: {}
-        logstash / grok:
+        Kibana: {}
+        Logstash / grok:
           start: 2017-11
           end: 2017-12
     cloud:
@@ -85,7 +85,7 @@ knowledge tree:
     PHP:
       start: 2011-09
       end: 2012-06
-    'c#':
+    'C#':
       start: 2013-01
       end: 2013-06
     Java:
@@ -93,7 +93,7 @@ knowledge tree:
       end: 2014-01
     HTML5 / CSS3:
       start: 2011-09
-    Go:
+    Go (golang):
       start: 2019-06
       end: 2019-09
   
@@ -138,19 +138,19 @@ knowledge tree:
         start: 2012
         end: 2013
     Infrastructure as Code IaC:
-      ansible:
+      Ansible:
         start: 2017-03
         end: 2019-08
-      terraform:
+      Terraform:
         start: 2018-11
     CI/CD integration, deployment:
-      gitlab:
+      Gitlab:
         start: 2018-08
         end: 2018-11
-      travis:
+      Travis:
         start: 2017-02
         end: 2018-10
-      Azure Devops:
+      Azure DevOps:
         start: 2019-11
   
   process management:
@@ -168,12 +168,12 @@ knowledge tree:
         end: 2013-06
     documentation:
       markdown: {}
-      dokuwiki:
+      Dokuwiki:
         start: 2017
         end: 2019
-      confluence:
+      Confluence:
         start: 2017-04
-        end: 2018-11
+        end: 2019-10
       draw.io: {}
     SDLC:
       Agile:
@@ -187,22 +187,22 @@ knowledge tree:
         end: 2012
   
   containers:
-    lxc:
+    LXC:
       start: 2017-03
       end: 2018
-      lxd:
+      LXD:
         start: 2017-11
         end: 2018
-    docker:
+    Docker:
       start: 2015-02
-    rkt:
+    Rkt:
       start: 2017-11
       end: 2017-12
     container orchestration:
-      microservices:
+      Microservices:
         start: 2016-06
         end: 2018
-      kubernetes k8s:
+      Kubernetes k8s:
         start: 2018-06
       DC/OS Mesosphere:
         start: 2017-02

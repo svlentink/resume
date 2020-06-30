@@ -9,48 +9,37 @@ cc: NL
 url: http://rabobank.nl
 title: DevOps engineer
 desc: As part of the strategic move away from own data centers (DC) to the Cloud,
-  I rationalized on premise infrastructure.
-  Followed by implementing Pega (Java)
-  in kubernetes on Azure through
-  continues integration (CI) pipelines.
+  I rationalized the on premise infrastructure.
+  For this I used Infrastructure as Code (IaC) principles
+  to create a manageable middleware to request resources in their private DC.
 activities:
-  - Automated deployment on Azure using Terraform and pipelines
-  - Creating Terraform provider using Golang
+  - Strategize transition to containers, to facilitate transition to the Cloud
+  - Research options to request resources via ManageIQ using Infrastructure as Code (IaC)
+  - Creating ManageIQ Terraform provider using Golang
+  - Develop new readable Terraform modules following AWS syntax
   - Develop data parsers in Python for on premise DC management
-  - Strategize transition to containers
-  - Containerize Pega (creation of golden image)
-  - Convert existing installation guide to Infrastructure as Code (IaC)
-  - Optimize Azure pipelines
+  - Create coupling between DevOps tools and APIs
+  - Optimizing existing IaC templates (YAML and JSON)
+  - Containerize Pega using Dockerfile (creation of golden image)
+  - Creating platform design drawings
+  - Assisting team with Python, Linux, containers, routing and Terraform questions
+  - Presenting insights and designs to teams
 dutch:
-  desc-old: Als onderdeel van de strategische verschuiving van eigen datacenters (DC) naar de Cloud,
+  desc: Als onderdeel van de strategische verschuiving van eigen datacenters (DC) naar de Cloud,
     rationaliseerde ik bestaande infrastructuur.
-    Gevolgd door het inrichten
-    van Pega (Java) in kubernetes op Azure
-    dmv. continues integration (CI) pipelines.
-  desc: Rabobank heeft een strategische keuze gemaakt om haar eigen datacenters
-    naar de Azure Cloud te verschuiven.
-    Mijn opdracht is om op basis van een Infrastructure as Code (IaC) principe
-    een kwalitatief en beheersbare middleware platform te bouwen om ICT services
-    geautomatiseerd aan te vragen en uit te rollen.
-  activities-old:
-  - Automatiseren uitrol op Azure met Terraform en pipelines
-  - Ontwikkelen Terraform provider in Golang
-  - Ontwikkelen data parsers in Python voor on premise DC management
-  - Strategie maken transitie naar containers
-  - Containerize Pega
+    Hierbij gebruikte ik Infrastructure as Code (IaC) principes
+    om een beheersbare middleware te maken voor het aanvragen van ICT services in het eigen DC.
   activities:
-  - Strategie maken voor transitie naar containers ter voorbereiding voor Cloud migratie
-  - Onderzoek naar de methode om resources aan te vragen mbv. ManageIQ
-  - Inventariseren van Data structuren
-  - Inventariseren van de gebruikte CI/CD en IaC technieken en tools
-  - Ontwikkelen van nieuwe “leesbare” datastructuur
-  - Ontwikkelen nieuw IaC templates met Terraform
-  - Schrijven van data parsers mbv. Python
-  - Ontwikkelen van custom Terraform provider in Golang
-  - Bouwen van koppelingen tussen verschillende DevOps tools en API’s
-  - Ondersteunen van het team met complexere Python en Terraform vragen
+  - Strategie maken voor transitie naar containers tbv. Cloud migratie
+  - Onderzoek naar methodes om resources aan te vragen in ManageIQ via Infrastructure as Code (IaC)
+  - Ontwikkelen van ManageIQ Terraform provider mbv. Golang
+  - Ontwikkelen nieuwe leesbare Terraform templates volgens AWS format
+  - Ontwikkelen van data parsers mbv. Python voor on premise DC management
+  - Bouwen van koppelingen tussen DevOps tools en API's
+  - Optimaliseren van bestaande IaC templates (YAML en JSON)
   - Pega vatten in container dmv. Dockerfile
   - Platform tekeningen maken
+  - Ondersteunen van team met Python, Linux, containers, routing en Terraform vragen
   - Presenteren designs en bevindingen aan teams
 
 tech:
@@ -60,7 +49,10 @@ tech:
 - Python
 - Ansible
 - Alpine Linux
+- ManageIQ
 - Git
 - Go (golang)
 - Redhat
-
+- Bitbucket
+- Confluence
+- Infrastructure as Code (IaC)

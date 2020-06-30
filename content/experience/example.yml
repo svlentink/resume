@@ -1,0 +1,48 @@
+archive: true #makes it invisible
+
+start: 2020-11
+end: 2021-06
+hours: 40
+employment: consultant #intern #edu. project #employee
+
+sector: banking
+company: ExampleBank
+city: Amsterdam
+cc: NL
+url: https://examplebank.com
+
+title: Cloud Architect
+# The what, why of your work
+desc: STAR (situation, task, action, result).
+  Why project? (As part of strategic move to migrate from A to B).
+  My role (In this project I designed and executed on Alpha and Beta).
+  Responsibilities (Was I responsible for the X, Y and Z).
+  Business value created (This resulted in gamma and delta).
+# The how of your work
+activities:
+  - strategic; design, architecture
+  - tactic; research, selection, coordination, assessment
+  - operational; manage(ment), develop, implement
+  - some examples
+  - Constant evaluation of business value vs. engineer's wishes for technical improvements
+  - Integrate security principles in IaC, k8s and processes
+  - Implement Terraform as a cloud agnostic configuration tool
+  - Perform Database tests as part of selection process
+  - Direct the IaC team
+  - Assisting team with Terraform and container questions
+
+dutch:
+  desc: Zelfde desc, alleen dan vertaald
+  activities:
+  - Zelfde lijst met activiteiten
+
+tech:
+- Scrum
+- Excel
+- Python
+- Linux
+- CI/CD
+- Git
+- Infrastructure as Code (IaC)
+
+
