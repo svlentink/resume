@@ -58,6 +58,9 @@ github.com/svlentink/resume
 .dataframe td:first-child { display:none; }
 
 /* needed for proper print layout */
+@page {
+  size: A4;
+}
 body {
   max-width: 210mm;
   min-width: 210mm;
