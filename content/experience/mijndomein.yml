@@ -41,7 +41,8 @@ dutch:
     - Onderhoud in datacenter
 #techniques
 tech:
-  - Scrum/Kanban
+  - Scrum
+  - Kanban
   - Python
   - Apache
   - LXC

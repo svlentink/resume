@@ -1,6 +1,6 @@
 REST API
 SSH
-MVC
+Model View Controller (MVC)
 SOAP
 OpenSSL
 OpenSSH
@@ -16,21 +16,20 @@ KISS Keep it simple
 IPv6
 DRY Don't repeat yourself
 Arduino
-S3
-websockets
+AWS S3
 NFS
-mocha
 routing
 Wordpress
 makefile
 gcc
 unit test
 integration testing
-UML Unified Modeling Language
-flask
+Unified Modeling Language (UML)
+Flask
 JQuery
 webpack
-Progressive Web App
+Progressive Web App (PWA)
 Chrome extension
 Hugo
 FreeRADIUS
+

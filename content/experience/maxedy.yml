@@ -15,11 +15,13 @@ dutch:
 tech:
   - Scrum
   - OrientDB
-  - Node.Js / Javascript
+  - Node.js
+  - Javascript
   - REST API
   - Bash
   - NoSQL
   - HTML5
   - draw.io
   - Git
+  - Mocha
 

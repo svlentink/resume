@@ -3,3 +3,5 @@ resume.pdf
 *.aux
 generated
 generated/*
+__pycache__
+

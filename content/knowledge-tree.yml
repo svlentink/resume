@@ -3,7 +3,7 @@ knowledge tree:
     FreeRADIUS:
       start: 2019-10
       end: 2019-12
-    Openstack:
+    OpenStack:
       start: 2017-01
       end: 2017-02
     VM:
@@ -69,8 +69,11 @@ knowledge tree:
       start: 2015-02
     Python:
       start: 2017-02
-    Javascript / Node.js:
+    Javascript:
       start: 2015-02
+    Node.js:
+      start: 2015-02
+      end: 2018
     LaTeX:
       start: 2014
       end: 2019
@@ -91,8 +94,10 @@ knowledge tree:
     Java:
       start: 2012-04
       end: 2014-01
-    HTML5 / CSS3:
+    HTML5:
       start: 2011-09
+    CSS3:
+      start: 2011-10
     Go (golang):
       start: 2019-06
       end: 2019-09
@@ -121,10 +126,10 @@ knowledge tree:
         start: 2017
     Cryptography:
       RSA: {}
-      ECC: {}
-      Transport Layer Security TLS: {}
-      Secure Socket Layer SSL: {}
-      Public Key Infrastructure PKI: {}
+      Elliptic-curve cryptography (ECC): {}
+      Transport Layer Security (TLS): {}
+      Secure Socket Layer (SSL): {}
+      Public Key Infrastructure (PKI): {}
     
   
   Configuration Management CM:
@@ -167,7 +172,7 @@ knowledge tree:
         start: 2013-04
         end: 2013-06
     documentation:
-      markdown: {}
+      Markdown: {}
       Dokuwiki:
         start: 2017
         end: 2019
@@ -179,7 +184,7 @@ knowledge tree:
       Agile:
         Kanban:
           start: 2013
-        SCRUM:
+        Scrum:
           start: 2013-04
         User stories: {}
       Waterfall:
@@ -202,7 +207,7 @@ knowledge tree:
       Microservices:
         start: 2016-06
         end: 2018
-      Kubernetes k8s:
+      Kubernetes:
         start: 2018-06
       DC/OS Mesosphere:
         start: 2017-02
