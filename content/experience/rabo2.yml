@@ -10,9 +10,9 @@ url: http://rabobank.nl
 title: Cloud Architect
 desc: As part of the strategic move away from own data centers (DC) to the Cloud,
   I helped with setting up the infrastructure for the pilot application (Pega)
-  by creating the automated rollout of the kubernetes (k8s) cluster including the application.
+  by creating the automated rollout of a kubernetes (k8s) cluster including the application.
   We were responsible for designing and executing the first migration,
-  in which I directed the implementation of the Infrastructure as Code (IaC) using Terraform.
+  in which I directed the implementation of Infrastructure as Code (IaC) using Terraform.
 activities:
   - Constant evaluation of business value vs. engineer's wishes for technical improvements
   - Design of Infrastructure as Code (IaC) environment
@@ -28,9 +28,9 @@ activities:
 dutch:
   desc: Als onderdeel van de strategische verschuiving van eigen datacenters (DC) naar de Cloud,
     hielp ik met het opzetten van de infrastructuur voor de pilot applicatie (Pega)
-    door het ontwikkelen van het automatisch uitrollen van het kubernetes (k8s) cluster met de applicatie.
+    door het ontwikkelen van het automatisch uitrollen van een kubernetes (k8s) cluster met de applicatie.
     Wij waren verantwoordelijk voor het opzetten en uitvoeren van de eerste migratie,
-    waarbij ik de implementatie aanstuurde van de Infrastructure as Code (IaC) mbv. Terraform.
+    waarbij ik de implementatie aanstuurde van Infrastructure as Code (IaC) mbv. Terraform.
   activities:
   - Continue evaluatie van business value vs. technische verbeteringen aangedragen door engineers
   - Design van de Infrastructure as Code (IaC) omgeving
