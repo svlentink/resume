@@ -52,6 +52,7 @@ html = '''
 <!--
 github.com/svlentink/resume
 -->
+<meta name="viewport" content="width=210mm, initial-scale=1">
 <style>
 /* basics */
 .dataframe thead { display:none; }
