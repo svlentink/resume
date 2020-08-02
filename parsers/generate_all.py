@@ -73,6 +73,7 @@ body {
   min-height: initial;
   box-shadow: initial;
   background: initial;
+  padding: 0;
 }
 section {
 //  page-break-after:always;
@@ -100,10 +101,10 @@ h1,h2,h3,h4 { margin:1mm; margin-bottom:0; }
   float:left;
 }
 #experience .dataframe td:nth-child(2) { display:none; }
-#experience tr { font-size: 90%; }
+#experience tr { font-size: 14px; }
 #experience tr:nth-child(1) { /* title */
   font-weight: bold;
-  font-size: 100%;
+  font-size: 16px;
 }
 #experience tr:nth-child(2) { text-align:right; } /* timespan */
 #experience table {
@@ -130,12 +131,15 @@ h1 {margin-bottom: 2mm; }
   margin: 0;
   text-align: center;
   font-style: italic;
+  font-size: 16px;
 }
 #personal table {
-  max-width:35%;
+  max-width:38%;
   float:right;
   margin: 0;
   text-align:right;
+  font-size: 15px;
+  margin-bottom: 15px;
 }
 #personal table td { padding: 0; }
 #personal h1 {
@@ -153,11 +157,18 @@ h1 {margin-bottom: 2mm; }
 /* education */
 #education table {
   min-width:100%;
-  font-size: 80%;
+  font-size: 12.5px;
+  border-collapse: collapse;
+}
+#education tr {
+  border-bottom: 0.5px solid lightgrey;
 }
 #education, #tree {
-  max-width: 38%;
+  max-width: 39%;
   float:right;
+}
+#tree span {
+  font-size: 15px;
 }
 
 /* knowledge graph */
