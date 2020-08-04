@@ -1,0 +1,32 @@
+archive: true
+start: 2020-07
+end: 2021
+hours: 40
+sector: energy
+employment: consultant
+company: Tennet
+city: Arnhem
+cc: NL
+url: http://tennet.eu
+title: Data engineer
+desc: fixme
+activities:
+  - fixme
+dutch:
+  desc: fixme
+  activities:
+  - fixme
+
+tech:
+- Scrum
+- Nifi
+- DC/OS
+- Kafka
+- Python
+- Dockerfile
+- Linux
+- CI/CD
+- Git
+- SQL
+
+
