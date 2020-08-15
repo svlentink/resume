@@ -28,5 +28,9 @@ tech:
 - CI/CD
 - Git
 - SQL
+- Impala
+- Hue
+- Jenkins
+- Mesos Marathon
 
 
