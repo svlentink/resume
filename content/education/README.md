@@ -1,0 +1,4 @@
+# Education and certificates
+
+FIXME: include link/pointer/href to copy of proof since some companies want to verify every cert. mentioned on your resume!
+
