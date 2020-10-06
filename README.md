@@ -37,6 +37,7 @@ they understand the HR language better than us techies.
 ## Links
 
 + US format: https://www.zipjob.com/blog/us-resume-format/
++ EU format: https://europa.eu/europass/en
 + Great examples: https://enhancv.com/resume-examples/
 + possible option for generation of PDF: https://themes.gohugo.io/hugo-theme-winning/
 
