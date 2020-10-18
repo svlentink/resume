@@ -14,7 +14,7 @@ spec:
   # kubectl get sc
   storageClassName: microk8s-hostpath
   hostPath:
-    path: /root/Dropbox/webIDE/gits/resume
+    path: /mnt/k8s/ide/gits/resume
 
 ---
 kind: PersistentVolumeClaim
