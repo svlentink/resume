@@ -1,0 +1,15 @@
+start: 2006
+end: 2006
+hours: 40
+employment: internship
+archive: true #makes it invisible
+company: Autogarage Markerkant
+city: Almere
+sector: transportation
+cc: NL
+title: Car mechanic
+desc: Two week internship part of high school
+dutch:
+  title: Auto monteur
+  desc: Twee weken stage onderdeel van middelbare school
+

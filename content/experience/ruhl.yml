@@ -1,0 +1,15 @@
+start: 2007
+end: 2007
+hours: 40
+employment: internship
+archive: true #makes it invisible
+company: Ruhl jachtmotoren
+city: Lelystad
+sector: watersports
+cc: NL
+title: Boat (engine) mechanic
+desc: Two week internship part of high school
+dutch:
+  title: Boot(motor) monteur
+  desc: Twee weken stage onderdeel van middelbare school
+
