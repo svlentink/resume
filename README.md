@@ -42,16 +42,6 @@ they understand the HR language better than us techies.
 + possible option for generation of PDF: https://themes.gohugo.io/hugo-theme-winning/
 
 
-## TODO
-
-- One page resume; use the items of knowledge tree, together with the items of all experiences and combine them into one set of items
-- Add MBTI outcome, belbin?
-- TODO: pdf (`texi2pdf`),
-- HTML **(`pandoc --from=markdown`)** did not work, markdown needs table header
-- see experience as single block
-- remove scrum as separate and place in techniques
-- title on top and 'Resume compile on', left a about/ambition in italics, right contact details with favicons to links
-
 ## Tips
 
 - during interview
