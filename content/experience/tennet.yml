@@ -32,5 +32,7 @@ tech:
 - Hue
 - Jenkins
 - Mesos Marathon
+- ELK ElasticSearch Logstash Kibana
+- Filebeat
 
 
