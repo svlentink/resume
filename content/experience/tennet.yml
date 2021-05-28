@@ -1,4 +1,4 @@
-archive: true
+archive: false
 start: 2020-07
 end: 2021
 hours: 40
@@ -9,30 +9,54 @@ city: Arnhem
 cc: NL
 url: http://tennet.eu
 title: Data engineer
-desc: fixme
+desc: Enabling the upscaling of renewable energy sources through the creation of
+  data ingestion pipelines to facilitate data scientist in making predictive models.
+  We developed ingestion services that ingested from various sources and wrote to HDFS or inserted into a database.
+  These services were monitored and had alerting enabled using ElasticSearch.
 activities:
-  - fixme
-dutch:
-  desc: fixme
-  activities:
-  - fixme
+  - Developing ingestion services using Python, deployed using GitOps to container orchestration platform
+  - Enabling deployment of Grafana using GitOps onto container orchestration platform
+  - Improving and stimulating innovation relating to security processes through standardization and automation
+  - Enabling developers to run VS-code on the container platform; debugging from within the network
+  - Developing multi threaded Python service to ingest data using Nifi
+  - Enabling deployment of Database (DaaS) using GitOps
+  - Managing prerequisites of ingestion services; ACLs, service user, HDFS, Kafka etc.
+  - Creation of Dashboards visualizing ingestion metrics using Kibana
+  - Configuration of Filebeat on container orchestration to forward to Logstash (ElasticSearch)
+  - Enabling deployment of ElasticSearch watchers using GitOps for alerting to Slack and email
+  - Creating and maintaining internal Python (pypi) packages
+#dutch:
+#  desc: Nog niet gedaan, zie Engelse CV
+#  activities:
+#  - fixme
 
 tech:
 - Scrum
-- Nifi
-- DC/OS
-- Kafka
 - Python
 - Dockerfile
 - Linux
 - CI/CD
 - Git
 - SQL
+- Nifi
+- DC/OS
+- Kafka
+- Kafka-sentry
 - Impala
 - Hue
+- Hadoop
+- HDFS
+- Oracle
+- PostgreSQL
 - Jenkins
 - Mesos Marathon
 - ELK ElasticSearch Logstash Kibana
+- Grafana
 - Filebeat
+- Kerberos
+- SOAP
+- Webdav
+- REST API
+- SFTP
 
 
