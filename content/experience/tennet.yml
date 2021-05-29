@@ -14,17 +14,20 @@ desc: Enabling the upscaling of renewable energy sources through the creation of
   We developed ingestion services that ingested from various sources and wrote to HDFS or inserted into a database.
   These services were monitored and had alerting enabled using ElasticSearch.
 activities:
-  - Developing ingestion services using Python, deployed using GitOps to container orchestration platform
-  - Enabling deployment of Grafana using GitOps onto container orchestration platform
+  - Developing ingestion services using Python
+  - Deploying various services using GitOps to container orchestration platform
+  - Enabling GitOps of LDAP enabled Grafana instances
   - Improving and stimulating innovation relating to security processes through standardization and automation
-  - Enabling developers to run VS-code on the container platform; debugging from within the network
+  - Enabling developers to run VS-code on the DTAP container platforms
   - Developing multi threaded Python service to ingest data using Nifi
-  - Enabling deployment of Database (DaaS) using GitOps
+  - Enabling GitOps of Database (DaaS)
   - Managing prerequisites of ingestion services; ACLs, service user, HDFS, Kafka etc.
   - Creation of Dashboards visualizing ingestion metrics using Kibana
-  - Configuration of Filebeat on container orchestration to forward to Logstash (ElasticSearch)
-  - Enabling deployment of ElasticSearch watchers using GitOps for alerting to Slack and email
+  - Configuration of Filebeat on container orchestration platform
+  - Developing python package to implement standardized JSON log format
+  - Enabling GitOps of ElasticSearch watchers for alerting to Slack and email
   - Creating and maintaining internal Python (pypi) packages
+  - Developing streaming API in Python between HDFS and HTTP
 #dutch:
 #  desc: Nog niet gedaan, zie Engelse CV
 #  activities:
