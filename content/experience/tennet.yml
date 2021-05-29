@@ -11,8 +11,8 @@ url: http://tennet.eu
 title: Data engineer
 desc: Enabling the upscaling of renewable energy sources through the creation of
   data ingestion pipelines to facilitate data scientist in making predictive models.
-  We developed ingestion services that ingested from various sources and wrote to HDFS or inserted into a database.
-  These services were monitored and had alerting enabled using ElasticSearch.
+  We developed ingestion services that ingested from various sources and wrote to HDFS or inserted into a database,
+  while monitoring them using dashboards and alerting.
 activities:
   - Developing ingestion services using Python
   - Deploying various services using GitOps to container orchestration platform
