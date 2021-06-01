@@ -1,6 +1,6 @@
 archive: false
 start: 2020-07
-end: 2021
+end: 2021-06
 hours: 40
 sector: energy
 employment: consultant
@@ -9,20 +9,20 @@ city: Arnhem
 cc: NL
 url: http://tennet.eu
 title: Data engineer
-desc: Enabling the upscaling of renewable energy sources through the creation of
+desc: Enabled the upscaling of renewable energy sources through the creation of
   data ingestion pipelines to facilitate data scientist in making predictive models.
-  We developed ingestion services that ingested from various sources and wrote to HDFS or inserted into a database,
+  We developed services that ingested from various sources and wrote to HDFS or inserted into a database,
   while monitoring them using dashboards and alerting.
 activities:
+  - Improving and stimulating innovation relating to security processes through standardization and automation
   - Developing ingestion services using Python
   - Deploying various services using GitOps to container orchestration platform
   - Enabling GitOps of LDAP enabled Grafana instances
-  - Improving and stimulating innovation relating to security processes through standardization and automation
   - Enabling developers to run VS-code on the DTAP container platforms
   - Developing multi threaded Python service to ingest data using Nifi
-  - Enabling GitOps of Database (DaaS)
-  - Managing prerequisites of ingestion services; ACLs, service user, HDFS, Kafka etc.
-  - Creation of Dashboards visualizing ingestion metrics using Kibana
+  - Enabling GitOps of Databases (DaaS)
+  - Managing prerequisites ingestion services; ACLs, service user, HDFS, Kafka
+  - Creation of dashboards visualizing ingestion metrics using Kibana
   - Configuration of Filebeat on container orchestration platform
   - Developing python package to implement standardized JSON log format
   - Enabling GitOps of ElasticSearch watchers for alerting to Slack and email
@@ -44,7 +44,6 @@ tech:
 - Nifi
 - DC/OS
 - Kafka
-- Kafka-sentry
 - Impala
 - Hue
 - Hadoop
@@ -57,6 +56,8 @@ tech:
 - Grafana
 - Filebeat
 - Kerberos
+- Bash
+- PowerShell
 - SOAP
 - Webdav
 - REST API
