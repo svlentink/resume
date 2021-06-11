@@ -9,7 +9,7 @@ cc: NL
 url: http://superbuddy.nl
 title: DevOps Engineer
 desc: As part of my thesis, I've dockerized their monolith
-  and enabled AB testing by separating components into micr0 services.
+  and enabled AB testing by separating components into microservices.
   Adding better monitoring and deployment via CI/CD.
 activities:
   - System recommendations

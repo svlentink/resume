@@ -19,7 +19,7 @@ activities:
   - Deploying various services using GitOps to container orchestration platform
   - Enabling GitOps of LDAP enabled Grafana instances
   - Enabling developers to run VS-code on the DTAP container platforms
-  - Developing multi threaded Python service to ingest data using Nifi
+  - Developing multi threaded Python service to ingest data using NiFi
   - Enabling GitOps of Databases (DaaS)
   - Managing prerequisites ingestion services; ACLs, service user, HDFS, Kafka
   - Creation of dashboards visualizing ingestion metrics using Kibana
@@ -28,10 +28,10 @@ activities:
   - Enabling GitOps of ElasticSearch watchers for alerting to Slack and email
   - Creating and maintaining internal Python (pypi) packages
   - Developing streaming API in Python between HDFS and HTTP
-#dutch:
-#  desc: Nog niet gedaan, zie Engelse CV
-#  activities:
-#  - fixme
+dutch:
+  desc: Nog niet gedaan, zie Engelse CV
+  activities:
+  - fixme
 
 tech:
 - Scrum
@@ -41,7 +41,7 @@ tech:
 - CI/CD
 - Git
 - SQL
-- Nifi
+- Apache NiFi
 - DC/OS
 - Kafka
 - Impala
