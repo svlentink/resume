@@ -29,9 +29,12 @@ activities:
   - Creating and maintaining internal Python (pypi) packages
   - Developing streaming API in Python between HDFS and HTTP
 dutch:
-  desc: Nog niet gedaan, zie Engelse CV
-  activities:
-  - fixme
+  desc: Het opschalen van duurzame energiebronnen mogelijk maken door het ontwikkelen van
+    data ingestion pipelines om data scientist in staat te stellen verspellingsmodellen te maken.
+    Wij ontwikkelden services die verschillende bronnen aanboorde en het opsloeg op HDFS of in een database,
+    voorzien van monitoring dmv. dashboards en alarmering.
+#  activities:
+#  - fixme
 
 tech:
 - Scrum
