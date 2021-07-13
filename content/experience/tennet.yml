@@ -52,6 +52,7 @@ tech:
 - Hadoop
 - HDFS
 - Oracle
+- Swagger
 - PostgreSQL
 - Jenkins
 - Mesos Marathon
