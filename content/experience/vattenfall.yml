@@ -1,0 +1,38 @@
+archive: true
+start: 2021-07
+end: 2022
+hours: 40
+sector: energy
+employment: consultant
+company: Vattenfall
+city: Amsterdam
+cc: NL
+url: http://vattenfall.nl
+title: Senior Data engineer
+desc: FIXME
+activities:
+  - Enabling GitOps of LDAP enabled Grafana instances
+  - Enabling developers to run VS-code on k8s
+  - Managing Cloud infrastructure through Infrastructue as Code (IaC)
+  - Enabling GitOps of Databases (DaaS) on Azure Cloud using Terraform
+
+
+tech:
+- Scrum
+- Python
+- Dockerfile
+- Linux
+#- CI/CD
+- Git
+- SQL
+- Apache NiFi
+- Kubernetes
+- Kafka
+- Swagger
+- PostgreSQL
+- Azure DevOps
+- Terraform
+- Bash
+- REST API
+
+
