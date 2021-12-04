@@ -45,8 +45,15 @@ they understand the HR language better than us techies.
 ## Tips
 
 - during interview
-  - bring printed resume
-  - have questions on paper about vacancy
-  - be relaxed, ask control questions
-  - ask when project success, which challenges, which metrics
+    - bring printed resume
+    - have questions on paper about vacancy, test it
+    - be relaxed, ask control questions
+    - ask when project success, which challenges, which metrics
+    - memorized tackeled problems and being able to explain them using STAR
+    - ask ratio managing vs executing (technical work)
+    - always close positive
+    - able to state strong and learning points
 
+- Know your demands
+    - work from home
+    - no standby duty
