@@ -53,7 +53,7 @@ def asciitree2lists(inp: str, sep = ';'):
 def getTree(file_path = "/content/knowledge-tree.yml"):
   rawdata = {}
   with open(file_path, 'r') as ymlfile:
-    rawdata = yaml.load(ymlfile)
+    rawdata = yaml.full_load(ymlfile)
   # https://sedimental.org/remap.html
   remapped = remap(rawdata, visit=to_odict)
   asciitr = gen_tree_func(remapped)
@@ -82,7 +82,7 @@ def getAllTech():
   file_path = "/content/knowledge-tree.yml"
   rawdata = {}
   with open(file_path, 'r') as ymlfile:
-    rawdata = yaml.load(ymlfile)
+    rawdata = yaml.full_load(ymlfile)
   treeset = set()
   getTreeAsSet('',rawdata,treeset)
 
@@ -92,7 +92,7 @@ def getAllTech():
   expset = set()
   for f in glob(files_path):
     with open(f, 'r') as ymlfile:
-      rawdata = yaml.load(ymlfile)
+      rawdata = yaml.full_load(ymlfile)
       if 'tech' in rawdata:
         for key in rawdata['tech']:
           expset.add(key)

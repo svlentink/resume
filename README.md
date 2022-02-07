@@ -53,6 +53,7 @@ they understand the HR language better than us techies.
     - ask ratio managing vs executing (technical work)
     - always close positive
     - able to state strong and learning points
+    - do they work on projects (Prince2, ITIL, waterfall) or products (agile)
 
 - Know your demands
     - work from home

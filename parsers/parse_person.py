@@ -4,7 +4,7 @@ from shared import *
 
 def get_person_data(filepath = "/content/basics.yml"):
   with open(filepath,'r') as ymlfile:
-    return yaml.load(ymlfile)
+    return yaml.full_load(ymlfile)
 
 def get_person_table(data = get_person_data()):
   table = []

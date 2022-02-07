@@ -15,10 +15,10 @@ lang_pref = getenv('COMPILE_LANGUAGE') or 'language_unknown'
 lang_dict = {}
 for f in iglob('/content/languages/' + lang_pref + '.y*ml'):
   with open(f,'r') as ymlfile:
-    lang_dict = yaml.load(ymlfile)
+    lang_dict = yaml.full_load(ymlfile)
 
 with open('/content/settings.yml', 'r') as f:
-  settings = yaml.load(f)
+  settings = yaml.full_load(f)
 
 def get_val(obj, attr):
   if not obj:
@@ -126,7 +126,7 @@ def load_yamls(dir_path):
   objs = []
   for f in iglob(dir_path + '/*.y*ml'):
     with open(f,'r') as ymlfile:
-      obj = yaml.load(ymlfile)
+      obj = yaml.full_load(ymlfile)
       if 'end' not in obj:
         obj['end'] = datetime.datetime.now().year
       obj['end'] = str(obj['end']) #make all a str
