@@ -9,24 +9,31 @@ city: Amsterdam
 cc: NL
 url: http://vattenfall.nl
 title: Senior Data engineer
-desc: FIXME
+desc: |
+  Optimize offshore wind turbine maintenance by empowering data analysts with tooling, infrastructure and data,
+  so their predictive models can identify the wear on turbine components.
 activities:
-  - Enabling GitOps of LDAP enabled Grafana instances
-  - Enabling developers to run VS-code on k8s
-  - Managing Cloud infrastructure through Infrastructue as Code (IaC)
-  - Enabling GitOps of Databases (DaaS) on Azure Cloud using Terraform
+- Enabling developers to run VS-code on k8s
+- Managing Cloud infrastructure through Infrastructue as Code (IaC) #MCM phase 1
+- Enabling GitOps of AKS and DB on Azure Cloud using Terraform #MCM phase 1
+- Translate business questions into complex SQL queries #MCM
+- Creating designs for data extraction, transformation and loading (ETL) #DPT using Azure blob
+- Configuring JWT authentication proxy for web application backend
 
 
 tech:
 - Scrum
 - Python
+- Pandas
+- Envoy
+- SQL
+- Apache NiFi
+- AKS Kubernetes
+- Kustomize
 - Dockerfile
 - Linux
 #- CI/CD
 - Git
-- SQL
-- Apache NiFi
-- Kubernetes
 - Kafka
 - Swagger
 - PostgreSQL
@@ -34,5 +41,9 @@ tech:
 - Terraform
 - Bash
 - REST API
+- PostgREST
+- OmniDB
+- MS Visio
+- Azure Blob
 
 
