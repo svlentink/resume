@@ -1,6 +1,7 @@
-archive: true
+
+archive: false
 start: 2021-07
-end: 2022
+end: 2022-06
 hours: 40
 sector: energy
 employment: consultant
@@ -18,8 +19,13 @@ activities:
 - Enabling GitOps of AKS and DB on Azure Cloud using Terraform #MCM phase 1
 - Translate business questions into complex SQL queries #MCM
 - Creating designs for data extraction, transformation and loading (ETL) #DPT using Azure blob
-- Configuring JWT authentication proxy for web application backend
+- Configuring JWT authentication proxy for web application backend #envoy doing ms token validation
 
+dutch:
+  desc: |
+    Optimalizeren van onderhoud aan offshore wind turbines
+    door data analisten te voorzien van tooling, infrastructuur en data,
+    zodat voorspellende modellen de slijtage aan turbine onderdelen kan identificeren.
 
 tech:
 - Scrum
@@ -32,7 +38,6 @@ tech:
 - Kustomize
 - Dockerfile
 - Linux
-#- CI/CD
 - Git
 - Kafka
 - Swagger
@@ -45,5 +50,3 @@ tech:
 - OmniDB
 - MS Visio
 - Azure Blob
-
-
