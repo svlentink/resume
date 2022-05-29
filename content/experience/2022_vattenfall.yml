@@ -10,7 +10,7 @@ city: Amsterdam
 cc: NL
 url: http://vattenfall.nl
 title: Senior Data engineer
-desc: |
+desc:
   Optimize offshore wind turbine maintenance by empowering data analysts with tooling, infrastructure and data,
   so their predictive models can identify the wear on turbine components.
 activities:
@@ -22,7 +22,7 @@ activities:
 - Configuring JWT authentication proxy for web application backend #envoy doing ms token validation
 
 dutch:
-  desc: |
+  desc:
     Optimalizeren van onderhoud aan offshore wind turbines
     door data analisten te voorzien van tooling, infrastructuur en data,
     zodat voorspellende modellen de slijtage aan turbine onderdelen kan identificeren.

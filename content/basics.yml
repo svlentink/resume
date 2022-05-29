@@ -15,7 +15,7 @@ intro: Eager to create and learn, diligent and always looking to get the job don
 #  My peers knows me as the Docker guy.
 headline: FIXME
 preference: kubernetes, security, data science, coding
-develop_goal: |
+develop_goal:
   Love to deepen my experience
   as a data (platform) engineer
 #  with container orchestration (kubernetes)
@@ -26,7 +26,7 @@ dutch:
   intro: Leergierig, ijverig en altijd opzoek naar de beste manier om iets gedaan te krijgen.
     Technologieen zijn enkel een middel tot het doel.
     Security bewust en bereid om problemen discreet aan te kaarten.
-  develop_goal: |
+  develop_goal:
 #    Wil mijn kennis mbt. container orchestration (kubernetes) verdiepen
     Wil mij verder verdiepen als data (platform) engineer
     en vind het leuk als mijn werk raakvlakken heeft met data science,
