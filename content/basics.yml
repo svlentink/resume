@@ -18,8 +18,8 @@ preference: kubernetes, security, data science, coding
 develop_goal:
   Love to deepen my experience
   as a data (platform) engineer
-#  with container orchestration (kubernetes)
   and like it when my work incorporates data science, security and writing code.
+#  with container orchestration (kubernetes)
 motivation: FIXME
 dutch:
   name: drs. ing. Sander Lentink
@@ -27,10 +27,10 @@ dutch:
     Technologieen zijn enkel een middel tot het doel.
     Security bewust en bereid om problemen discreet aan te kaarten.
   develop_goal:
-#    Wil mijn kennis mbt. container orchestration (kubernetes) verdiepen
     Wil mij verder verdiepen als data (platform) engineer
     en vind het leuk als mijn werk raakvlakken heeft met data science,
     security en code te schrijven. 
+#    Wil mijn kennis mbt. container orchestration (kubernetes) verdiepen
 
 # FIXME
 # write it more into what I have the customer to offer
