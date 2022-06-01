@@ -16,10 +16,11 @@ desc:
 activities:
 - Translate business questions into complex SQL queries #MCM
 - Creating designs for data extraction, transformation and loading (ETL) #DPT using Azure blob
-- Configuring JWT authentication proxy for web application backend #envoy doing ms token validation
+- Configuring JWT authentication using Envoy proxy for web application backend #envoy doing ms token validation
 - Enabling developers to run VS-code on k8s
 - Managing Cloud infrastructure through Infrastructue as Code (IaC) #MCM phase 1
 - Enabling GitOps of AKS and DB on Azure Cloud using Terraform #MCM phase 1
+- Data transformation in Python using Pandas
 
 dutch:
   desc:
