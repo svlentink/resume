@@ -26,18 +26,19 @@ dutch:
   - Implementeren van protocol op Raspberry Pi, welke dient als wireless Access Point
 
 tech:
-  - draw.io
-  - LaTeX
-  - FreeRADIUS
-  - Python
-  - Markdown
-  - Javascript
-  - Git
-  - Debian Linux
-  - Docker
-  - Bash
-  - Raspberry Pi
-  - Orange Pi
-  - Armbian
+- draw.io
+- LaTeX
+- FreeRADIUS
+- Python
+- Markdown
+- Javascript
+- Git
+- Debian Linux
+- Docker
+- Bash
+- Raspberry Pi
+- Orange Pi
+- Armbian
+- OpenVPN
 
 #Netwerk en applicatie laag aanbevelingen

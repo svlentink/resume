@@ -41,25 +41,26 @@ dutch:
     - Onderhoud in datacenter
 #techniques
 tech:
-  - Scrum
-  - Kanban
-  - Python
-  - Apache
-  - LXC
-  - SQL
-  - Docker
-  - Kubernetes
-  - DC/OS Mesosphere
-  - Git
-  - Exim
-  - KVM
-  - Debian Linux
-  - AWS EC2
-  - RabbitMQ
-  - PowerDNS
-  - HA-proxy
-  - OpenStack
-  - Kibana
-  - Dokuwiki
+- Scrum
+- Kanban
+- Python
+- Apache
+- LXC
+- SQL
+- Docker
+- Kubernetes
+- DC/OS Mesosphere
+- Git
+- Exim
+- KVM
+- Debian Linux
+- AWS EC2
+- RabbitMQ
+- PowerDNS
+- HA-proxy
+- OpenStack
+- Kibana
+- Dokuwiki
+- CertManager
 
 # worked the first 9 months full time, the remaining months part time.
