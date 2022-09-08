@@ -1,0 +1,37 @@
+
+archive: true
+start: 2022-07
+end: 2023
+hours: 32
+sector: aviation
+employment: consultant
+company: Schiphol
+city: Amsterdam
+cc: NL
+url: https://schiphol.nl
+title: Senior Data engineer
+desc:
+  Optimize passenger, cargo and aircraft flow through ... FIXME
+activities:
+- Managing Kafka through Infrastructure as Code (IaC)
+- Managing Cloud infrastructure through Terraform
+- Developing data ingestion services in Python
+
+
+tech:
+- Scrum
+- Python
+- OpenShift
+- Mermaid
+- Linux
+- Git
+- Kafka
+- PostgreSQL
+- Azure DevOps
+- Terraform
+- Bash
+- REST API
+- Azure Blob
+- JFrog
+- Gitlab
+- SOAP
