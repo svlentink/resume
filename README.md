@@ -54,6 +54,7 @@ they understand the HR language better than us techies.
     - always close positive
     - able to state strong and learning points
     - do they work on projects (Prince2, ITIL, waterfall) or products (agile)
+    - start by expressing gratitude for invite and willingness to answer questions, but first you are wondering why they invited you, what stood out in resume. This psychological trick will result in them likely continueing the positive attitude towards you in the interview.
 
 - Know your demands
     - work from home
