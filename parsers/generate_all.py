@@ -42,6 +42,8 @@ person2doc(doc)
 doc.add_page_break()
 edu2doc(doc)
 doc.add_page_break()
+lang2doc(doc)
+doc.add_page_break()
 tree2doc(doc, tree)
 doc.add_page_break()
 exps2doc(doc)
@@ -181,6 +183,7 @@ h1 {margin-bottom: 2mm; }
 html += '<section id="personal">\n'   + person2html() + '</section>\n'
 html += '<section id="experience">\n' + exps2html()   + '</section>\n'
 html += '<section id="education">\n'  + edu2html()    + '</section>\n'
+html += '<section id="education">\n'  + lang2html()    + '</section>\n'
 html += '<section id="tree">\n'       + tree2html()   + '</section>\n'
 with open('/output/resume-' + lang_pref + '.html','w') as f:
   f.write(html)

@@ -1,7 +1,7 @@
 
 archive: true
 start: 2022-07
-end: 2023
+end: 2024-07
 hours: 32
 sector: aviation
 employment: consultant
@@ -13,10 +13,17 @@ title: Senior Data engineer
 desc:
   Optimize passenger, cargo and aircraft flow through ... FIXME
 activities:
-- Managing Kafka through Infrastructure as Code (IaC)
-- Managing Cloud infrastructure through Terraform
+- Managing cloud infrastructure through Infrastructure as Code (IaC)
+#- Managing Cloud infrastructure through OpenTofu/Terraform
+- Deployment of Confluent Kafka infra using Terraform
 - Developing data ingestion services in Python
-
+#- Developing a Web Scraping tool in Python
+- Containerization of Scala applications
+#- Containerizing the building of Scala applications
+- Migrating CICD pipelines from Jenkins to Azure DevOps
+#- Migration Gitlab CICD pipelines to Azure DevOps
+- Migrating application layer logging from Datadog to Splunk
+- Constructing XSD validation schemas for data sources
 
 tech:
 - Scrum
@@ -28,10 +35,30 @@ tech:
 - Kafka
 - PostgreSQL
 - Azure DevOps
+- OpenTofu
 - Terraform
 - Bash
 - REST API
+- Securit
+- TCP
+- netcat
+- firewall
 - Azure Blob
 - JFrog
 - Gitlab
 - SOAP
+- Docker
+- Docker
+- Podman
+- Confluent
+- Confluence
+- Gitlab
+- XML
+- XSD
+- YAML
+- JSON
+- Airflow
+- Splunk
+- Datadog
+- AVRO
+
