@@ -9,7 +9,7 @@ aggregations:
     - employment
     - ', '
     - perc_remote
-    - '% remote)'
+    - '&percnt; remote)'
   fromto:
     - start
     - '-'

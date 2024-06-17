@@ -12,7 +12,7 @@ cc: NL
 url: https://schiphol.nl
 title: Senior Data engineer
 desc:
-  Optimize passenger, cargo and aircraft flow through ... FIXME
+  Optimize airport logistics by enabling data driven decision making
 activities:
 - Managing cloud infrastructure through Infrastructure as Code (IaC)
 #- Managing Cloud infrastructure through OpenTofu/Terraform
