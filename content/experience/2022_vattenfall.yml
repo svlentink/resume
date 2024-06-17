@@ -2,6 +2,7 @@
 archive: false
 start: 2021-07
 end: 2022-06
+perc_remote: 80
 hours: 40
 sector: energy
 employment: consultant

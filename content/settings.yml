@@ -7,7 +7,9 @@ aggregations:
     - hours #value in experience file again
     - 'h p/w (' #str
     - employment
-    - ')'
+    - ', '
+    - perc_remote
+    - '% remote)'
   fromto:
     - start
     - '-'

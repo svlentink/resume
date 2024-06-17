@@ -2,6 +2,7 @@ archive: true #makes it invisible
 
 start: 2020-11
 end: 2021-06
+perc_remote: 95 # worked 95% remotely
 hours: 40
 employment: consultant #intern #edu. project #thesis #employee
 

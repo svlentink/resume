@@ -1,6 +1,7 @@
 archive: true #makes it invisible
 start: 2009
 end: 2011
+perc_remote: 0
 hours: 8
 employment: employee
 company: Iscal sugar

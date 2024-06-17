@@ -1,5 +1,6 @@
 start: 2011-07
 end: 2011-07
+perc_remote: 15
 hours: 80 
 employment: community service
 archive: true #makes it invisible

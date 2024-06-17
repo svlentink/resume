@@ -1,5 +1,6 @@
 start: 2010-01
 end: 2010-06
+perc_remote: 50
 hours: 8
 archive: true #makes it invisible
 company: De Pijler

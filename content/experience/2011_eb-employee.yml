@@ -1,6 +1,7 @@
 archive: true #makes it invisible
 start: 2010-01
 end: 2011-01
+perc_remote: 0
 hours: 8
 employment: employee
 company: Engels en de Beer

@@ -1,5 +1,6 @@
 start: 2012-01
 end: 2012-03
+perc_remote: 75
 hours: 30
 employment: edu. project
 archive: true #makes it invisible
@@ -12,3 +13,4 @@ desc: Build an robot using Arduino
 dutch:
   title: Robot programmeur
   desc: Arduino robot
+

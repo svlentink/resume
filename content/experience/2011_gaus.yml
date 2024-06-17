@@ -1,5 +1,6 @@
 start: 2010-09
 end: 2011-01
+perc_remote: 25
 hours: 16
 employment: internship
 archive: true #makes it invisible

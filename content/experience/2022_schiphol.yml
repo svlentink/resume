@@ -2,6 +2,7 @@
 archive: false
 start: 2022-07
 end: 2024-07
+perc_remote: 95
 hours: 32
 sector: aviation
 employment: consultant
