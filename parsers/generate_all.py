@@ -3,7 +3,7 @@
 from parse_tree import getTree, tree2doc, tuples2monospaced, tree2html
 from parse_exp import exps2doc, get_exp_tables, exps2monospaced, exps2html
 from parse_edu import get_edu_table, edu2doc, edu2html
-from parse_person import person2doc, person2html
+from parse_person import person2doc, person2html, lang2doc, lang2html
 from shared import load_yamls, lang_pref, tuples2html
 from docx import Document
 
@@ -167,7 +167,7 @@ h1 {margin-bottom: 2mm; }
 #education tr {
   border-bottom: 0.5px solid lightgrey;
 }
-#education, #tree {
+#education, #tree, #language {
   max-width: 39%;
   float:right;
 }
@@ -183,7 +183,7 @@ h1 {margin-bottom: 2mm; }
 html += '<section id="personal">\n'   + person2html() + '</section>\n'
 html += '<section id="experience">\n' + exps2html()   + '</section>\n'
 html += '<section id="education">\n'  + edu2html()    + '</section>\n'
-html += '<section id="education">\n'  + lang2html()    + '</section>\n'
+html += '<section id="language">\n'   + lang2html()    + '</section>\n'
 html += '<section id="tree">\n'       + tree2html()   + '</section>\n'
 with open('/output/resume-' + lang_pref + '.html','w') as f:
   f.write(html)

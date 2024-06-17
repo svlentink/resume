@@ -1,5 +1,6 @@
 start: 2019-03
 end: 2019-10
+perc_remote: 40
 hours: 24
 sector: banking
 employment: consultant

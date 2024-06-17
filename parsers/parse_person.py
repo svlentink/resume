@@ -33,3 +33,22 @@ def person2html(data = get_person_data()):
   result += '<p>' + get_val(data,'develop_goal') + '</p>'
   return result
 
+def get_lang_table(data = get_person_data()):
+  langtable = get_val(data,'languages')
+  table = []
+  for i in langtable:
+    proficiency = langtable[i]
+    pro_str= ("&#9734;" * (5-proficiency)) + ("&#9733;" * proficiency)
+    table.append([i,pro_str])
+  return table
+
+def lang2doc(data = get_person_data()):
+  return None
+
+def lang2html():
+  result = '<h2>' + get_val(0, 'Languages') + '</h2>'
+  langtable = get_lang_table()
+  langhtml = tuples2html(langtable)
+  result += langhtml
+  return result
+

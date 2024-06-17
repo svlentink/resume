@@ -1,5 +1,6 @@
 start: 2013-01
 end: 2013-03
+perc_remote: 0
 hours: 24
 employment: edu. project
 archive: true #makes it invisible
