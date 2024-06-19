@@ -18,6 +18,7 @@ activities:
 #- Managing Cloud infrastructure through OpenTofu/Terraform
 - Deployment of Confluent Kafka infra using Terraform
 - Developing data ingestion services in Python
+- Assisting (junior) colleagues with Network, CI/CD and k8s issues
 #- Developing a Web Scraping tool in Python
 - Containerization of Scala applications
 #- Containerizing the building of Scala applications
