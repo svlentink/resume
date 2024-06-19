@@ -143,7 +143,6 @@ h1 {margin-bottom: 2mm; }
   margin: 0;
   text-align:right;
   font-size: 15px;
-  margin-bottom: 15px;
 }
 #personal table td { padding: 0; }
 #personal h1 {
