@@ -130,7 +130,7 @@ h1 {margin-bottom: 2mm; }
   float: left;
 }
 #personal p {
-  max-width: 60%;
+  max-width: 120mm; /* 60%; */
   float: left;
   margin: 0;
   text-align: center;
@@ -138,7 +138,7 @@ h1 {margin-bottom: 2mm; }
   font-size: 16px;
 }
 #personal table {
-  max-width:38%;
+  max-width: 65mm; /* 22%; */
   float:right;
   margin: 0;
   text-align:right;
@@ -156,6 +156,21 @@ h1 {margin-bottom: 2mm; }
 #personal tr:nth-child(3) td:after { content: '	\\0260F'; } /* phone */
 #personal tr:nth-child(4) td:after { content: '	\\02709'; } /* envelope */
 #personal table { border: 0; }
+#personal #profilepic {
+/* 3/4 aspect ratio */
+  margin-top: -7mm;
+  margin-bottom: -3mm;
+  width: 30mm; /* 15%; */
+  height: 40mm;
+  float:right;
+  display:block;
+  background-image: url('https://cdn.lent.ink/img/pasfoto.png');
+  box-shadow: inset 0 0 10px 10px white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:40%;
+}
 
 /* education */
 #education table {
