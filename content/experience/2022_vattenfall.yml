@@ -10,7 +10,7 @@ company: Vattenfall
 city: Amsterdam
 cc: NL
 url: http://vattenfall.nl
-title: Senior Data engineer
+title: Senior Data/DevOps engineer
 desc:
   Optimize offshore wind turbine maintenance by empowering data analysts with tooling, infrastructure and data,
   so their predictive models can identify the wear on turbine components.
@@ -54,3 +54,4 @@ tech:
 - Azure Blob
 - Nginx
 - Nexus
+- DataBricks
