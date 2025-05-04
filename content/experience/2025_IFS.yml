@@ -1,0 +1,36 @@
+archive: false
+
+start: 2025-03
+end: 2026
+perc_remote: 99 # worked 95% remotely
+hours: 40
+employment: consultant #intern #edu. project #thesis #employee
+
+sector: enterprise software #education #retail #IT #research
+company: IFS
+city: Den Bosch
+cc: NL
+url: https://ifs.com
+
+title: Sr. DevOps Engineer
+# The what, why of your work
+desc: Ongoing assignment.
+# The how of your work
+activities:
+  - Automate manual infrastructure provisioning using OpenTofu (Terraform)
+  - Model current Ci/CD pipelines and Ansible include tree for optimization recommendations
+
+tech:
+  - Scrum
+  - Ansible
+  - OpenTofu
+  - Terraform
+  - Python
+  - Linux
+  - CI/CD
+  - Git
+  - Infrastructure as Code (IaC)
+  - Azure DevOps
+  - GitLab
+  - Jira
+  - BitBucket
