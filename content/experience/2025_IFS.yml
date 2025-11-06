@@ -2,7 +2,7 @@ archive: false
 
 start: 2025-03
 end: 2026
-perc_remote: 99 # worked 95% remotely
+perc_remote: 99
 hours: 40
 employment: consultant #intern #edu. project #thesis #employee
 
@@ -14,11 +14,20 @@ url: https://ifs.com
 
 title: Sr. DevOps Engineer
 # The what, why of your work
-desc: Ongoing assignment.
+desc: Enable multi tenant infrastructure on legacy Infrastructure as Code (IaC) by using the strangler pattern
 # The how of your work
 activities:
   - Automate manual infrastructure provisioning using OpenTofu (Terraform)
-  - Model current Ci/CD pipelines and Ansible include tree for optimization recommendations
+  - Model current CI/CD pipelines and create refactor design
+  - Refactor Ansible infrastructure away from monolith
+  - Implement REST API proxy in Golang
+  - Rewrite Bash backend processes into TypeScript
+  - Test TypeScript codebase using Playwright
+  - Containerize testing pipelines to allow local 
+  - Testing legacy code and pipelines and bugfix existing errors
+  - Increase testing efficiency through separation of responsibility and error logs
+  - Implement dashboard in Azure DevOps for periodic tests
+  - Refactor Gitlab and Azure DevOps pipelines
 
 tech:
   - Scrum
@@ -27,10 +36,15 @@ tech:
   - Terraform
   - Python
   - Linux
+  - TypeScript
+  - Podman
   - CI/CD
   - Git
+  - Golang
   - Infrastructure as Code (IaC)
   - Azure DevOps
   - GitLab
   - Jira
   - BitBucket
+  - Figma
+  - Jenkins
