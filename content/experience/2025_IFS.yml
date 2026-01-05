@@ -1,8 +1,8 @@
 archive: false
 
 start: 2025-03
-end: 2026
-perc_remote: 99
+end: 2025-12
+perc_remote: 98
 hours: 40
 employment: consultant #intern #edu. project #thesis #employee
 
@@ -18,15 +18,15 @@ desc: Enable multi tenant infrastructure on legacy Infrastructure as Code (IaC) 
 # The how of your work
 activities:
   - Automate manual infrastructure provisioning using OpenTofu (Terraform)
-  - Model current CI/CD pipelines and create refactor design
-  - Refactor Ansible infrastructure away from monolith
+  - Model current CI/CD pipelines and create plan to refactor design
+  - Refactor Ansible monolith into roles and playbooks
   - Implement REST API proxy in Golang
   - Rewrite Bash backend processes into TypeScript
   - Test TypeScript codebase using Playwright
-  - Containerize testing pipelines to allow local 
-  - Testing legacy code and pipelines and bugfix existing errors
+  - Containerize testing pipelines to allow local testing
+  - Testing legacy code and pipelines to diagnose and fix existing code
   - Increase testing efficiency through separation of responsibility and error logs
-  - Implement dashboard in Azure DevOps for periodic tests
+  - Implement dashboard in Azure DevOps for scheduled periodic tests
   - Refactor Gitlab and Azure DevOps pipelines
 
 tech:
