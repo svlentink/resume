@@ -8,7 +8,6 @@ birthyear: 1991
 availability: Actively looking
 intro: |
   Architecting & implementing Maintainable, Documented, and Repeatable IT solutions.
-  Proactive | Tool-Agnostic | Security-Focused
 #  secure solutions.
 #  Dedicated to Execution & Continuous Improvement
 #  Security-Focused | Solution-Oriented | Mission-Driven
@@ -19,23 +18,24 @@ intro: |
 headline: FIXME
 preference: kubernetes, security, data science, coding
 develop_goal:
-  Love to deepen my experience
-  as a data (platform) engineer
-  and like it when my work incorporates data science, security and writing code.
+  Proactive | Tool-Agnostic | Security-Focused
+#  Love to deepen my experience
+#  as a data (platform) engineer
+#  and like it when my work incorporates data science, security and writing code.
 #  with container orchestration (kubernetes)
 motivation: FIXME
 dutch:
   name: drs. ing. Sander Lentink
-  intro: |
+  intro:
     Ontwerpen & implementeren van onderhoudbare, gedocumenteerde en herhaalbare IT-oplossingen.
-    Proactief | Tool-onafhankelijk | Beveiligingsgericht
 #    Leergierig, ijverig en altijd opzoek naar de beste manier om iets gedaan te krijgen.
 #    Technologieen zijn enkel een middel tot het doel.
 #    Security bewust en bereid om problemen discreet aan te kaarten.
   develop_goal:
-    Wil mij verder verdiepen als data (platform) engineer
-    en vind het leuk als mijn werk raakvlakken heeft met data science,
-    security en code te schrijven. 
+    Proactief | Tool-onafhankelijk | Beveiligingsgericht
+#    Wil mij verder verdiepen als data (platform) engineer
+#    en vind het leuk als mijn werk raakvlakken heeft met data science,
+#    security en code te schrijven. 
 #    Wil mijn kennis mbt. container orchestration (kubernetes) verdiepen
 
 # FIXME
