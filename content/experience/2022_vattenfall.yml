@@ -26,8 +26,16 @@ activities:
 dutch:
   desc:
     Optimalizeren van onderhoud aan offshore wind turbines
-    door data analisten te voorzien van tooling, infrastructuur en data,
+    door gegevensanalisten te voorzien van tooling, infrastructuur en data,
     zodat voorspellende modellen de slijtage aan turbine onderdelen kan identificeren.
+  activities:
+  - Vertalen van zakelijke vragen naar complexe SQL-query's
+  - Ontwerp voor gegevens-extractie, -transformatie en -laden (ETL)
+  - JWT-authenticatie configureren m.b.v. Envoy-proxy voor backend van webapplicatie
+  - Ontwikkelaars in staat stellen VS-Code op k8s te draaien
+  - Cloudinfrastructuur beheren via Infrastructure as Code (IaC)
+  - GitOps implementeren voor AKS en databases in Azure-Cloud m.b.v. Terraform
+  - Gegevenstransformatie in Python m.b.v. Pandas
 
 tech:
 - Scrum

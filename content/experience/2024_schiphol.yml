@@ -22,10 +22,22 @@ activities:
 #- Developing a Web Scraping tool in Python
 - Containerization of Scala applications
 #- Containerizing the building of Scala applications
-- Migrating CICD pipelines from Jenkins to Azure DevOps
+- Migrating CI/CD pipelines from Jenkins to Azure DevOps
 #- Migration Gitlab CICD pipelines to Azure DevOps
 - Migrating application layer logging from Datadog to Splunk
 - Constructing XSD validation schemas for data sources
+
+dutch:
+  desc: Optimaliseren van luchthaven logistiek d.m.v. gegevens gedreven besluitvorming
+  activities:
+  - Onderhouden van Cloudinfrastructuur d.m.v. Infrastructuur als Code (IaC)
+  - Uitrol van Confluent Kafka infrastructuur m.b.v. Terraform
+  - Ontwikkeling van data-invoerservices in Python
+  - Assisteren van (junior) ontwikkelaars met netwerk, CI/CD en k8s problemen
+  - Containerisatie van Scala-applicaties
+  - Migreren van CI/CD pijpleidingen van Jenkins naar Azure DevOps
+  - Applicatielaag-logging migreren van Datadog naar Splunk
+  - Construeren van XSD validatieschema's voor gegevensbronnen
 
 tech:
 - Scrum
@@ -41,7 +53,7 @@ tech:
 - Terraform
 - Bash
 - REST API
-- Securit
+- Security
 - TCP
 - netcat
 - firewall

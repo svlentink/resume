@@ -48,3 +48,19 @@ tech:
   - BitBucket
   - Figma
   - Jenkins
+
+dutch:
+  desc: Multi-tenant infrastructuur mogelijk maken op bestaande Infrastructuur als Code (IaC) door gebruik te maken van het strangler-patroon
+  activities:
+  - Automatiseren handmatige infrastructuurprovisionering met OpenTofu (Terraform)
+  - Modelleren van huidige CI/CD-pijpleidingen en ontwerpplan voor herstructurering
+  - Herstructurering van Ansible-monoliet in rollen en playbooks
+  - Implementatie van REST API-proxy in Golang
+  - Vertaal Bash-backendprocessen naar TypeScript
+  - Test TypeScript met Playwright
+  - Containeriseer testpijpleidingen voor lokaal testen
+  - Test verouderde code en pijpleidingen om bestaande code te diagnosticeren en repareren
+  - Verhoog de testefficiëntie m.b.v. verantwoordelijkheidsscheiding en foutenlogboeken
+  - Implementeer een dashboard in Azure DevOps voor geplande periodieke tests
+  - Herstructureer Gitlab- en Azure DevOps-pijpleidingen
+

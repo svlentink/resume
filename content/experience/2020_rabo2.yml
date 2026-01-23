@@ -31,17 +31,17 @@ dutch:
     hielp ik met het opzetten van de infrastructuur voor de pilot applicatie (Pega)
     door het ontwikkelen van het automatisch uitrollen van een kubernetes (k8s) cluster met de applicatie.
     Wij waren verantwoordelijk voor het opzetten en uitvoeren van de eerste migratie,
-    waarbij ik de implementatie aanstuurde van Infrastructure as Code (IaC) mbv. Terraform.
+    waarbij ik de implementatie aanstuurde van Infrastructure as Code (IaC) m.b.v. Terraform.
   activities:
   - Continue evaluatie van business value vs. technische verbeteringen aangedragen door engineers
-  - Design van de Infrastructure as Code (IaC) omgeving
+  - Design van Infrastructure as Code (IaC) omgeving
   - Integreren security principes in IaC, k8s en werkprocessen
   - Ontwikkelen standaarden en modules in Terraform
   - Optimaliseren CI/CD pipelines en templates
 #  - Terraform inrichten als cloud agnostische configuratie tool
-  - Automatiseren deployment op Azure mbv. Terraform en pipelines
+  - Automatiseren uitrol op Azure m.b.v. Terraform en pipelines
   - Omzetten bestaande installatie handleiding naar IaC
-  - Uitvoeren Database tests tbv. selectieproces
+  - Uitvoeren Database tests t.b.v. selectieproces
   - Aansturen van driekoppig IaC team
   - Ondersteunen van team met Terraform en container vragen
 

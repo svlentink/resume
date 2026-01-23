@@ -31,11 +31,24 @@ activities:
   - Developing streaming API in Python between HDFS and HTTP
 dutch:
   desc: Het opschalen van duurzame energiebronnen mogelijk maken door het ontwikkelen van
-    data ingestion pipelines om data scientist in staat te stellen verspellingsmodellen te maken.
+    gegevensinvoer pijpleidingen om data scientist in staat te stellen verspellingsmodellen te maken.
     Wij ontwikkelden services die verschillende bronnen aanboorde en het opsloeg op HDFS of in een database,
-    voorzien van monitoring dmv. dashboards en alarmering.
-#  activities:
-#  - fixme
+    voorzien van monitoring d.m.v. dashboards en alarmering.
+  activities:
+  - Verbeteren en stimuleren van innovatie m.b.t. beveiligingsprocessen d.m.v. standaardisatie en automatisering
+  - Ontwikkelen van data-invoerservices met Python
+  - Implementeren van diverse services met GitOps op containerorkestratieplatform
+  - GitOps mogelijk maken voor LDAP Grafana-instanties
+  - Ontwikkelaars in staat stellen VS-Code te draaien op DTAP-containerplatforms
+  - Ontwikkelen van multithreaded Python-service voor data-invoer m.b.v. NiFi
+  - GitOps voor databases (DaaS)
+  - Vereistenbeheer voor data-invoerservices; ACL's, servicegebruiker, HDFS, Kafka
+  - Creëren van dashboards die data-invoerstatistieken visualiseren met Kibana
+  - Configureren van Filebeat op containerorkestratieplatform
+  - Ontwikkelen van Python-pakket voor implementatie van gestandaardiseerd JSON-logformaat
+  - GitOps inschakelen voor ElasticSearch-watchers voor waarschuwingen naar Slack en e-mail
+  - Creëren en onderhouden van interne Python-pakketten (pypi)
+  - Ontwikkelen van streaming-API in Python tussen HDFS en HTTP
 
 tech:
 - Scrum

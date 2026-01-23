@@ -18,23 +18,23 @@ activities:
   - Optimize operations using Nagios, Elastic search monitoring, Slack notifications
   - Maintenance hosting infrastructure
   - Security audit the infrastructure
-  - Ddos intervention
+  - DDOS intervention
   - Spam and phising email monitoring and prevention
   - Provide software developers with docker platform
   - On-call shift
   - Email platform maintenance
   - Maintenance in data center
 dutch:
-  desc: Automatiseren van het operationeel beheer en het implementeren van nieuwe services.
+  desc: Automatiseren van operationeel beheer en implementeren van nieuwe services.
     Mijn verantwoordelijkheid was het in de lucht houden van de bestaande diensten;
     hosting, email, DNS en het moderniseren van de interne configuratie tools. 
   activities:
-    - Ontwikkelen microservices met Python
+    - Ontwikkelen microservices in Python
     - Microservices koppelen met RabbitMQ message systeem
-    - Optimaliseren beheer mbv. nagios, elastic search monitoring, Slack notifications
+    - Optimaliseren beheer m.b.v. nagios, elastic search monitoring, Slack meldingen
     - Beheer hosting infra
-    - Audit en rapporteren van security mbt. infrastructuur
-    - Ddos interventie
+    - Audit en rapporteren van security m.b.t. infrastructuur
+    - DDOS interventie
     - Spam en phising email monitoring en preventie
     - Software ontwikkelaars voorzien van docker platform
     - Standby diensten draaien
@@ -63,5 +63,6 @@ tech:
 - Kibana
 - Dokuwiki
 - CertManager
+- BGP
 
 # worked the first 9 months full time, the remaining months part time.

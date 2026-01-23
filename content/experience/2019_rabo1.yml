@@ -32,13 +32,13 @@ dutch:
     om een beheersbare middleware te maken voor het aanvragen van ICT services in het eigen DC.
   activities:
   - Strategie maken voor transitie naar containers tbv. Cloud migratie
-  - Onderzoek naar methodes om resources aan te vragen in ManageIQ via Infrastructure as Code (IaC)
-  - Ontwikkelen van ManageIQ Terraform provider mbv. Golang
-  - Ontwikkelen nieuwe leesbare Terraform templates volgens AWS format
-  - Ontwikkelen van data parsers mbv. Python voor on premise DC management
+  - Onderzoek naar methodes om resources aan te vragen in ManageIQ via Infrastructuur als Code (IaC)
+  - Ontwikkelen van ManageIQ Terraform aanbieder m.b.v. Golang
+  - Ontwikkelen nieuwe leesbare Terraform sjabloon volgens AWS format
+  - Ontwikkelen van gegevensverwerkers m.b.v. Python voor on premise DC beheer
   - Bouwen van koppelingen tussen DevOps tools en API's
-  - Optimaliseren van bestaande IaC templates (YAML en JSON)
-  - Pega vatten in container dmv. Dockerfile
+  - Optimaliseren van bestaande IaC sjabloon (YAML en JSON)
+  - Pega vatten in container d.m.v. Dockerfile
   - Platform tekeningen maken
   - Ondersteunen van team met Python, Linux, containers, routing en Terraform vragen
   - Presenteren designs en bevindingen aan teams

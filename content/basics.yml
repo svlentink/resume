@@ -1,4 +1,4 @@
-doctitle: Freelance Data / DevOps / Fullstack / Linux engineer
+doctitle: Sr. Data / DevOps / Fullstack / Linux consultant
 name: ing. Sander Lentink, MSc.
 currentcity: "Lelystad | &#127466;&#127482; EU"
 drivers license: A, B
@@ -6,9 +6,13 @@ phone: '+31617012655'
 email: sv@lent.ink
 birthyear: 1991
 availability: Actively looking
-intro: Eager to create and learn, diligent and always looking to get the job done.
-  Technologies are solely a means to get the job done.
-  Security minded and willing to discreetly address issues.
+intro: |
+  Architecting & implementing Maintainable, Documented, and Repeatable IT solutions.
+  Proactive | Tool-Agnostic | Security-Focused
+#  secure solutions.
+#  Dedicated to Execution & Continuous Improvement
+#  Security-Focused | Solution-Oriented | Mission-Driven
+#  Security minded and willing to discreetly address issues.
 # Dissecting complex problems energizes me.
 #  As a DevOps my job is to enable developers to expose their latest features through 
 #  My peers knows me as the Docker guy.
@@ -22,9 +26,12 @@ develop_goal:
 motivation: FIXME
 dutch:
   name: drs. ing. Sander Lentink
-  intro: Leergierig, ijverig en altijd opzoek naar de beste manier om iets gedaan te krijgen.
-    Technologieen zijn enkel een middel tot het doel.
-    Security bewust en bereid om problemen discreet aan te kaarten.
+  intro: |
+    Ontwerpen & implementeren van onderhoudbare, gedocumenteerde en herhaalbare IT-oplossingen.
+    Proactief | Tool-onafhankelijk | Beveiligingsgericht
+#    Leergierig, ijverig en altijd opzoek naar de beste manier om iets gedaan te krijgen.
+#    Technologieen zijn enkel een middel tot het doel.
+#    Security bewust en bereid om problemen discreet aan te kaarten.
   develop_goal:
     Wil mij verder verdiepen als data (platform) engineer
     en vind het leuk als mijn werk raakvlakken heeft met data science,
