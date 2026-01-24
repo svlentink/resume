@@ -109,6 +109,9 @@ h1,h2,h3,h4 { margin:1mm; margin-bottom:0; }
 #experience tr:nth-child(1) { /* title */
   font-weight: bold;
   font-size: 16px;
+  -webkit-user-modify: read-write;
+  -moz-user-modify: read-write;
+  user-modify: read-write;
 }
 #experience tr:nth-child(2) { text-align:right; } /* timespan */
 #experience table {
