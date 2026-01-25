@@ -191,6 +191,17 @@ h1 {margin-bottom: 2mm; }
 #tree span {
   font-size: 15px;
 }
+#tree ul {
+  list-style: none;
+  padding: 0;
+}
+#tree li {
+  display: inline-block;
+  margin-right: 1mm;
+  font-size: 15px;
+}
+#tree li:after { content: ', '; }
+#tree li:last-child:after { content: ''; }
 
 /* knowledge graph */
 #knowledgeoverview { display:none; }

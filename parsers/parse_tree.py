@@ -97,12 +97,17 @@ def getAllTech():
         for key in rawdata['tech']:
           expset.add(key)
 
-  return treeset.union(otherset).union(expset)
+  l = list(treeset.union(otherset).union(expset))
+  return sorted(l, key = lambda x: str(x).casefold())
+
 
 def getAllTechStr():
-  l = list(getAllTech())
-  s = sorted(l, key = lambda x: str(x).casefold())
-  return ', '.join(s)
+  arr = getAllTech()
+  return ', '.join(arr)
+
+def getAllTechList():
+  arr = getAllTech()
+  return list2htmllist(arr)
 
 def tree2doc(doc, tree = getTree(), other=getOtherstr()):
   addHead(doc,'Knowledge fields', 1)
@@ -122,6 +127,7 @@ def tree2html(tree = getTree(), other=getOtherstr()):
   result += '<span>' + ', '.join(other) + '</span>'
   result += '</div>\n'
   result += '<h2>' + get_val(0, 'Techniques') + '</h3>'
-  result += '<span>' + getAllTechStr() + '</span>'
+  result += '<span style="display:none;">' + getAllTechStr() + '</span>'
+  result += getAllTechList()
   return result
 
