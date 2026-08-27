@@ -1,0 +1,41 @@
+archive: false
+
+start: 2026-05
+end: 2026-12
+perc_remote: 60
+hours: 40
+employment: consultant #intern #edu. project #thesis #employee
+
+sector: Finance
+company: BouwInvest
+city: Amsterdam
+cc: NL
+url: https:/bouwinvest.com
+
+title: Lead Monitoring | Data Engineer
+# The what, why of your work
+desc: Automate, align, communicate, strategize and implement the Data Integrations monitoring
+# The how of your work
+activities:
+- Create automated overviews of data flows in MS Teams using SQL and Python
+- Communicate and document status of data flows, through meetings and Atlassian Jira
+- Create dashboards that compare numbers between systems to find discrepancies using SQL and Python Pandas
+- Translate between business (accounting & asset management) and development team
+- Research general ledger discrepancies detected on third party accounting using SQL and Python Pandas
+- Validate data sets used by Analytics using SQL, Excel and Python
+- Create Power BI report for Analytics department
+- Signal/suggest security improvements relating to authentication, VPN, email server, WiFi etc.
+
+
+tech:
+  - Scrum
+  - SQL
+  - Python Pandas
+  - Microsoft Fabric
+  - Azure DevOps
+  - Jira
+  - Python
+  - Linux
+  - Git
+  - SAP BW
+

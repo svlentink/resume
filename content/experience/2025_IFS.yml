@@ -18,7 +18,7 @@ desc: Enable multi tenant infrastructure on legacy Infrastructure as Code (IaC) 
 # The how of your work
 activities:
   - Automate manual infrastructure provisioning using OpenTofu (Terraform)
-  - Model current CI/CD pipelines and create plan to refactor design
+  - Model current CI/CD pipelines and create plan to refactor architecture
   - Refactor Ansible monolith into roles and playbooks
   - Implement REST API proxy in Golang
   - Rewrite Bash backend processes into TypeScript
