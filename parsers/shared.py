@@ -166,7 +166,7 @@ def attribute2tuple(obj,attr):
 def list2htmllist(arr):
   result = '<ul>'
   for i in arr:
-    result += '<li onclick="this.style.fontWeight=\'bold\'">' + str(i) + '</li>'
+    result += f"<li>{i}</li>" #'<li onclick="this.style.fontWeight=\'bold\'">' + str(i) + '</li>'
   result += '</ul>'
   return result
 

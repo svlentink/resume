@@ -1,0 +1,10 @@
+k8s,kubernetes,openshift kubernetes,aks kubernetes,openshift
+azure devops,git,bitbucket,github,gitlab
+podman,docker,docker-compose,dockerfile
+infrastructure as code,IaC,infrastructure as code (iac)
+linux,alpine linux,debian linux,ubuntu linux,kali linux,kali,ubuntu,alpine
+DNS,powerdns
+sql,sql server,mariadb,mysql
+terraform,opentofu
+soap,xml
+

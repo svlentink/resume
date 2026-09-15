@@ -109,6 +109,10 @@ h1,h2,h3,h4 { margin:1mm; margin-bottom:0; }
 #experience tr:nth-child(1) { /* title */
   font-weight: bold;
   font-size: 16px;
+}
+#personal h1,
+#personal p,
+#experience tr:nth-child(1) { /* title */
   -webkit-user-modify: read-write;
   -moz-user-modify: read-write;
   user-modify: read-write;

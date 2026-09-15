@@ -109,6 +109,11 @@ def getAllTechList():
   arr = getAllTech()
   return list2htmllist(arr)
 
+def equal_words(filepath = '/content/equal-words.csv'):
+    with open(filepath, "r", encoding="utf-8") as f:
+        data = [line.rstrip("\n").split(",") for line in f]
+    return data
+
 def tree2doc(doc, tree = getTree(), other=getOtherstr()):
   addHead(doc,'Knowledge fields', 1)
   run = doc.add_paragraph().add_run(tree)
@@ -129,5 +134,42 @@ def tree2html(tree = getTree(), other=getOtherstr()):
   result += '<h2>' + get_val(0, 'Techniques') + '</h3>'
   result += '<span style="display:none;">' + getAllTechStr() + '</span>'
   result += getAllTechList()
+  result += f'''
+  <script>
+    TECH_ALL = {json.dumps(getAllTech())}
+    EQUAL_WORDS = {json.dumps(equal_words())}
+    words_to_match_on() => {
+        match_words = TECH_ALL
+        for(var equalset of EQUAL_WORDS)
+            for(var equal_word of equalset)
+                for(var tech of match_words)
+                    if(equal_word.casefold() == tech.casefold())
+                        match_words = match_words.concat(equalset
+        result = new Set(match_words)
+        return result
+    }
+    matched_words(job_desc) => {
+        result = new Set()
+        txt = job_desc.casefold()
+        for(let w of words_to_match_on()){
+            word = w.casefold()
+            if(txt.contains(word))
+                result.add(word)
+        }
+        return result
+    }
+    mark_matching_as_bold(matchset) => {
+        let all = document.querySelectorAll('*')
+        for(let elem in all)
+            if('innerText' in elem)
+                for(let w of matchset)
+                    if(elem.innerText.casefold().contains(w))
+                        elem.style.fontWeight = 'bold'
+    }
+    let job_desc = prompt("Input the job description to mark the relevant experience as bold, or leave empty.")
+    let matchset = matched_words(job_desc)
+    mark_matching_as_bold(matchset)
+  </script>
+  '''
   return result
 
