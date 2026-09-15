@@ -166,8 +166,13 @@ def tree2html(tree = getTree(), other=getOtherstr()):
         for(let elem of all)
             if('innerText' in elem)
                 for(let w of matchset)
-                    if(elem.innerText.toLowerCase().includes(w))
+                    if(elem.checkVisibility()
+                        && elem.children.length == 0
+                        && elem.innerText.toLowerCase().includes(w)
+                        && w.length > 2){ // prevent matching R or Go
+                        console.log('matched', w, elem.innerText)
                         elem.style.fontWeight = 'bold'
+                    }
     }
     let job_desc = prompt("Input the job description to mark the relevant experience as bold, or leave empty.")
     let matchset = matched_words(job_desc)
