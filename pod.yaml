@@ -1,0 +1,38 @@
+# podman play kube pod.yaml
+# podman logs -f generate
+# podman play kube --down pod.yaml
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: yaml-resume
+spec:
+  containers:
+    - name: generate
+      image: docker.io/svlentink/yaml-resume
+      env:
+        - name: COMPILE_LANGUAGE
+          value: dutch
+      volumeMounts:
+        - name: generated
+          mountPath: /output
+        - name: content
+          mountPath: /content
+          readOnly: true
+        - name: parsers
+          mountPath: /parsers
+          readOnly: true
+  volumes:
+    - name: generated
+      hostPath:
+        path: ./generated
+        type: Directory
+    - name: content
+      hostPath:
+        path: ./content
+        type: Directory
+    - name: parsers
+      hostPath:
+        path: ./parsers
+        type: Directory
+

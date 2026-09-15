@@ -43,7 +43,7 @@ spec:
       restartPolicy: Never
       containers:
       - name: cv
-        image: svlentink/yaml-resume
+        image: docker.io/svlentink/yaml-resume
         volumeMounts:
         - name: cv
           mountPath: /content

@@ -1,7 +1,7 @@
 version: '3'
 services:
   generate:
-    image: svlentink/yaml-resume
+    image: docker.io/svlentink/yaml-resume
     environment:
       COMPILE_LANGUAGE: dutch
     volumes:

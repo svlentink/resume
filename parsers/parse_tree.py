@@ -5,6 +5,7 @@ from collections import OrderedDict as odict
 from boltons.iterutils import remap
 from shared import *
 from glob import glob
+import json
 #import numpy as np
 #import pandas as pd
 
@@ -134,42 +135,44 @@ def tree2html(tree = getTree(), other=getOtherstr()):
   result += '<h2>' + get_val(0, 'Techniques') + '</h3>'
   result += '<span style="display:none;">' + getAllTechStr() + '</span>'
   result += getAllTechList()
-  result += f'''
+  result += f"""
   <script>
-    TECH_ALL = {json.dumps(getAllTech())}
-    EQUAL_WORDS = {json.dumps(equal_words())}
-    words_to_match_on() => {
-        match_words = TECH_ALL
+    const TECH_ALL = {json.dumps(getAllTech())}
+    const EQUAL_WORDS = {json.dumps(equal_words())}
+  """
+  result += """
+    function words_to_match_on() {
+        let match_words = TECH_ALL
         for(var equalset of EQUAL_WORDS)
             for(var equal_word of equalset)
                 for(var tech of match_words)
-                    if(equal_word.casefold() == tech.casefold())
-                        match_words = match_words.concat(equalset
+                    if(equal_word.toLowerCase() == tech.toLowerCase())
+                        match_words = match_words.concat(equalset)
         result = new Set(match_words)
         return result
     }
-    matched_words(job_desc) => {
-        result = new Set()
-        txt = job_desc.casefold()
+    function matched_words(job_desc) {
+        let result = new Set()
+        let txt = job_desc.toLowerCase()
         for(let w of words_to_match_on()){
-            word = w.casefold()
-            if(txt.contains(word))
+            word = w.toLowerCase()
+            if(txt.includes(word))
                 result.add(word)
         }
         return result
     }
-    mark_matching_as_bold(matchset) => {
+    function mark_matching_as_bold(matchset) {
         let all = document.querySelectorAll('*')
-        for(let elem in all)
+        for(let elem of all)
             if('innerText' in elem)
                 for(let w of matchset)
-                    if(elem.innerText.casefold().contains(w))
+                    if(elem.innerText.toLowerCase().includes(w))
                         elem.style.fontWeight = 'bold'
     }
     let job_desc = prompt("Input the job description to mark the relevant experience as bold, or leave empty.")
     let matchset = matched_words(job_desc)
     mark_matching_as_bold(matchset)
   </script>
-  '''
+  """
   return result
 
