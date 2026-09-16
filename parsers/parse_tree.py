@@ -174,9 +174,11 @@ def tree2html(tree = getTree(), other=getOtherstr()):
                         elem.style.fontWeight = 'bold'
                     }
     }
-    let job_desc = prompt("Input the job description to mark the relevant experience as bold, or leave empty.")
-    let matchset = matched_words(job_desc)
-    mark_matching_as_bold(matchset)
+    function assist(){
+        let job_desc = prompt("Input the job description to mark the relevant experience as bold, or leave empty.")
+        let matchset = matched_words(job_desc)
+        mark_matching_as_bold(matchset)
+    }
   </script>
   """
   return result
