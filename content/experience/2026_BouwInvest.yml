@@ -27,6 +27,19 @@ activities:
 - Signal/suggest security improvements relating to authentication, VPN, email server, WiFi etc.
 
 
+dutch:
+  desc: Automatiseren, afstemmen, communiceren, strategie bepalen en implementeren van Data-integraties monitoring
+  activities:
+  - Opstellen van geautomatiseerde datastroom overzichten in MS Teams mbv. SQL en Python
+  - Communiceren en documenteren van data(stroom) status via vergaderingen en Atlassian Jira
+  - Ontwikkelen van dashboards die data tussen systemen vergelijkt om afwijkingen te detecteren, mbv. SQL en Python Pandas
+  - Fungeren als schakel tussen de business (boekhouding & assetmanagement) en ontwikkelingsteam
+  - Onderzoeken van afwijkingen in het grootboek bij externe boekhoudsystemen mbv. SQL en Python Pandas
+  - Valideren datasets gebruikt door Analytics afdeling mbv. SQL, Excel en Python
+  - Maken van Power BI-rapportages voor de afdeling Analytics
+  - Signaleren en rapporteren van beveiligingsverbeteringen mbt. authenticatie, VPN, e-mailserver, WiFi, enz.
+
+
 tech:
   - Scrum
   - SQL
@@ -38,4 +51,11 @@ tech:
   - Linux
   - Git
   - SAP BW
+  - Xurrent
+  - Sharepoint
+  - Markdown
+  - Reasult
+  - Planon
+  - Excel
+  - MS Teams
 

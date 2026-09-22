@@ -21,8 +21,8 @@ def person2doc(doc, data = get_person_data()):
 
   addHead(doc,'About', 2)
   doc.add_paragraph(get_val(data,'intro'))
-  addHead(doc,'Ambition',3)
-  doc.add_paragraph(get_val(data,'develop_goal'))
+  #addHead(doc,'Ambition',3)
+  #doc.add_paragraph(get_val(data,'develop_goal'))
 
 def person2html(data = get_person_data()):
   result = '<h1 id="doctitle">' + get_val(data,'doctitle') + '</h1>'
@@ -30,8 +30,8 @@ def person2html(data = get_person_data()):
   result += tuples2html(get_person_table(data))
   result += '<h3>' + get_val(0,'About') + '</h3>'
   result += '<p>' + get_val(data,'intro') + '</p>'
-  result += '<h4>' + get_val(0,'Ambition') + '</h4>'
-  result += '<p>' + get_val(data,'develop_goal') + '</p>'
+  #result += '<h4>' + get_val(0,'Ambition') + '</h4>'
+  #result += '<p>' + get_val(data,'develop_goal') + '</p>'
   return result
 
 def get_lang_table(data = get_person_data()):

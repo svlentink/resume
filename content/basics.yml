@@ -6,8 +6,13 @@ phone: '+31617012655'
 email: sv@lent.ink
 birthyear: 1991
 availability: Actively looking
+preference: kubernetes, security, data science, coding
+
+
+# intro should old brief headline/description/development goals/ambition/sales pitch NOTE this will be overwritten when a job specific motivation is provided
 intro: |
   Architecting & implementing Maintainable, Documented, and Repeatable IT solutions.
+  Proactive | Tool-Agnostic | Security-Focused
 #  secure solutions.
 #  Dedicated to Execution & Continuous Improvement
 #  Security-Focused | Solution-Oriented | Mission-Driven
@@ -15,24 +20,20 @@ intro: |
 # Dissecting complex problems energizes me.
 #  As a DevOps my job is to enable developers to expose their latest features through 
 #  My peers knows me as the Docker guy.
-headline: FIXME
-preference: kubernetes, security, data science, coding
-develop_goal:
-  Proactive | Tool-Agnostic | Security-Focused
 #  Love to deepen my experience
 #  as a data (platform) engineer
 #  and like it when my work incorporates data science, security and writing code.
 #  with container orchestration (kubernetes)
-motivation: FIXME
+
+
 dutch:
   name: drs. ing. Sander Lentink
-  intro:
+  intro: |
     Ontwerpen & implementeren van onderhoudbare, gedocumenteerde en herhaalbare IT-oplossingen.
+    Proactief | Tool-onafhankelijk | Beveiligingsgericht
 #    Leergierig, ijverig en altijd opzoek naar de beste manier om iets gedaan te krijgen.
 #    Technologieen zijn enkel een middel tot het doel.
 #    Security bewust en bereid om problemen discreet aan te kaarten.
-  develop_goal:
-    Proactief | Tool-onafhankelijk | Beveiligingsgericht
 #    Wil mij verder verdiepen als data (platform) engineer
 #    en vind het leuk als mijn werk raakvlakken heeft met data science,
 #    security en code te schrijven. 

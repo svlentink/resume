@@ -140,7 +140,7 @@ h1 {margin-bottom: 2mm; }
   max-width: 120mm; /* 60%; */
   float: left;
   margin: 0;
-  text-align: center;
+  //text-align: center;
   font-style: italic;
   font-size: 16px;
 }
