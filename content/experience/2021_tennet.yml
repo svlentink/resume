@@ -43,11 +43,11 @@ dutch:
   - Ontwikkelen van multithreaded Python-service voor data-invoer m.b.v. NiFi
   - GitOps voor databases (DaaS)
   - Vereistenbeheer voor data-invoerservices; ACL's, servicegebruiker, HDFS, Kafka
-  - Creëren van dashboards die data-invoerstatistieken visualiseren met Kibana
+  - Creeren van dashboards die data-invoerstatistieken visualiseren met Kibana
   - Configureren van Filebeat op containerorkestratieplatform
   - Ontwikkelen van Python-pakket voor implementatie van gestandaardiseerd JSON-logformaat
   - GitOps inschakelen voor ElasticSearch-watchers voor waarschuwingen naar Slack en e-mail
-  - Creëren en onderhouden van interne Python-pakketten (pypi)
+  - Creeren en onderhouden van interne Python-pakketten (pypi)
   - Ontwikkelen van streaming-API in Python tussen HDFS en HTTP
 
 tech:
