@@ -174,10 +174,16 @@ def tree2html(tree = getTree(), other=getOtherstr()):
                         elem.style.fontWeight = 'bold'
                     }
     }
+    function set_motivation_cover_letter(){
+        let motivation = prompt("Input the job specific motivation/cover letter, or leave empty.")
+        if (motivation.length)
+            document.querySelector('#personal p').innerText = motivation
+    }
     function assist(){
         let job_desc = prompt("Input the job description to mark the relevant experience as bold, or leave empty.")
         let matchset = matched_words(job_desc)
         mark_matching_as_bold(matchset)
+        set_motivation_cover_letter()
     }
   </script>
   """

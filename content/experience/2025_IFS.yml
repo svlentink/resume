@@ -60,7 +60,7 @@ dutch:
   - Test TypeScript met Playwright
   - Containeriseer testpijpleidingen voor lokaal testen
   - Test verouderde code en pijpleidingen om bestaande code te diagnosticeren en repareren
-  - Verhoog de testefficiëntie m.b.v. verantwoordelijkheidsscheiding en foutenlogboeken
+  - Verhoog de testefficientie m.b.v. verantwoordelijkheidsscheiding en foutenlogboeken
   - Implementeer een dashboard in Azure DevOps voor geplande periodieke tests
   - Herstructureer Gitlab- en Azure DevOps-pijpleidingen
 
